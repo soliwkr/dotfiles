@@ -1,5 +1,7 @@
-# Secrets
-.ssh/**
+# Secrets — track config (no secrets) but never private keys
+.ssh/id_*
+.ssh/authorized_keys
+.ssh/known_hosts
 .gnupg/**
 .config/keyrings/**
 .pki/**
