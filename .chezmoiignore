@@ -1,0 +1,52 @@
+# Secrets
+.ssh/**
+.gnupg/**
+.config/keyrings/**
+.pki/**
+
+# Runtime / browser state
+.config/chromium/**
+.config/BraveSoftware/**
+.config/dconf/**
+.config/fcitx/**
+.config/fcitx5/**
+.config/ibus/**
+.config/pulse/**
+.config/autostart/**
+
+# Omarchy runtime theme state (managed by omarchy, changes on theme switch)
+.config/omarchy/current/**
+
+# Caches and state
+.cache/**
+.npm/**
+.local/state/**
+.local/share/recently-used.xbel
+.local/share/gvfs-metadata/**
+.local/share/keyrings/**
+.local/share/sddm/**
+.local/share/nvim/**
+.local/share/applications/**
+.local/share/fonts/**
+.local/share/mime/**
+.local/share/flatpak/**
+.local/share/icons/**
+.local/share/hyprland/**
+.local/share/mise/installs/**
+.local/share/mise/shims/**
+.local/share/chezmoi/**
+
+# XDG user dirs
+Desktop/**
+Documents/**
+Music/**
+Pictures/**
+Public/**
+Templates/**
+Videos/**
+Downloads/**
+
+# Misc
+.bash_history
+*.log
+*.bak
