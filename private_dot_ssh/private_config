@@ -4,3 +4,16 @@ Host *
     IdentityAgent ~/.1password/agent.sock
     ServerAliveInterval 60
     ServerAliveCountMax 3
+    ControlMaster auto
+    ControlPath ~/.ssh/control-socket-%h-%p-%r
+    ControlPersist 3600
+    StrictHostKeyChecking accept-new
+
+# Servers
+Host soliwkr
+    HostName 89.167.65.226
+    User root
+
+Host verbum-lucis-vps
+    HostName 158.69.219.187
+    User debian
