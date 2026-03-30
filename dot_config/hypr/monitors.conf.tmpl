@@ -1,0 +1,20 @@
+# See https://wiki.hyprland.org/Configuring/Monitors/
+# Format: monitor=name,resolution,position,scale
+
+{{ if eq .chezmoi.hostname "soliwkr" -}}
+# MacBook Pro 2015 13" — Retina 2560x1600
+# Scale 2 = effective 1280x800 (same as macOS native)
+env = GDK_SCALE,2
+monitor=eDP-1,2560x1600@60,0x0,2
+monitor=,preferred,auto,1
+
+{{ else -}}
+# Dell Precision 5550 — 4K OLED 3840x2400 + external monitor
+# Scale 2 = effective 1920x1200
+env = GDK_SCALE,2
+monitor=eDP-1,3840x2400@60,0x0,2
+monitor=,preferred,auto,1
+
+{{ end -}}
+# Fallback for any unrecognised monitor
+monitor=,preferred,auto,auto
