@@ -1,0 +1,26 @@
+# Core Ubuntu/Debian — server + desktop
+bat
+btop
+build-essential
+curl
+docker.io
+docker-compose
+eza
+fd-find
+fzf
+gh
+git
+jq
+less
+luarocks
+man-db
+ripgrep
+rclone
+rsync
+ruby
+tmux
+tree
+unzip
+wget
+whois
+zoxide

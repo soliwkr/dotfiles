@@ -1,0 +1,9 @@
+# Desktop Ubuntu
+alacritty
+kitty
+mako-notifier
+nautilus
+neovim
+obs-studio
+obsidian
+signal-desktop

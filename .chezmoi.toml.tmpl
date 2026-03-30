@@ -1,3 +1,11 @@
+{{- $isDesktop := false -}}
+{{- $virt := output "sh" "-c" "systemd-detect-virt 2>/dev/null || echo none" | trim -}}
+{{- $hasDri := output "sh" "-c" "test -e /dev/dri/card0 && echo yes || echo no" | trim -}}
+{{- if and (eq $virt "none") (eq $hasDri "yes") -}}
+{{-   $isDesktop = true -}}
+{{- end -}}
+
 [data]
-    name = "Walker White"
-    email = "soliwkr@gmail.com"
+    name     = "Walker White"
+    email    = "soliwkr@gmail.com"
+    isDesktop = {{ $isDesktop }}

@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-# Crea la struttura directory canonale (idempotente)
-# Gira PRIMA di clone repos (prefix 05 < 20)
+# Crea struttura directory canonica (idempotente)
 set -euo pipefail
 
-mkdir -p \
-  "$HOME/Codice" \
-  "$HOME/Vault" \
-  "$HOME/Documenti" \
-  "$HOME/Foto" \
-  "$HOME/Scripts"
+mkdir -p   "$HOME/Codice"   "$HOME/Documenti"   "$HOME/Immagini"   "$HOME/Musica"   "$HOME/Scaricati"   "$HOME/Scrivania"   "$HOME/Video"   "$HOME/Vault"   "$HOME/Scripts"   "$HOME/Work"
 
-echo "Directory base create."
+echo "Directory canoniche create."
