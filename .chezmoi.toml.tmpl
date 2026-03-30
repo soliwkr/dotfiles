@@ -1,11 +1,17 @@
 {{- $isDesktop := false -}}
-{{- $virt := output "sh" "-c" "systemd-detect-virt 2>/dev/null || echo none" | trim -}}
-{{- $hasDri := output "sh" "-c" "test -e /dev/dri/card0 && echo yes || echo no" | trim -}}
+{{- $virt := output "sh" "-c" "systemd-detect-virt 2>/dev/null | head -1 || echo none" | trim -}}
+{{- $hasDri := output "sh" "-c" "ls /dev/dri/card* 2>/dev/null | grep -q . && echo yes || echo no" | trim -}}
 {{- if and (eq $virt "none") (eq $hasDri "yes") -}}
 {{-   $isDesktop = true -}}
 {{- end -}}
 
+encryption = "age"
+
+[age]
+    identity  = "~/.config/chezmoi/key.txt"
+    recipient = "age1lng233qu5upldxxhkwhr9nqlaa037nkrtaqqr2vssljhfuxrvgqsvkd9a2"
+
 [data]
-    name     = "Walker White"
-    email    = "soliwkr@gmail.com"
+    name      = "Walker White"
+    email     = "soliwkr@gmail.com"
     isDesktop = {{ $isDesktop }}
