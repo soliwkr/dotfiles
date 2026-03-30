@@ -122,3 +122,8 @@ xournalpp
 yaru-icon-theme
 yay
 zram-generator
+# NVIDIA — Quadro T2000 / Wayland
+nvidia-dkms
+nvidia-utils
+libva-nvidia-driver
+egl-wayland
