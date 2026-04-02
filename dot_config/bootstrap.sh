@@ -30,6 +30,24 @@ if ! command -v chezmoi &>/dev/null; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Ensure age key is present (required to decrypt rclone.conf and other secrets)
+AGE_KEY="$HOME/.config/chezmoi/key.txt"
+if [[ ! -f "$AGE_KEY" ]]; then
+  info "Age key not found at $AGE_KEY"
+  echo ""
+  echo "This dotfiles repo uses age encryption for secrets (rclone.conf, etc.)."
+  echo "You must copy your age private key to this machine before continuing."
+  echo ""
+  echo "From your existing machine, run:"
+  echo "  scp ~/.config/chezmoi/key.txt $(whoami)@$(hostname):~/.config/chezmoi/key.txt"
+  echo ""
+  echo "Or paste the key content now (end with Ctrl-D on a blank line):"
+  mkdir -p "$(dirname "$AGE_KEY")"
+  cat > "$AGE_KEY"
+  chmod 600 "$AGE_KEY"
+  success "Age key saved."
+fi
+
 # Apply dotfiles (chezmoi handles package install via run_once scripts)
 info "Applying dotfiles from $CHEZMOI_REPO..."
 chezmoi init --apply "$CHEZMOI_REPO"
