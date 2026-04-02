@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+{{ if and (eq .chezmoi.osRelease.id "arch") .isDesktop -}}
+# Builda e installa plugin Hyprland (hyprexpo, hyprfocus)
+# Re-esegue se la versione di Hyprland cambia
+# hyprland-version: {{ output "pacman" "-Q" "hyprland" | trim }}
+set -euo pipefail
+
+info() { echo -e "\033[1;34m==>\033[0m $*"; }
+
+mkdir -p "$HOME/.local/lib/hyprland"
+
+# Dipendenze build
+if ! command -v cmake &>/dev/null || ! command -v cpio &>/dev/null; then
+    info "Installazione dipendenze build..."
+    sudo pacman -S --needed --noconfirm cmake cpio
+fi
+
+TMPDIR=$(mktemp -d)
+trap "rm -rf $TMPDIR" EXIT
+
+info "Clone hyprland-plugins..."
+git clone --depth=1 https://github.com/hyprwm/hyprland-plugins "$TMPDIR/hyprland-plugins"
+
+for plugin in hyprexpo hyprfocus; do
+    info "Build $plugin..."
+    cmake -B "$TMPDIR/hyprland-plugins/$plugin/build"           -S "$TMPDIR/hyprland-plugins/$plugin"           -DCMAKE_BUILD_TYPE=Release -Wno-dev 2>/dev/null
+    cmake --build "$TMPDIR/hyprland-plugins/$plugin/build" -j$(nproc) 2>/dev/null
+    cp "$TMPDIR/hyprland-plugins/$plugin/build/lib${plugin}.so"        "$HOME/.local/lib/hyprland/"
+    info "$plugin installato in ~/.local/lib/hyprland/"
+done
+
+{{ end -}}

@@ -1,5 +1,5 @@
 #!/bin/bash
-{{ if and (eq .chezmoi.osRelease.id arch) .isDesktop -}}
+{{ if and (eq .chezmoi.osRelease.id "arch") .isDesktop -}}
 # NVIDIA DRM modeset — required for Wayland/Hyprland with NVIDIA GPU
 # Only runs if nvidia-dkms is installed
 
