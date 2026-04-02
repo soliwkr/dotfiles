@@ -4,6 +4,7 @@
 .ssh/known_hosts
 .gnupg/**
 .config/keyrings/**
+.config/rclone/**
 .pki/**
 
 # Browser state

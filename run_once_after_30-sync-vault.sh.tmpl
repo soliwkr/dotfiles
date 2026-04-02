@@ -1,25 +1,31 @@
 #!/usr/bin/env bash
-# Sincronizza Vault e Documenti da OneDrive via rclone (run once)
-set -euo pipefail
+# DISABILITATO: OneDrive sync rimosso (era fuori controllo)
+# La macchina è perfettamente organizzata senza questo sync
+exit 0
 
-info()    { echo -e "\033[1;34m==>\033[0m $*"; }
-warn()    { echo -e "\033[1;33m!\033[0m $*"; }
-
-if ! command -v rclone &>/dev/null; then
-  warn "rclone non trovato, skip sync"
-  exit 0
-fi
-
-if ! rclone listremotes 2>/dev/null | grep -q 'onedrive:'; then
-  warn "Remote OneDrive non configurato. Configura con: rclone config"
-  warn "Poi rilancia: chezmoi apply"
-  exit 0
-fi
-
-info "Sync Vault da OneDrive..."
-rclone copy onedrive:/Vault "$HOME/Vault"   --transfers 4 --checkers 8   --update --progress 2>/dev/null || warn "Vault sync parziale, ricontrolla"
-
-info "Sync Documenti da OneDrive..."
-rclone copy onedrive:/Home/Documenti "$HOME/Documenti"   --transfers 4 --checkers 8   --update --progress 2>/dev/null || warn "Documenti sync parziale"
-
-info "Sync completato."
+# PRECEDENTE (disabilitato):
+# #!/usr/bin/env bash
+# # Sincronizza Vault e Documenti da OneDrive via rclone (run once)
+# set -euo pipefail
+#
+# info()    { echo -e "\033[1;34m==>\033[0m $*"; }
+# warn()    { echo -e "\033[1;33m!\033[0m $*"; }
+#
+# if ! command -v rclone &>/dev/null; then
+#   warn "rclone non trovato, skip sync"
+#   exit 0
+# fi
+#
+# if ! rclone listremotes 2>/dev/null | grep -q 'onedrive:'; then
+#   warn "Remote OneDrive non configurato. Configura con: rclone config"
+#   warn "Poi rilancia: chezmoi apply"
+#   exit 0
+# fi
+#
+# info "Sync Vault da OneDrive..."
+# rclone copy onedrive:/Vault "$HOME/Vault"   --transfers 4 --checkers 8   --update --progress 2>/dev/null || warn "Vault sync parziale, ricontrolla"
+#
+# info "Sync Documenti da OneDrive..."
+# rclone copy onedrive:/Home/Documenti "$HOME/Documenti"   --transfers 4 --checkers 8   --update --progress 2>/dev/null || warn "Documenti sync parziale"
+#
+# info "Sync completato."
