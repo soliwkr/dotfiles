@@ -1,38 +1,42 @@
 #!/usr/bin/env bash
-# Prompts to generate an SSH key if none exists. Runs once.
+# Recupera la chiave SSH da 1Password. Runs once.
 set -euo pipefail
 
-if [[ -f "$HOME/.ssh/id_ed25519" ]]; then
-  exit 0
-fi
-
-echo ""
-echo "No SSH key found. Generate one? [y/N]"
-read -r answer </dev/tty
-if [[ "${answer,,}" != "y" ]]; then
-  exit 0
-fi
+info()    { echo -e "\033[1;34m==>\033[0m $*"; }
+success() { echo -e "\033[1;32m✓\033[0m $*"; }
+warn()    { echo -e "\033[1;33m!\033[0m $*"; }
 
 mkdir -p "$HOME/.ssh"
 chmod 700 "$HOME/.ssh"
-ssh-keygen -t ed25519 -C "{{ .email }}" -f "$HOME/.ssh/id_ed25519" -N "" </dev/tty
 
-eval "$(ssh-agent -s)"
-ssh-add "$HOME/.ssh/id_ed25519"
+if [[ -f "$HOME/.ssh/id_ed25519" ]]; then
+  success "Chiave SSH già presente"
+  exit 0
+fi
 
-echo ""
-echo "Public key (add to https://github.com/settings/keys):"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-cat "$HOME/.ssh/id_ed25519.pub"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo ""
-echo "Press enter after adding the key to GitHub..."
-read -r </dev/tty
+info "Recupero chiave SSH da 1Password..."
 
-# Switch chezmoi remote to SSH (if using HTTPS)
+if ! command -v op &>/dev/null; then
+  warn "1Password CLI non trovato — genera la chiave manualmente con: ssh-keygen -t ed25519"
+  exit 1
+fi
+
+# Recupera la chiave privata dal documento 1Password
+if op document get "SSH Private Key - soliwkr main" --vault Personal --output "$HOME/.ssh/id_ed25519" 2>/dev/null; then
+  chmod 600 "$HOME/.ssh/id_ed25519"
+  ssh-keygen -y -f "$HOME/.ssh/id_ed25519" > "$HOME/.ssh/id_ed25519.pub"
+  chmod 644 "$HOME/.ssh/id_ed25519.pub"
+  success "Chiave SSH recuperata da 1Password"
+else
+  warn "Documento '1Password — SSH Private Key - soliwkr main' non trovato"
+  warn "Genera la chiave manualmente: ssh-keygen -t ed25519 -C '{{ .email }}'"
+  exit 1
+fi
+
+# Switch chezmoi remote a SSH se usa HTTPS
 REMOTE=$(git -C "$HOME/.local/share/chezmoi" remote get-url origin 2>/dev/null || true)
 if [[ "$REMOTE" == https://github.com/* ]]; then
   SLUG="${REMOTE#https://github.com/}"
   git -C "$HOME/.local/share/chezmoi" remote set-url origin "git@github.com:$SLUG"
-  echo "Remote switched to SSH: git@github.com:$SLUG"
+  info "Remote chezmoi aggiornato a SSH: git@github.com:$SLUG"
 fi
