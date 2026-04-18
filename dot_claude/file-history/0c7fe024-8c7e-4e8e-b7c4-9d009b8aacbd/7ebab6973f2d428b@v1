@@ -1,0 +1,23 @@
+#!/bin/bash
+{{ if and (eq .chezmoi.osRelease.id arch) .isDesktop -}}
+# NVIDIA DRM modeset — required for Wayland/Hyprland with NVIDIA GPU
+# Only runs if nvidia-dkms is installed
+
+if pacman -Q nvidia-dkms &>/dev/null; then
+    echo "==> Configuring NVIDIA kernel parameters for Wayland"
+
+    # Add nvidia modules to mkinitcpio
+    if ! grep -q 'nvidia nvidia_modeset nvidia_uvm nvidia_drm' /etc/mkinitcpio.conf; then
+        sudo sed -i 's/^MODULES=(\(.*\))/MODULES=(\1 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
+        sudo mkinitcpio -P
+    fi
+
+    # Add kernel parameter via /etc/modprobe.d
+    if [ ! -f /etc/modprobe.d/nvidia.conf ]; then
+        echo 'options nvidia_drm modeset=1 fbdev=1' | sudo tee /etc/modprobe.d/nvidia.conf
+        echo 'options nvidia NVreg_PreserveVideoMemoryAllocations=1' | sudo tee -a /etc/modprobe.d/nvidia.conf
+    fi
+
+    echo "==> NVIDIA kernel params set. Reboot required."
+fi
+{{ end -}}

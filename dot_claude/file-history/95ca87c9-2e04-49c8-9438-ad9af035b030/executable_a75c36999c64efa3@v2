@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Prompts to generate an SSH key if none exists. Runs once.
+set -euo pipefail
+
+if [[ -f "$HOME/.ssh/id_ed25519" ]]; then
+  exit 0
+fi
+
+echo ""
+echo "No SSH key found. Generate one? [y/N]"
+read -r answer </dev/tty
+if [[ "${answer,,}" != "y" ]]; then
+  exit 0
+fi
+
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
+ssh-keygen -t ed25519 -C "{{ .email }}" -f "$HOME/.ssh/id_ed25519" -N "" </dev/tty
+
+eval "$(ssh-agent -s)"
+ssh-add "$HOME/.ssh/id_ed25519"
+
+echo ""
+echo "Public key (add to https://github.com/settings/keys):"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+cat "$HOME/.ssh/id_ed25519.pub"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo ""
+echo "Press enter after adding the key to GitHub..."
+read -r </dev/tty
+
+# Switch chezmoi remote to SSH (if using HTTPS)
+REMOTE=$(git -C "$HOME/.local/share/chezmoi" remote get-url origin 2>/dev/null || true)
+if [[ "$REMOTE" == https://github.com/* ]]; then
+  SLUG="${REMOTE#https://github.com/}"
+  git -C "$HOME/.local/share/chezmoi" remote set-url origin "git@github.com:$SLUG"
+  echo "Remote switched to SSH: git@github.com:$SLUG"
+fi

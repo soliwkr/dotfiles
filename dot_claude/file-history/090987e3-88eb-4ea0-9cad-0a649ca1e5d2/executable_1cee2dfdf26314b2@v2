@@ -1,0 +1,25 @@
+#!/bin/bash
+# TMUX SESSIONIZER - Jump to project in new tmux session (CTRL-J in tmux)
+
+SELECTED=$(find ~/projects -maxdepth 2 -type d 2>/dev/null | fzf --preview 'ls -la {}')
+
+if [ -z "$SELECTED" ]; then
+  exit 0
+fi
+
+SESSION_NAME=$(basename "$SELECTED" | tr . _)
+
+# If not in tmux, create new session and attach
+if [ -z "$TMUX" ]; then
+  tmux new-session -d -s "$SESSION_NAME" -c "$SELECTED"
+  tmux attach -t "$SESSION_NAME"
+  exit 0
+fi
+
+# If in tmux and session exists, switch to it
+if tmux list-sessions | grep -q "^$SESSION_NAME:"; then
+  tmux switch-client -t "$SESSION_NAME"
+else
+  tmux new-session -d -s "$SESSION_NAME" -c "$SELECTED"
+  tmux switch-client -t "$SESSION_NAME"
+fi

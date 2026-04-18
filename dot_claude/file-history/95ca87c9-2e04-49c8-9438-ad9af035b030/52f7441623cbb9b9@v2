@@ -1,0 +1,75 @@
+# Fedora equivalent packages
+# Install with: sudo dnf install $(cat packages-fedora.txt | grep -v '^#' | tr '\n' ' ')
+
+# Core
+git
+gh
+curl
+wget
+jq
+ripgrep
+fd-find
+fzf
+bat
+eza
+zoxide
+tree
+unzip
+whois
+
+# Shell / prompt
+starship
+tmux
+bash-completion
+
+# Desktop (Hyprland on Fedora)
+hyprland
+waybar
+mako
+swaybg
+slurp
+grim
+wl-clipboard
+xdg-terminal-exec
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+pipewire
+pipewire-alsa
+pipewire-jack
+wireplumber
+gst-plugin-pipewire
+
+# Terminals
+alacritty
+kitty
+
+# Tools
+neovim
+lazygit
+btop
+fastfetch
+mpv
+imv
+nautilus
+
+# Fonts
+jetbrains-mono-fonts-all
+
+# Utilities
+brightnessctl
+playerctl
+pamixer
+
+# Dev
+mise
+rust
+clang
+llvm
+ruby
+luarocks
+
+# Apps
+obsidian
+signal-desktop
+spotify-client
+1password

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Recupera la chiave SSH da 1Password. Runs once.
+set -euo pipefail
+
+info()    { echo -e "\033[1;34m==>\033[0m $*"; }
+success() { echo -e "\033[1;32m✓\033[0m $*"; }
+warn()    { echo -e "\033[1;33m!\033[0m $*"; }
+
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
+
+if [[ -f "$HOME/.ssh/id_ed25519" ]]; then
+  success "Chiave SSH già presente"
+  exit 0
+fi
+
+info "Recupero chiave SSH da 1Password..."
+
+if ! command -v op &>/dev/null; then
+  warn "1Password CLI non trovato — genera la chiave manualmente con: ssh-keygen -t ed25519"
+  exit 1
+fi
+
+# Recupera la chiave privata dal documento 1Password
+if op document get "SSH Private Key - soliwkr main" --vault Personal --output "$HOME/.ssh/id_ed25519" 2>/dev/null; then
+  chmod 600 "$HOME/.ssh/id_ed25519"
+  ssh-keygen -y -f "$HOME/.ssh/id_ed25519" > "$HOME/.ssh/id_ed25519.pub"
+  chmod 644 "$HOME/.ssh/id_ed25519.pub"
+  success "Chiave SSH recuperata da 1Password"
+else
+  warn "Documento '1Password — SSH Private Key - soliwkr main' non trovato"
+  warn "Genera la chiave manualmente: ssh-keygen -t ed25519 -C '{{ .email }}'"
+  exit 1
+fi
+
+# Switch chezmoi remote a SSH se usa HTTPS
+REMOTE=$(git -C "$HOME/.local/share/chezmoi" remote get-url origin 2>/dev/null || true)
+if [[ "$REMOTE" == https://github.com/* ]]; then
+  SLUG="${REMOTE#https://github.com/}"
+  git -C "$HOME/.local/share/chezmoi" remote set-url origin "git@github.com:$SLUG"
+  info "Remote chezmoi aggiornato a SSH: git@github.com:$SLUG"
+fi

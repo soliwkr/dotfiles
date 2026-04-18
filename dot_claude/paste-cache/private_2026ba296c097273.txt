@@ -1,0 +1,194 @@
+# Local Business Builder for Claude Code
+
+Build SEO-optimized local business websites that generate 80-100+ pages programmatically from your services and service areas. Every page gets unique content, Schema.org structured data, internal linking, and on-page SEO, all deployed as a fast static site on Cloudflare Pages. Works for any local service business: plumbers, electricians, HVAC techs, dentists, lawyers, roofers, landscapers, and more.
+
+## Features
+
+- **Programmatic SEO**: Automatically generates `[areas] x [services]` combination pages, each with unique titles, meta descriptions, headings, FAQs, and testimonials
+- **Schema.org JSON-LD**: LocalBusiness, Service, FAQPage, BreadcrumbList, and Review markup on every page
+- **Responsive design**: Built with Tailwind CSS v4, mobile-first, fast on every device
+- **Internal linking mesh**: Related service links, nearby area links, breadcrumbs, and cross-links for maximum crawlability
+- **Blog with content collections**: Astro 5 content collections for blog posts with Markdown/MDX support
+- **AI image generation** (optional): Generate hero images, service photos, and area images using Gemini (requires API key)
+- **Cloudflare Pages deployment** (optional): Zero-config static hosting with global CDN, or deploy anywhere that serves static files
+- **Industry agnostic**: Preconfigured templates for plumbing, electrical, HVAC, dental, legal, roofing, landscaping, cleaning, pest control, and any other local service business
+
+## Installation
+
+```
+claude plugin add savvity/local-business-builder
+```
+
+## Quick Start
+
+Open Claude Code in an empty project directory and try one of these prompts:
+
+```
+Build a website for my plumbing business in Austin, TX
+```
+
+```
+Create a website for ABC Electric serving Dallas and surrounding areas
+```
+
+```
+Improve this local business site: www.example.com
+```
+
+The agent will ask you a few questions about your business, then scaffold and build the entire site.
+
+## What You Need
+
+The agent will ask for the following information (you can provide it up front or answer questions interactively):
+
+| Information | Example | Required |
+|---|---|---|
+| Business name | "Austin Plumbing Pros" | Yes |
+| Services offered | "Water heater repair, drain cleaning, slab leak detection" | Yes |
+| Service areas | "Austin, Round Rock, Cedar Park, Georgetown" | Yes |
+| Phone number | "(512) 555-0199" | Yes |
+| Email address | "info@austinplumbing.com" | Yes |
+| Street address | "1234 Main St, Austin, TX 78701" | Yes |
+| Business hours | "Mon-Fri 7am-6pm, Sat 8am-2pm" | Yes |
+| Website URL/domain | "www.austinplumbingpros.com" | Yes |
+| Logo image file | logo.png or logo.svg | No |
+| Brand colors | "Dark green and gold" | No |
+| License/insurance info | "Licensed & Insured, TX License #12345" | No |
+| Years in business | "15 years" | No |
+| Tagline/slogan | "Your Trusted Local Plumber Since 2010" | No |
+
+## Optional Features
+
+### AI Image Generation
+
+If you provide a Gemini API key, the agent can generate custom images for your site:
+
+```
+export GEMINI_API_KEY="your-key-here"
+```
+
+### Cloudflare Pages Deployment
+
+The generated site deploys to Cloudflare Pages out of the box. The agent can configure this for you if you have a Cloudflare account, or you can deploy the static `dist/` folder to any hosting provider.
+
+## How It Works
+
+The agent follows a 7-phase build process:
+
+1. **Discovery**: Asks about your business, services, areas, and branding preferences
+2. **Scaffold**: Creates the Astro 5 project structure from templates, installs dependencies
+3. **Data generation**: Builds TypeScript data files for your business info, services, and areas
+4. **SEO content**: Generates unique titles, meta descriptions, H1s, intros, FAQs, and testimonials for every service-area combination page
+5. **Customization**: Applies your brand colors, logo, fonts, and contact information across all templates
+6. **Content seeding**: Creates initial blog posts targeting local keywords
+7. **Build and verify**: Runs `astro build`, verifies all pages render correctly, checks for broken links
+
+## Supported Industries
+
+| Business Type | Schema.org Type | Example Services |
+|---|---|---|
+| Plumber | Plumber | Water heater repair, drain cleaning, pipe repair |
+| Electrician | Electrician | Panel upgrades, wiring, lighting installation |
+| HVAC | HVACBusiness | AC repair, furnace installation, duct cleaning |
+| Dentist | Dentist | Teeth cleaning, crowns, implants, whitening |
+| Lawyer | LegalService | Personal injury, family law, estate planning |
+| Roofer | RoofingContractor | Roof repair, replacement, inspection, gutters |
+| Landscaper | LandscapingService | Lawn care, tree trimming, irrigation, hardscaping |
+| Cleaning Service | CleaningService | House cleaning, carpet cleaning, pressure washing |
+| Pest Control | PestControlService | Termite treatment, rodent removal, mosquito control |
+| Moving Company | MovingCompany | Local moving, packing, storage, commercial moves |
+| Locksmith | Locksmith | Emergency lockout, rekey, lock installation |
+| Painter | HousePainter | Interior painting, exterior painting, cabinet refinishing |
+| Auto Repair | AutoRepair | Oil change, brake repair, engine diagnostics |
+| Veterinarian | VeterinaryCare | Wellness exams, vaccinations, surgery, dental care |
+| Any other local service | LocalBusiness | Customize for your industry |
+
+## Tech Stack
+
+| Technology | Version | Purpose |
+|---|---|---|
+| [Astro](https://astro.build) | 5.x | Static site framework with content collections |
+| [Tailwind CSS](https://tailwindcss.com) | 4.x | Utility-first CSS with CSS-native configuration |
+| [TypeScript](https://www.typescriptlang.org) | 5.x | Type-safe data files and configuration |
+| [Cloudflare Pages](https://pages.cloudflare.com) | - | Global CDN hosting with zero-config deploys |
+
+### Key Architectural Decisions
+
+- **Static-first**: All pages are pre-rendered at build time for maximum speed and SEO
+- **Data-driven pages**: Service-area combinations are generated from TypeScript data files using Astro's `getStaticPaths`, not hardcoded
+- **Tailwind CSS v4**: Uses the new CSS-native configuration (no `tailwind.config.js`), `@theme` for design tokens, and `@plugin` for official plugins
+- **Content collections**: Blog posts use Astro 5's type-safe content collections with `render()` from `astro:content`
+- **No JavaScript by default**: Pages ship zero client-side JS unless explicitly needed (e.g., mobile menu toggle)
+
+## Project Structure (Generated Output)
+
+```
+your-business-site/
+├── public/
+│   ├── robots.txt
+│   ├── favicon.svg
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── Breadcrumbs.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── SEO.astro
+│   │   ├── SeoFaq.astro
+│   │   ├── SeoRelatedLinks.astro
+│   │   ├── SeoServiceAreas.astro
+│   │   └── SeoTestimonials.astro
+│   ├── content/
+│   │   └── blog/
+│   │       └── *.md
+│   ├── data/
+│   │   ├── business.ts
+│   │   ├── serviceAreas.ts
+│   │   ├── serviceTypes.ts
+│   │   └── seoContent.ts
+│   ├── layouts/
+│   │   └── BaseLayout.astro
+│   ├── lib/
+│   │   └── urls.ts
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── about.astro
+│   │   ├── contact.astro
+│   │   ├── areas/
+│   │   │   ├── index.astro
+│   │   │   └── [area].astro
+│   │   ├── services/
+│   │   │   ├── index.astro
+│   │   │   ├── [service].astro
+│   │   │   └── [area]/
+│   │   │       └── [service].astro
+│   │   └── blog/
+│   │       ├── index.astro
+│   │       └── [slug].astro
+│   └── styles/
+│       └── global.css
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+### Page Count Calculation
+
+For a business with **S** services and **A** areas, the site generates:
+
+| Page Type | Count | Example (8 services, 10 areas) |
+|---|---|---|
+| Homepage | 1 | 1 |
+| About | 1 | 1 |
+| Contact | 1 | 1 |
+| Services index | 1 | 1 |
+| Individual service pages | S | 8 |
+| Areas index | 1 | 1 |
+| Individual area pages | A | 10 |
+| Service-area combinations | S x A | 80 |
+| Blog posts | varies | 5+ |
+| **Total** | **S x A + S + A + 5 + blog** | **107+** |
+
+## License
+
+MIT

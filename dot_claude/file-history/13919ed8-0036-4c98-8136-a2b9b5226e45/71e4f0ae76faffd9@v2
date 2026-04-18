@@ -1,0 +1,3 @@
+# Extra autostart processes
+exec-once = bash -c "sleep 2 && hyprctl plugin load ~/.local/lib/hyprland/libhyprexpo.so && hyprctl plugin load ~/.local/lib/hyprland/libhyprfocus.so"
+exec-once = uwsm-app -- 1password --silent

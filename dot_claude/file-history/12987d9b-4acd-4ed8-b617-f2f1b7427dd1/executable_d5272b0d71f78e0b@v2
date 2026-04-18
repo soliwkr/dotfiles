@@ -1,0 +1,16 @@
+#!/bin/bash
+# Ultra-god welcome banner
+
+if command -v figlet &>/dev/null && command -v lolcat &>/dev/null; then
+  figlet "LAZY GOD" | lolcat
+  echo ""
+fi
+
+if command -v fastfetch &>/dev/null; then
+  fastfetch --logo-color 5 --hide-titles
+fi
+
+echo ""
+echo "🚀 Terminal ready for action!"
+echo "💡 Tip: type 'terminal-setup-check' to verify setup"
+echo ""

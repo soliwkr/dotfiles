@@ -23,6 +23,31 @@
 # Omarchy runtime
 .config/omarchy/current/**
 
+# AI Tools Runtime/State
+.claude/backups/**
+.claude/cache/**
+.claude/debug/**
+.claude/file-history/**
+.claude/image-cache/**
+.claude/paste-cache/**
+.claude/plans/**
+.claude/projects/**
+.claude/session-env/**
+.claude/sessions/**
+.claude/shell-snapshots/**
+.claude/tasks/**
+.claude/telemetry/**
+.claude/todos/**
+.claude/plugins/marketplaces/**
+.claude/history.jsonl
+.claude/mcp-needs-auth-cache.json
+
+.gemini/antigravity/**
+.gemini/antigravity-browser-profile/**
+.gemini/history/**
+.gemini/tmp/**
+.gemini/state.json
+
 # Caches e stato runtime
 .cache/**
 .npm/**

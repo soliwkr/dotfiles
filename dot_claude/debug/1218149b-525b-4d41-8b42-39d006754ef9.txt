@@ -1,0 +1,40 @@
+2026-03-18T08:08:10.703Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T08:08:10.704Z [DEBUG] MDM settings load completed in 1ms
+2026-03-18T08:08:10.744Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-18T08:08:10.744Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-18T08:08:10.744Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-18T08:08:10.744Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-18T08:08:10.776Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/soliwkr/.claude/skills, project=[]
+2026-03-18T08:08:10.783Z [DEBUG] Error log sink initialized
+2026-03-18T08:08:10.798Z [DEBUG] Git remote URL: null
+2026-03-18T08:08:10.798Z [DEBUG] No git remote URL found
+2026-03-18T08:08:10.800Z [DEBUG] [render] initLayout starting
+2026-03-18T08:08:10.815Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 1, project: 0, additional: 0, legacy commands: 0)
+2026-03-18T08:08:10.910Z [DEBUG] [render] initLayout complete
+2026-03-18T08:08:11.036Z [DEBUG] Install: Starting installation process (force=false, target=syncthing)
+2026-03-18T08:08:11.037Z [DEBUG] Install: Calling installLatest(channelOrVersion=syncthing, forceReinstall=false)
+2026-03-18T08:08:11.037Z [DEBUG] [render] first ink render: 1723ms since process start
+2026-03-18T08:08:11.037Z [ERROR] Install command failed: Error: Invalid channel: syncthing. Use 'stable' or 'latest'
+2026-03-18T08:08:11.196Z [DEBUG] [Claude in Chrome] Found chromium profiles: Default
+2026-03-18T08:08:11.217Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2026-03-18T08:08:11.228Z [DEBUG] Loading plugin claude-code-setup from source: "./plugins/claude-code-setup"
+2026-03-18T08:08:11.229Z [DEBUG] [Claude in Chrome] Found vivaldi profiles: Default
+2026-03-18T08:08:11.229Z [DEBUG] [Claude in Chrome] Extension fcoeoabgfenejglbffodgkkbkcdhcgfn found in vivaldi Default
+2026-03-18T08:08:11.242Z [DEBUG] Using manifest version for claude-code-setup@claude-plugins-official: 1.0.0
+2026-03-18T08:08:11.301Z [DEBUG] Plugin claude-code-setup@claude-plugins-official version 1.0.0 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-18T08:08:11.301Z [DEBUG] Resolved local plugin claude-code-setup to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-18T08:08:11.301Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: 205b6e0b3036
+2026-03-18T08:08:11.307Z [DEBUG] Plugin frontend-design@claude-plugins-official version 205b6e0b3036 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-18T08:08:11.307Z [DEBUG] Resolved local plugin frontend-design to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-18T08:08:11.364Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-03-18T08:08:11.364Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-03-18T08:08:11.364Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2026-03-18T08:08:11.364Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036/skills
+2026-03-18T08:08:11.377Z [DEBUG] Total plugin commands loaded: 0
+2026-03-18T08:08:11.380Z [DEBUG] Registered 0 hooks from 2 plugins
+2026-03-18T08:08:11.380Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2026-03-18T08:08:11.380Z [DEBUG] Checking plugin claude-code-setup: skillsPath=exists, skillsPaths=0 paths
+2026-03-18T08:08:11.380Z [DEBUG] Attempting to load skills from plugin claude-code-setup default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/skills
+2026-03-18T08:08:11.452Z [DEBUG] Loaded 1 skills from plugin claude-code-setup default directory
+2026-03-18T08:08:11.452Z [DEBUG] Total plugin skills loaded: 2
+2026-03-18T08:08:11.452Z [DEBUG] getSkills returning: 1 skill dir commands, 2 plugin skills, 3 bundled skills

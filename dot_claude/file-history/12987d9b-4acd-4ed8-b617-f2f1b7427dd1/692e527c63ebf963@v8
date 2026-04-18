@@ -1,0 +1,132 @@
+# ========================================
+# ZSH CONFIG - LAZY GOD MODE ULTRA PIMP
+# ========================================
+
+# WELCOME BANNER (figlet + lolcat)
+if command -v figlet &>/dev/null && command -v lolcat &>/dev/null; then
+  figlet "LAZY GOD" | lolcat
+fi
+
+# System info banner (fastfetch)
+if command -v fastfetch &>/dev/null; then
+  fastfetch --logo-color 5 --hide-titles
+fi
+
+# Init Starship prompt
+eval "$(starship init zsh)"
+
+# ========== FZF KEYBINDINGS ==========
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# ========== ALIASES ==========
+alias cat=bat
+alias top=btm
+export BAT_THEME="Dracula"
+
+# ========== EXPORTS ==========
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git" 2>/dev/null'
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+# Direnv hook
+eval "$(direnv hook zsh)"
+
+# ========== ZINIT PLUGIN MANAGER ==========
+if [ ! -d "$HOME/.local/share/zinit/zinit.git" ]; then
+  mkdir -p "$HOME/.local/share/zinit"
+  git clone https://github.com/zdharma-continuum/zinit.git "$HOME/.local/share/zinit/zinit.git"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+
+# Plugins (loaded on demand, ultra fast)
+zinit ice wait"0" lucid atload"_zsh_autosuggest_start"
+zinit light zsh-users/zsh-autosuggestions
+
+zinit ice wait"1" lucid
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit ice wait"2" lucid
+zinit light Aloxaf/fzf-tab
+
+zinit ice wait"3" lucid
+zinit light zsh-users/zsh-history-substring-search
+
+# ========== COMPLETIONS & KEYBINDINGS ==========
+autoload -Uz compinit && compinit
+
+bindkey -v
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# ========== CUSTOM FUNCTIONS ==========
+
+take() {
+  mkdir -p "$1" && cd "$1"
+}
+
+gst() {
+  if [ -z "$1" ]; then
+    git stash
+  else
+    git stash push -m "$1"
+  fi
+}
+
+reload() {
+  echo "🔄 Reloading zsh config..."
+  exec zsh
+}
+
+cls() {
+  clear
+  [ -x ~/.local/bin/welcome-banner ] && ~/.local/bin/welcome-banner
+}
+
+# ========== ABBREVIAZIONI (DEVE ESSERE ULTIMA!) ==========
+
+# Navigation
+abbr -a ... ../..
+abbr -a cd- 'cd -'
+abbr -a md mkdir -p
+
+# Listing
+abbr -a ll lsd -lA
+abbr -a la lsd -A
+abbr -a l lsd
+
+# GIT - Core
+abbr -a gs git status
+abbr -a ga git add .
+abbr -a gc git commit -m
+abbr -a gp git push
+abbr -a gpl git pull
+abbr -a gr git reset
+abbr -a gb git branch
+abbr -a gco git checkout
+abbr -a gd git diff
+abbr -a gl git log --oneline -10
+
+# GIT - Lazy
+abbr -a gcp 'git add . && git commit -m'
+abbr -a gpr 'git pull --rebase'
+abbr -a gf 'git fetch'
+abbr -a gfp 'git fetch && git pull'
+abbr -a gpu 'git push --set-upstream origin'
+abbr -a gsu 'git submodule update --init --recursive'
+
+# TOOLS
+abbr -a glg lazygit
+abbr -a rg 'rg --color=always'
+
+# DIRENV
+abbr -a da direnv allow
+abbr -a dd direnv deny
+abbr -a dr direnv reload
+abbr -a ds direnv status
+
+# TMUX
+abbr -a tm tmux
+abbr -a tma 'tmux attach-session -t'
+abbr -a tml 'tmux list-sessions'
+abbr -a tmc 'tmux kill-session -t'

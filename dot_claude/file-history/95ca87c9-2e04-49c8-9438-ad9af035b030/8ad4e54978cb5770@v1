@@ -1,0 +1,6 @@
+# Use 1Password SSH agent for all connections
+# Keys live in 1Password vault — no private keys on disk
+Host *
+    IdentityAgent ~/.1password/agent.sock
+    ServerAliveInterval 60
+    ServerAliveCountMax 3

@@ -1,0 +1,290 @@
+{"display":"/plugin ","pastedContents":{},"timestamp":1772879166263,"project":"/home/soliwkr","sessionId":"9c7e9f74-d9db-4384-a663-6bafc66c757b"}
+{"display":"/plugin ","pastedContents":{},"timestamp":1772879185989,"project":"/home/soliwkr","sessionId":"9c7e9f74-d9db-4384-a663-6bafc66c757b"}
+{"display":"clean install this is my user home page. i want to achieve full git centered stateless workstation i can spin up in few mins and doesnt depend on my own hardware","pastedContents":{},"timestamp":1772879348356,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"vorrei usare chezmoi ed essere completamente agnostico. its arch or fedora. its stateless. devo migrare anche da fedora e poter tornare a qualsiasi distro.","pastedContents":{},"timestamp":1772880018147,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"continue","pastedContents":{},"timestamp":1772880036838,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"lets login in gh the user is soliwkr","pastedContents":{},"timestamp":1772880414557,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ok this is one of the problems i want to solve. fedora keys and everything else is my master system i want to migrate from","pastedContents":{},"timestamp":1772880610863,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/config ","pastedContents":{},"timestamp":1772880817789,"project":"/home/soliwkr","sessionId":"63d87f71-3e33-465c-a1e1-f5f701209c18"}
+{"display":"/","pastedContents":{},"timestamp":1772880876053,"project":"/home/soliwkr","sessionId":"63d87f71-3e33-465c-a1e1-f5f701209c18"}
+{"display":"i have cloudflarewrangler r2 and we could organize a ssh access into my fedora on local network/tailscale","pastedContents":{},"timestamp":1772881426312,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"wor","pastedContents":{},"timestamp":1772883458598,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"done. the user is chris","pastedContents":{},"timestamp":1772883725032,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"fatto","pastedContents":{},"timestamp":1772883794475,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ora su fedora non c'è piu la chiave originale e non funziona piu niente","pastedContents":{},"timestamp":1772990396647,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ora su fedora non c'è piu la chiave originale e non funziona piu niente","pastedContents":{},"timestamp":1772990509621,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ora su fedora non c'è piu la chiave originale e non funziona piu niente","pastedContents":{},"timestamp":1772990591625,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ora su fedora non c'è piu la chiave originale e non funziona piu niente","pastedContents":{},"timestamp":1772990613878,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ok fatto","pastedContents":{},"timestamp":1772991338820,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"riprova","pastedContents":{},"timestamp":1772991380305,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ogni volta che apro terminale vedo una barra rossa in fondo con scritto [ERROR] unable to load confic \"/home/soliwkr/.config/alacritty etc etc etc . see log at /tmp/alctritty-47914.log","pastedContents":{},"timestamp":1772992391803,"project":"/home/soliwkr","sessionId":"faa51314-9722-431d-bba0-f99f13881332"}
+{"display":"[Pasted text #1 +41 lines]","pastedContents":{"1":{"id":1,"type":"text","contentHash":"82458793f302f739"}},"timestamp":1773059469909,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"riprova quindi","pastedContents":{},"timestamp":1773059816166,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"fatto","pastedContents":{},"timestamp":1773059949444,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ma stai connettendo attraverso tailscale o attraverso ssh locale?","pastedContents":{},"timestamp":1773060014270,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"1","pastedContents":{},"timestamp":1773060090562,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"no. ne qui ne su fedora. che devo fare?","pastedContents":{},"timestamp":1773060251839,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"prova ora","pastedContents":{},"timestamp":1773061983556,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"si ma cmq ti voglio dire che pare che ora su fedora la chiave base sia cambiata. non so che hai fatto","pastedContents":{},"timestamp":1773067967937,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"continua","pastedContents":{},"timestamp":1773068471511,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"continua","pastedContents":{},"timestamp":1773068476047,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"continua","pastedContents":{},"timestamp":1773068484320,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"fermati un attimo. ma se sei in ssh, ma perche nn porti tutt oqui e rendiamo questa la workstation che poi diventa stateless. io poi installero omarchy sulla macchina dove ora ho fedora. un comando, wait, pronto, identitco a qui","pastedContents":{},"timestamp":1773068971085,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"no aspetta. noi vogliamo prendere caos da fedora e creare la workstation eterna. ordinata divinamente.","pastedContents":{},"timestamp":1773069429952,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/rate-limit-options","pastedContents":{},"timestamp":1773069432681,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/rate-limit-options","pastedContents":{},"timestamp":1773069433063,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"continue","pastedContents":{},"timestamp":1773297933046,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ma nn abbiamo detto che vai in ssh diretto","pastedContents":{},"timestamp":1773298176081,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"ma nn abbiamo detto che vai in ssh diretto","pastedContents":{},"timestamp":1773298182820,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"hai detto che usavi ssh diretto senza tailscale","pastedContents":{},"timestamp":1773298231601,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"hai detto che usavi ssh diretto senza tailscale","pastedContents":{},"timestamp":1773298233903,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"dovresti gia poter andare","pastedContents":{},"timestamp":1773298278904,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"nn voglio che \"copi\" la struttura. vogli che ne creiamo una adatta alla workstation stateless che stiamo creando","pastedContents":{},"timestamp":1773298565643,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"tutto italiano","pastedContents":{},"timestamp":1773298615764,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"vabbe nel senso, voglio anche portare tutto il vault (disco su fedora) usa termini inglesi quando tradurli in italiano è forzato. Foto invece di photos si, Volta invece di Vault non ha senso. \n\n","pastedContents":{},"timestamp":1773298754317,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"usa i plurali se servono. scripts, senno mi sbaglio. ","pastedContents":{},"timestamp":1773298796082,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"si","pastedContents":{},"timestamp":1773298834772,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/config ","pastedContents":{},"timestamp":1773299135386,"project":"/home/soliwkr","sessionId":"0b507419-726a-4826-b06c-e6812ce818b9"}
+{"display":"/omarchy ","pastedContents":{},"timestamp":1773299267335,"project":"/home/soliwkr","sessionId":"0b507419-726a-4826-b06c-e6812ce818b9"}
+{"display":"/permissions ","pastedContents":{},"timestamp":1773299326851,"project":"/home/soliwkr","sessionId":"0b507419-726a-4826-b06c-e6812ce818b9"}
+{"display":"60496826f56a093a72602bfae074fdcf       cee2808adf7704b99ee87360e781f814     2c0fac5fcaeb0e3dc01e3efb2c41b039cf9d3d06cc0b4815ce16de1a5d2a5fe6    https://60496826f56a093a72602bfae074fdcf.eu.r2.cloudflarestorage.com","pastedContents":{},"timestamp":1773299973284,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"che punto siamo","pastedContents":{},"timestamp":1773300556248,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"li unifichiamo ma tieni la struttura obsidian di lifeos. in piu. c'è una partizione in fedora chiamata Vault, dove dobbiamo vedere cosè veramente su disco e cosa è solo un symlink con servizi cloud online, fare gap analysis e ristrutturare intera workstation qui. cosi da poi installare omarchy sulla macchian di fedora, dare un comando solo e essere operativo in brevissimo tempo totalemnten el mio ambiente. stateless. eterno","pastedContents":{},"timestamp":1773302157953,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/rate-limit-options","pastedContents":{},"timestamp":1773302531431,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"/rate-limit-options","pastedContents":{},"timestamp":1773302531559,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"per ora non syncare con nessun r2 etc. creiamo la perfetta macchina stateless in omarchy. poi ci occupiamo di renderla cloud","pastedContents":{},"timestamp":1773313662704,"project":"/home/soliwkr","sessionId":"95ca87c9-2e04-49c8-9438-ad9af035b030"}
+{"display":"riprov col socket","pastedContents":{},"timestamp":1773315395622,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"ma non puo ientrare in ssh in locale dentro il mio fedora?","pastedContents":{},"timestamp":1773315482057,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"sto dicendo usa ssh senza 1password. poi lo configuri tu da qui 1password","pastedContents":{},"timestamp":1773315823744,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"3288292216Asd@@##!!","pastedContents":{},"timestamp":1773698559104,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"chris 3288292216Asd@@##!!","pastedContents":{},"timestamp":1773738261628,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"tailscale","pastedContents":{},"timestamp":1773759161937,"project":"/home/soliwkr","sessionId":"758096d4-4242-4a14-a57e-595b10ec6c52"}
+{"display":"\nno su omarchy su un vecchio macbook del 2015. aggiustami lo scaling","pastedContents":{},"timestamp":1773759198841,"project":"/home/soliwkr","sessionId":"758096d4-4242-4a14-a57e-595b10ec6c52"}
+{"display":"abilita ssh su tailscale","pastedContents":{},"timestamp":1773761788450,"project":"/home/soliwkr","sessionId":"9aa6c5a5-b985-4e8b-b02f-622f829b9be3"}
+{"display":"bilita tailscale in ssh","pastedContents":{},"timestamp":1773761916563,"project":"/home/soliwkr","sessionId":"9aa6c5a5-b985-4e8b-b02f-622f829b9be3"}
+{"display":"/model ","pastedContents":{},"timestamp":1773761939058,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"abilita ssh in tailscale","pastedContents":{},"timestamp":1773761954012,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"si","pastedContents":{},"timestamp":1773761991141,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"e per far collegare qui?","pastedContents":{},"timestamp":1773762023046,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"1","pastedContents":{},"timestamp":1773762063777,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"ma no nn avevo usato un comando tipo tailscale up --ssh qualcosa","pastedContents":{},"timestamp":1773762138077,"project":"/home/soliwkr","sessionId":"c6d3bc09-d7f8-48af-ad5e-ff6f3d874738"}
+{"display":"riprova e continua","pastedContents":{},"timestamp":1773763825272,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"adesso come stiamo messi? siamo qui su omarchy come su fedora e posso loggare dappertutto?","pastedContents":{},"timestamp":1773764422152,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"password è 3332, ssh authsock mi dice the agent has no identitse","pastedContents":{},"timestamp":1773764627229,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"si ma io sto facendo questo per libearmi di fedora e poi specchiare questa installazione di omarchy quando la installerò sul laptop principale.","pastedContents":{},"timestamp":1773764924010,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"1","pastedContents":{},"timestamp":1773765049976,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"salva un file di testo nella home con il comando","pastedContents":{},"timestamp":1773765156777,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"ma poi come funziona? non andiamo i conflitto con due macchine identiche con nome utente identico","pastedContents":{},"timestamp":1773765258089,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"installa syncthing","pastedContents":{},"timestamp":1773821310702,"project":"/home/soliwkr","sessionId":"5e0700c4-7bf7-42a4-8d1d-8573e3cb094e"}
+{"display":"[Pasted text #1 +18 lines]","pastedContents":{"1":{"id":1,"type":"text","content":"looking for conflicting packages...\n\nPackage (1)      New Version  Net Change  Download Size\n\nextra/syncthing  2.0.14-1      25.19 MiB       9.38 MiB\n\nTotal Download Size:    9.38 MiB\nTotal Installed Size:  25.19 MiB\n\n:: Proceed with installation? [Y/n] y\n:: Retrieving packages...\n syncthing-2.0.14-1-x86_64.pkg.tar.zst failed to download\nerror: failed retrieving file 'syncthing-2.0.14-1-x86_64.pkg.tar.zst' from stable-mirror.omarchy.org : The requested URL returned error: 404\nwarning: failed to retrieve some files\nerror: failed to commit transaction (failed to retrieve some files)\nErrors occurred, no packages were upgraded.\n -> error installing repo packages\n\n~ ✗"}},"timestamp":1773821369551,"project":"/home/soliwkr","sessionId":"5e0700c4-7bf7-42a4-8d1d-8573e3cb094e"}
+{"display":"voglio installare il client non il server","pastedContents":{},"timestamp":1773822128423,"project":"/home/soliwkr","sessionId":"5e0700c4-7bf7-42a4-8d1d-8573e3cb094e"}
+{"display":"restart syncthing","pastedContents":{},"timestamp":1773832402079,"project":"/home/soliwkr","sessionId":"5e0700c4-7bf7-42a4-8d1d-8573e3cb094e"}
+{"display":"si","pastedContents":{},"timestamp":1773851631145,"project":"/home/soliwkr","sessionId":"5e0700c4-7bf7-42a4-8d1d-8573e3cb094e"}
+{"display":"d","pastedContents":{},"timestamp":1773851646681,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"c","pastedContents":{},"timestamp":1773910368762,"project":"/home/soliwkr","sessionId":"7fd05a63-cc31-490f-a28b-da23e0bbc461"}
+{"display":"/resume","pastedContents":{},"timestamp":1774941581994,"project":"/home/soliwkr","sessionId":"e1b41060-8527-47e8-9e69-c577a36b384d"}
+{"display":"puoi vedere perche il mio setup chezmoi si blocca tentando di clonare un repo sbagliato?","pastedContents":{},"timestamp":1774941868344,"project":"/home/soliwkr","sessionId":"ef546457-36aa-4dde-9eab-6b0c9e1d29ea"}
+{"display":"puoi vedere perche il mio setup\nchezmoi si blocca tentando di clonare\nun repo sbagliato?","pastedContents":{},"timestamp":1774941897592,"project":"/home/soliwkr","sessionId":"ef546457-36aa-4dde-9eab-6b0c9e1d29ea"}
+{"display":"puoi vedere perche il mio setup\nchezmoi si blocca tentando di clonare\nun repo sbagliato?","pastedContents":{},"timestamp":1774941914306,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"/login","pastedContents":{},"timestamp":1774941931394,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"puoi vedere perche il mio setup\nchezmoi si blocca tentando di clonare\nun repo sbagliato?","pastedContents":{},"timestamp":1774942020220,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"rianalizza la situazione in generale: ho fatto setup da ssh di questa macchina, ma ha rinominato un repo in modo sbagliato credo. qui avevo fatto chezmoi apply.","pastedContents":{},"timestamp":1774942071901,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"esiste tutto. non supporre, controlla. nn cercare invano, chiedi","pastedContents":{},"timestamp":1774942114982,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"[Pasted text #1 +12 lines]","pastedContents":{"1":{"id":1,"type":"text","content":"\n~ ❯ chezmoi apply\nAlready exists: rank-rent-studio\nAlready exists: eternal-stack-kingdom\nAlready exists: dotfiles\nCloning soliwkr/the-cross-seo...\nCloning into '/home/soliwkr/Codice/the-cross-seo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/soliwkr/the-cross-seo.git/' not found\nchezmoi: 20-clone-repos.sh: exit status 128\n\n~ ✗\n"}},"timestamp":1774942152880,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"il nome è sbagliato, ma non mi inforta, se non lo trovi","pastedContents":{},"timestamp":1774944150062,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"il nome è sbagliato, ma non mi inforta, se non lo trovi","pastedContents":{},"timestamp":1774944230875,"project":"/home/soliwkr","sessionId":"a3a69341-8789-4f0d-a743-6353e0e889b3"}
+{"display":"ho","pastedContents":{},"timestamp":1774944589634,"project":"/home/soliwkr","sessionId":"335ae946-f1c8-466f-bab8-4b9aeff72adb"}
+{"display":"ho","pastedContents":{},"timestamp":1774944589904,"project":"/home/soliwkr","sessionId":"335ae946-f1c8-466f-bab8-4b9aeff72adb"}
+{"display":"ho un config error in hyprland.conf at line 10 gobbling error: found no match","pastedContents":{},"timestamp":1774944635326,"project":"/home/soliwkr","sessionId":"3b71ab6b-af3a-4439-b580-9dfd3199232f"}
+{"display":"ho un config error in hyprland.conf at line 10 gobbling error: found no match","pastedContents":{},"timestamp":1774944666417,"project":"/home/soliwkr","sessionId":"a4b9995d-2f8a-43dc-b0a4-093f63af21b9"}
+{"display":"ho un config error in hyprland.conf at line 10 gobbling error: found no match","pastedContents":{},"timestamp":1774945295152,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"/login","pastedContents":{},"timestamp":1774945713298,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"ho un config error in hyprland.conf at line 10 gobbling error: found no match","pastedContents":{},"timestamp":1774947027088,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"prova chezmoi apply e vedi se completa","pastedContents":{},"timestamp":1774947109031,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"commenta riga","pastedContents":{},"timestamp":1774947151371,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"no. i repo sono tutti validi. forse dobbiamo loggare gh","pastedContents":{},"timestamp":1774947239765,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"perche sono nelle organizzazioni relative al nuovo account soliwkr, adesso il vecchio utente soliwalker è stato rinominato su github come soliwalker-legacy. rimuovi tutti i riferimenti a soliwalker e non clonare niente","pastedContents":{},"timestamp":1774947542415,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"ma sta ripristinando da one drive? avevamo rimosso il sync da onedrive. la macchina presente era perfettamente organizzata","pastedContents":{},"timestamp":1774947731619,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"quindi adesso sulla macchina nuova faccio?","pastedContents":{},"timestamp":1774948056762,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"il concetto è questo: questa macchina (prima del sync da onedrive) deve essere la \"macchina template\" per la mia stateless workstation.","pastedContents":{},"timestamp":1774948212642,"project":"/home/soliwkr","sessionId":"0c7fe024-8c7e-4e8e-b7c4-9d009b8aacbd"}
+{"display":"ho appena installato omarchy su mio precision dell 5550 T2000 e trackpad non funziona","pastedContents":{},"timestamp":1774948647206,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"nn dovro applicare driver magari?","pastedContents":{},"timestamp":1774948688639,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"boh. ora va dopo un reboot","pastedContents":{},"timestamp":1774948832815,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"mi dai il mio oneliner per chezmoi cosi lo applico?","pastedContents":{},"timestamp":1774949113057,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"ok. pusha","pastedContents":{},"timestamp":1774949372196,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"/omarchy","pastedContents":{},"timestamp":1774968806030,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"mi dai il mio oneliner per chezmoi cosi lo applico?","pastedContents":{},"timestamp":1774968936090,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"controlla l'intero setup di chezmoi","pastedContents":{},"timestamp":1775114147203,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"il fatto è che ho fatto personalizzazioni sulla macchina nuova in termini di monitor, trackpad, etc.","pastedContents":{},"timestamp":1775114352678,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"voglio che siano solo di precision","pastedContents":{},"timestamp":1775114372987,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"gurda tailscale","pastedContents":{},"timestamp":1775114393888,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"questa macchina è il companion, l altra omarchy-main è la macchina in cui ho gia fatto dei cambiamenti e deve diventare la machina principale partendo da questo companion. dovresti usare anche ssh per ricostruire l hard disk sulla macchina di destinazione cosi come lo abbiamo costruito qui","pastedContents":{},"timestamp":1775114511873,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"ho appena installato omarchy. its a clean slate.","pastedContents":{},"timestamp":1775114618559,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"semplicemente trova tutto su main e rendi chezmoi updated con quei parametri ho impostato sulla nuova macchina","pastedContents":{},"timestamp":1775114688288,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"riprova","pastedContents":{},"timestamp":1775114870531,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"/simplify","pastedContents":{},"timestamp":1775114957667,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"si","pastedContents":{},"timestamp":1775114973295,"project":"/home/soliwkr","sessionId":"35cf6348-1abe-4115-96fa-7d095a8ceb70"}
+{"display":"come sta andando","pastedContents":{},"timestamp":1775130516721,"project":"/home/soliwkr","sessionId":"83b72be7-e5e7-4f58-be0b-28ed52fba0dd"}
+{"display":"io pensavo che andassi di ssh locale","pastedContents":{},"timestamp":1775130572769,"project":"/home/soliwkr","sessionId":"83b72be7-e5e7-4f58-be0b-28ed52fba0dd"}
+{"display":"riprova","pastedContents":{},"timestamp":1775130654285,"project":"/home/soliwkr","sessionId":"83b72be7-e5e7-4f58-be0b-28ed52fba0dd"}
+{"display":"come procede","pastedContents":{},"timestamp":1775136727493,"project":"/home/soliwkr","sessionId":"83b72be7-e5e7-4f58-be0b-28ed52fba0dd"}
+{"display":"ho appena installato omarchy su questa macchina che è un precision dell 5550 T2000 32gb ram 4k touchscreen. devo installare qualcosa per renderlo perfettamente funzionante con omarchy?","pastedContents":{},"timestamp":1775285010771,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"ho appena installato omarchy su questa macchina che è un precision dell 5550 T2000 32gb ram 4k touchscreen. devo installare qualcosa per renderlo perfettamente funzionante con omarchy?","pastedContents":{},"timestamp":1775285044978,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"/login","pastedContents":{},"timestamp":1775285049198,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"ho appena installato omarchy su questa macchina che è un precision dell 5550 T2000 32gb ram 4k touchscreen. devo installare qualcosa per renderlo perfettamente funzionante con omarchy?","pastedContents":{},"timestamp":1775285067915,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"no voglio che controlli se è gia tutto a posto","pastedContents":{},"timestamp":1775285121105,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"vedi cosa è gia installato","pastedContents":{},"timestamp":1775285142058,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"[Image #1]","pastedContents":{},"timestamp":1775285201776,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"check again","pastedContents":{},"timestamp":1775285267888,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"Job for tlp.service canceled.","pastedContents":{},"timestamp":1775285330634,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"/permissions","pastedContents":{},"timestamp":1775285348548,"project":"/home/soliwkr","sessionId":"d5e03638-abe6-4000-aef3-2321e37074a9"}
+{"display":"controlla che ho visto succedere degli errori con i plugin hyprland. ricevuto notifica al boot","pastedContents":{},"timestamp":1775286122308,"project":"/home/soliwkr","sessionId":"13919ed8-0036-4c98-8136-a2b9b5226e45"}
+{"display":"si","pastedContents":{},"timestamp":1775286416083,"project":"/home/soliwkr","sessionId":"13919ed8-0036-4c98-8136-a2b9b5226e45"}
+{"display":"perche la vm di windows nn sta partendo? sono su omarchy","pastedContents":{},"timestamp":1775287539241,"project":"/home/soliwkr","sessionId":"035c22bf-3256-4a5f-ba09-890c348c038d"}
+{"display":"ottimo.","pastedContents":{},"timestamp":1775291499724,"project":"/home/soliwkr","sessionId":"13919ed8-0036-4c98-8136-a2b9b5226e45"}
+{"display":"claude --resume","pastedContents":{},"timestamp":1775302940108,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"voglio vedere perche non parte la Windows VM preconfigurata in omarchy","pastedContents":{},"timestamp":1775302984711,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"fai ricerca su omarchy perche avevo lanciato l'opzione windows dal suo menu. non so nient altro","pastedContents":{},"timestamp":1775303146191,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"dobbiam abilitare passthrough?","pastedContents":{},"timestamp":1775303532491,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"boh, immaginavo perchè no? alla fine mi permette di usare cose come affinity no?","pastedContents":{},"timestamp":1775303593950,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"grafica semplice (affinity design / canva e office / dev","pastedContents":{},"timestamp":1775303675070,"project":"/home/soliwkr","sessionId":"d3f49a4b-468f-439c-8c46-171e535650e0"}
+{"display":"nella confgiruazione delle gestures su omarchy ora non ho piu le normali azioni a due dita nelle app (es. page back e page worfard nel browser","pastedContents":{},"timestamp":1775304891534,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"vogli oentrambe","pastedContents":{},"timestamp":1775304944148,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"ah ok non funziona solo nel browser vivaldi","pastedContents":{},"timestamp":1775305089988,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"nn me lo fa abilitare. nn lo trova","pastedContents":{},"timestamp":1775305307737,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"nn funz","pastedContents":{},"timestamp":1775305410708,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"bbnn va","pastedContents":{},"timestamp":1775305516151,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"vai","pastedContents":{},"timestamp":1775305558533,"project":"/home/soliwkr","sessionId":"2142c661-cd32-47c7-8919-a42504ae5a40"}
+{"display":"vorrei creare un setup di meeting/streaming su omarchy sul mio dell preision 5550.\nho microfono esterno\nvorrei usare droidcam\nho macbook companion \nsarebbe top installare tutte le periferiche sul companion e utilizzare il precision dell come oepratore principale se mai può esser possibile.","pastedContents":{},"timestamp":1775479391727,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"no vorrei attaccare microfono e droidcam in wireless o tramite usb su omarchy ciompanion e usare quelle periferiche qui, come me lo dirai tu e creare un ambiente che registra da qui e streama da li. telefono android che tengo attaccato in ricarica perpetua","pastedContents":{},"timestamp":1775479533437,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"sul macbook c'è comunque omarchy. stiamo sotto tailscale\n\nio andrei di usb droidcam a questo punto","pastedContents":{},"timestamp":1775479639982,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"su macbook con omarchy installato. usa tailscale, ora è sconnesso","pastedContents":{},"timestamp":1775479689724,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"il nome è soliwkr-omarchy-companion. qui sul precision dell vorrei usare i recording di sistema, con i flussi l audio e la camera che invece stanno installati in obs su companion. se voglio streamare o creare una \"telecamera\" vistuale disponibile in network etc etc.","pastedContents":{},"timestamp":1775479812036,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"vorrei che tu ricordazss","pastedContents":{},"timestamp":1775479899671,"project":"/home/soliwkr","sessionId":"64900727-2c7f-40a9-9c81-7eb8171d34d5"}
+{"display":"voglio installare un openclaw + gemma 4 o su questo stesso laptop? oppure meglio su container nel server locale proxmox? o su un macbook del 2015 con comarchy? cosa ne pensi?","pastedContents":{},"timestamp":1775480298021,"project":"/home/soliwkr","sessionId":"0c44e466-6d84-48e9-8b0e-d40d8c265be1"}
+{"display":"[Image #1] perche quando apro il browser con il keybinding mi fa questo","pastedContents":{},"timestamp":1775480424969,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"vivaldi è il browser predefinito. fai funzionare quello","pastedContents":{},"timestamp":1775480743238,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"a posto. ora pasiamo oltre. pensi che io possa usare una pas4 jailbreakata per run ollama o altri non so, in rete locale","pastedContents":{},"timestamp":1775481025053,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"ho un server proxmox su un laoptiop vecchio in rete, anche un macbook 2015 con omarchy, sempre in rete","pastedContents":{},"timestamp":1775481097230,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"vogglio runnare gemma 4 nuovo modello","pastedContents":{},"timestamp":1775481141615,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"[Image #2]","pastedContents":{},"timestamp":1775481201827,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"a questo punto sul macbook. facciamolo. sto in tailscale","pastedContents":{},"timestamp":1775481320869,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"facciamolo da qui io e te","pastedContents":{},"timestamp":1775481341569,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"usa tailscale da qui per rispondere a tutte le tue domande","pastedContents":{},"timestamp":1775481366893,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"non  è remoto è in locale","pastedContents":{},"timestamp":1775481441179,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"fai scan tailscale","pastedContents":{},"timestamp":1775481504398,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"si","pastedContents":{},"timestamp":1775481657835,"project":"/home/soliwkr","sessionId":"cc01503d-7ea2-4fc5-b4be-03c62ac35823"}
+{"display":"mi togli la trasparenza dalle finestre inattive","pastedContents":{},"timestamp":1775482121751,"project":"/home/soliwkr","sessionId":"2923a9e2-ab46-4991-a85f-333c5bff0b6b"}
+{"display":"nn mi sembra","pastedContents":{},"timestamp":1775482188076,"project":"/home/soliwkr","sessionId":"2923a9e2-ab46-4991-a85f-333c5bff0b6b"}
+{"display":"[Pasted text #1 +8 lines]","pastedContents":{"1":{"id":1,"type":"text","content":"\n~ ❯ hyprctl getoption general:border_size\nint: 2\nset: true\n\n~ ❯\n\n\n"}},"timestamp":1775482247811,"project":"/home/soliwkr","sessionId":"2923a9e2-ab46-4991-a85f-333c5bff0b6b"}
+{"display":"//continue","pastedContents":{},"timestamp":1775482410800,"project":"/home/soliwkr","sessionId":"b51eac0e-85d3-45d4-9e5a-6ebb023af351"}
+{"display":"//continue","pastedContents":{},"timestamp":1775482410965,"project":"/home/soliwkr","sessionId":"b51eac0e-85d3-45d4-9e5a-6ebb023af351"}
+{"display":"metti la mia tastiera in italiano per favore","pastedContents":{},"timestamp":1775484150303,"project":"/home/soliwkr","sessionId":"25cc442c-d379-4dce-acd7-aa4b722a27a6"}
+{"display":"no ora funziona. ok. passiamo oltre.\n\nmi fai capire la filosofia di avere \"coder\" installato sulla propria vps? che cosè? perche dovrei usarlo come coder","pastedContents":{},"timestamp":1775484276720,"project":"/home/soliwkr","sessionId":"25cc442c-d379-4dce-acd7-aa4b722a27a6"}
+{"display":"[Image #1]","pastedContents":{},"timestamp":1775484279349,"project":"/home/soliwkr","sessionId":"25cc442c-d379-4dce-acd7-aa4b722a27a6"}
+{"display":"parlo di [Image #2] questo \"coder\"","pastedContents":{},"timestamp":1775484351032,"project":"/home/soliwkr","sessionId":"25cc442c-d379-4dce-acd7-aa4b722a27a6"}
+{"display":"voglio capire il senso dal ottima del dev singolo","pastedContents":{},"timestamp":1775484422146,"project":"/home/soliwkr","sessionId":"25cc442c-d379-4dce-acd7-aa4b722a27a6"}
+{"display":"mi riattivi le finestre che si auto centrano 1:1 cm si dice non ricordo","pastedContents":{},"timestamp":1775484978812,"project":"/home/soliwkr","sessionId":"d5568347-5e1a-4b5d-b614-97130f3f52bd"}
+{"display":"non n cquello . c'era un opzionee che restringe le finestre quando è solo una sullo schermo. regola per i superwide etc","pastedContents":{},"timestamp":1775485038395,"project":"/home/soliwkr","sessionId":"d5568347-5e1a-4b5d-b614-97130f3f52bd"}
+{"display":"no neanche","pastedContents":{},"timestamp":1775485062045,"project":"/home/soliwkr","sessionId":"d5568347-5e1a-4b5d-b614-97130f3f52bd"}
+{"display":"potresti controllar su chezmoi come sono i miei dotfiles relativi alle finestre, legestures etc","pastedContents":{},"timestamp":1775487341085,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"vorrei anche che la regola per le finestre singole al centro dello schermo, che non ricordo dove sta, forse nel look and feel?","pastedContents":{},"timestamp":1775487418755,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"vorrei riabilitarlo","pastedContents":{},"timestamp":1775487464176,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"fallo","pastedContents":{},"timestamp":1775487478707,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"no. solvi anche perche non lo trovi","pastedContents":{},"timestamp":1775487503190,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"guardache era gia installato","pastedContents":{},"timestamp":1775487527385,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"c'è qualcosa di strano","pastedContents":{},"timestamp":1775487560469,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"instfallo tu","pastedContents":{},"timestamp":1775487856508,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"perfetto. rimuovi background dim per finestre inattive","pastedContents":{},"timestamp":1775487908387,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"potrsti anche farmi capirue come posso ridimensionare le finestre quando c'p il tiling, su omarchy","pastedContents":{},"timestamp":1775488529850,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"adattali a lla tastiera italiana. nn mi prende - = etc pare","pastedContents":{},"timestamp":1775488627129,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"no perche devo usare alt gr per le bracket e poi non ha senso. devo poter urare- e +","pastedContents":{},"timestamp":1775488749426,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"il meno funziona il piu no","pastedContents":{},"timestamp":1775488830244,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"e ora non funziona il meno","pastedContents":{},"timestamp":1775488865325,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"no cancella ultima modifica ho sbagliato. andava bene","pastedContents":{},"timestamp":1775488954164,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"c'è modo di farlo piu veloce?","pastedContents":{},"timestamp":1775489027208,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"no. nn intendevo piu pixel. intendevo piu veloce la ripetizione sempre di 100","pastedContents":{},"timestamp":1775489088607,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"ah no. non continua se rimango il tasto premuto","pastedContents":{},"timestamp":1775489183035,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"no. da errore","pastedContents":{},"timestamp":1775489208773,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"ma no va bene. unica cosa che hai invertito i verticali","pastedContents":{},"timestamp":1775489422271,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"e pare che va al contrario ora","pastedContents":{},"timestamp":1775489468851,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"aggiungi SUPER SHIFT CRTRL per resize 500","pastedContents":{},"timestamp":1775489627719,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"non va","pastedContents":{},"timestamp":1775489673894,"project":"/home/soliwkr","sessionId":"de34675e-955c-4f4c-a25e-f28c075f9f66"}
+{"display":"la windows machine che sto runnando in docker mi chiede nested virtualization","pastedContents":{},"timestamp":1775491488739,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"[Pasted text #1 +47 lines]","pastedContents":{"1":{"id":1,"type":"text","contentHash":"6148640ddc38cece"}},"timestamp":1775491505397,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"nn so niente. sto su omarchy","pastedContents":{},"timestamp":1775491534035,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"sei tu a dover trovare tutto","pastedContents":{},"timestamp":1775491555594,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"[Image #2]","pastedContents":{},"timestamp":1775491667642,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"come faccio a controllare se è abilitato?","pastedContents":{},"timestamp":1775491978186,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"macchian virtuale si dice","pastedContents":{},"timestamp":1775492068751,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"quello dice","pastedContents":{},"timestamp":1775492085088,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"diche \"Macch etc.\" si","pastedContents":{},"timestamp":1775492104017,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"oraaaaaa però [Image #3]","pastedContents":{},"timestamp":1775492136783,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"sembra stia funzionando","pastedContents":{},"timestamp":1775492385174,"project":"/home/soliwkr","sessionId":"3fc87941-fdf4-4d92-b513-8e1a7c0a73bd"}
+{"display":"/buddy","pastedContents":{},"timestamp":1775493961975,"project":"/home/soliwkr","sessionId":"7edaae17-cfb2-4409-88a6-3cf7d7510093"}
+{"display":"vorrei verificare se nel mio chezmoi o dotfiles repo c'è la mia configurazione zsh","pastedContents":{},"timestamp":1775494311728,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"se fosssi un super ultra chad dev ops lazy god chad, pianifica intero setup terminale qui su omarchy","pastedContents":{},"timestamp":1775494399489,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"\n\n\n\nsi","pastedContents":{},"timestamp":1775494472310,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"\n\n\n\n\n\n\n\nvai","pastedContents":{},"timestamp":1775494506564,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ci sta gia","pastedContents":{},"timestamp":1775494624692,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"si","pastedContents":{},"timestamp":1775494671496,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"fatto","pastedContents":{},"timestamp":1775494734069,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"yes","pastedContents":{},"timestamp":1775494765982,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"vai","pastedContents":{},"timestamp":1775494871500,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"voglio testare","pastedContents":{},"timestamp":1775494941097,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"\n\n\n\nandiamo oltre","pastedContents":{},"timestamp":1775494996078,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ok\n\n\n\nandiamo oltre","pastedContents":{},"timestamp":1775495324960,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"hezmoi add ~/.config/direnv ~/.local/bin/create-envrc","pastedContents":{},"timestamp":1775495507184,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"finito.","pastedContents":{},"timestamp":1775495520749,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"adesso vorrei rallentare la ripetizione tasti della mia tassssstiera che èèèèè innaturale","pastedContents":{},"timestamp":1775495555768,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":" si va bvene","pastedContents":{},"timestamp":1775495597818,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"chezmoi add ~/.config/hypr/input.conf","pastedContents":{},"timestamp":1775495640666,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"fatto","pastedContents":{},"timestamp":1775495667337,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"voglio che mi pimpi il terminale","pastedContents":{},"timestamp":1775495696209,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"si ma sto usando zsh adess quindi?","pastedContents":{},"timestamp":1775495743672,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ultra god","pastedContents":{},"timestamp":1775495765460,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"nn ho capito come farlo partire","pastedContents":{},"timestamp":1775495915945,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"non il welcome banner. dico proprio zsh","pastedContents":{},"timestamp":1775495958464,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"e pare lo stesso","pastedContents":{},"timestamp":1775496012953,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Pasted text #1 +22 lines]","pastedContents":{"1":{"id":1,"type":"text","contentHash":"a693d2e236184acf"}},"timestamp":1775496061954,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Pasted text #1 +26 lines]","pastedContents":{"1":{"id":1,"type":"text","contentHash":"736dbaabbf828565"}},"timestamp":1775496147789,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Image #1]","pastedContents":{},"timestamp":1775496226081,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"pare non succede niente","pastedContents":{},"timestamp":1775496275431,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"bash","pastedContents":{},"timestamp":1775496313313,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"nn so controlla","pastedContents":{},"timestamp":1775496422433,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ma perche non li mandi tu i comandi","pastedContents":{},"timestamp":1775496437499,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"nn va","pastedContents":{},"timestamp":1775496514516,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"niente","pastedContents":{},"timestamp":1775496553439,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"salva questa conversazione, magari devo chiudere anche il terminale con cui parliamo","pastedContents":{},"timestamp":1775496580581,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"/resume","pastedContents":{},"timestamp":1775496648992,"project":"/home/soliwkr","sessionId":"b1f45535-6b99-431e-8211-a7cf45052d35"}
+{"display":"eccoci riproviamo","pastedContents":{},"timestamp":1775496673663,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"niente succede","pastedContents":{},"timestamp":1775496709466,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ciao","pastedContents":{},"timestamp":1775496735195,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"niente[Image #2]","pastedContents":{},"timestamp":1775496785466,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"si risponde","pastedContents":{},"timestamp":1775496833983,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"niente","pastedContents":{},"timestamp":1775496874058,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Pasted text #3 +8 lines]","pastedContents":{"3":{"id":3,"type":"text","content":"ls -la /etc/zsh/\n\n~\n➜ ls -la /etc/zsh/\nPermissions Size User Date Modified Name\n.rw-r--r--    36 root 15 Mar  2024  󱆃 zprofile\n\n~\n➜"}},"timestamp":1775496923607,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ma falle tu ste coseeee","pastedContents":{},"timestamp":1775496940162,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"\n\nprova tu","pastedContents":{},"timestamp":1775496975014,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"fai tutto tu nel terminale","pastedContents":{},"timestamp":1775497006797,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Pasted text #3 +8 lines]","pastedContents":{"3":{"id":3,"type":"text","content":"\n~\n➜ sudo -u soliwkr chsh -s /usr/bin/zsh\nChanging shell for soliwkr.\nPassword:\nchsh: Shell not changed.\n\n~ ⏱️  4s\n➜"}},"timestamp":1775497051554,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"nn va. dice not cjanged","pastedContents":{},"timestamp":1775497114511,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ma perche stai facendo fare il codice a me nel terminale invece chefarlo tu","pastedContents":{},"timestamp":1775497165575,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"bash","pastedContents":{},"timestamp":1775497193768,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"no changes dice","pastedContents":{},"timestamp":1775497223405,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"[Pasted text #3 +25 lines]","pastedContents":{"3":{"id":3,"type":"text","content":"➜ chsh -s /usr/bin/zsh\nChanging shell for soliwkr.\nPassword:\nchsh: Shell not changed.\n\n~ ⏱️  2s\n➜ echo /usr/bin/zsh | sudo tee -a /etc/shells\n[sudo] password for soliwkr:\n/usr/bin/zsh\n\n~ ⏱️  2s\n➜ chsh -s /usr/bin/zsh\nChanging shell for soliwkr.\nPassword:\nchsh: Shell not changed.\n\n~ ⏱️  3s\n➜ echo $SHELL\n/usr/bin/bash\n\n~\n➜ sudo usermod -s /usr/bin/zsh soliwkr\nusermod: no changes\n\n~\n➜"}},"timestamp":1775497240245,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"uguale non è che ce un problema con omarchy","pastedContents":{},"timestamp":1775497318165,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"fratello. devi fare tu le cose in terminale","pastedContents":{},"timestamp":1775497345249,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"fallo","pastedContents":{},"timestamp":1775497380831,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"si è entrato","pastedContents":{},"timestamp":1775497419388,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"ma ora me lo devi realmente pimpare con anche ohmyzsh","pastedContents":{},"timestamp":1775497485124,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"/resume","pastedContents":{},"timestamp":1775497594332,"project":"/home/soliwkr","sessionId":"46f61328-fd76-447c-b3e3-d8eb57baedc4"}
+{"display":"no ora è tornato a bash .","pastedContents":{},"timestamp":1775497616677,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"niente di nuovo","pastedContents":{},"timestamp":1775497641731,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"io non ho capito perche NON USI SEMPRE TU IL TERMINALE","pastedContents":{},"timestamp":1775497672844,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"/resume","pastedContents":{},"timestamp":1775498244041,"project":"/home/soliwkr","sessionId":"090987e3-88eb-4ea0-9cad-0a649ca1e5d2"}
+{"display":"ancora uguale","pastedContents":{},"timestamp":1775498257232,"project":"/home/soliwkr","sessionId":"12987d9b-4acd-4ed8-b617-f2f1b7427dd1"}
+{"display":"\r","pastedContents":{},"timestamp":1775620730828,"project":"/home/soliwkr","sessionId":"7df774cd-aedf-4094-9b61-06945a4a1ff6"}
+{"display":"\r","pastedContents":{},"timestamp":1775620731092,"project":"/home/soliwkr","sessionId":"7df774cd-aedf-4094-9b61-06945a4a1ff6"}
+{"display":"[Pasted text #1 +193 lines]","pastedContents":{"1":{"id":1,"type":"text","contentHash":"2026ba296c097273"}},"timestamp":1775620740308,"project":"/home/soliwkr","sessionId":"7df774cd-aedf-4094-9b61-06945a4a1ff6"}
+{"display":"/login","pastedContents":{},"timestamp":1775620757508,"project":"/home/soliwkr","sessionId":"7df774cd-aedf-4094-9b61-06945a4a1ff6"}

@@ -1,0 +1,80 @@
+imine EFI install completed successfully.
+(16/30) Clean Limine boot entries of removed kernels
+(17/30) Updating linux initcpios...
+Building UKI for linux (6.19.9-arch1-1)
+==> Using drop-in configuration file: 'omarchy_hooks.conf'
+==> Using drop-in configuration file: 'omarchy_resume.conf'
+==> Using drop-in configuration file: 'thunderbolt_module.conf'
+==> Starting build: '6.19.9-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci_renesas'
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_6xxx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+  -> Running build hook: [btrfs-overlayfs]
+  -> Running build hook: [resume]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Creating unified kernel image: '/tmp/staging_uki.efi'
+==> Unified kernel image generation successful
+UKI stored in /boot/EFI/Linux/omarchy_linux.efi
+Updated: /boot/limine.conf
+error: unable to write to pipe (Broken pipe)
+(18/30) Deploying Limine after upgrade...
+(19/30) Reloading system bus configuration...
+(20/30) Checking for old perl modules...
+(21/30) Updating GIO module cache...
+(22/30) Compiling GSettings XML schema files...
+(23/30) Probing GTK3 input method modules...
+(24/30) Updating icon theme caches...
+(25/30) Updating GTK4 module cache...
+(26/30) Reloading GVFS config...
+(27/30) Generating luarocks manifest for Lua 5.1...
+/usr/bin/lua5.5: /usr/bin/luarocks-admin:7: module 'luarocks.core.cfg' not found:
+    no field package.preload['luarocks.core.cfg']
+    no file '/usr/share/lua/5.5/luarocks/core/cfg.lua'
+    no file '/usr/local/share/lua/5.5/luarocks/core/cfg.lua'
+    no file '/usr/local/share/lua/5.5/luarocks/core/cfg/init.lua'
+    no file '/usr/share/lua/5.5/luarocks/core/cfg.lua'
+    no file '/usr/share/lua/5.5/luarocks/core/cfg/init.lua'
+    no file '/usr/local/lib/lua/5.5/luarocks/core/cfg.lua'
+    no file '/usr/local/lib/lua/5.5/luarocks/core/cfg/init.lua'
+    no file '/usr/lib/lua/5.5/luarocks/core/cfg.lua'
+    no file '/usr/lib/lua/5.5/luarocks/core/cfg/init.lua'
+    no file './luarocks/core/cfg.lua'
+    no file './luarocks/core/cfg/init.lua'
+    no file '/usr/local/lib/lua/5.5/luarocks/core/cfg.so'
+    no file '/usr/lib/lua/5.5/luarocks/core/cfg.so'
+    no file '/usr/local/lib/lua/5.5/loadall.so'
+    no file '/usr/lib/lua/5.5/loadall.so'
+    no file './luarocks/core/cfg.so'
+    no file '/usr/local/lib/lua/5.5/luarocks.so'
+    no file '/usr/lib/lua/5.5/luarocks.so'
+    no file '/usr/local/lib/lua/5.5/loadall.so'
+    no file '/usr/lib/lua/5.5/loadall.so'
+    no file './luarocks.so'
+stack traceback:
+    [C]: in global 'require'
+    /usr/bin/luarocks-admin:7: in main chunk
+    [C]: in ?
+error: command failed to execute correctly
+(28/30) Updating the info directory file...
+(29/30) Updating the desktop file MIME type cache...
+(30/30) Restarting Walker services after system update
+Running as unit: run-p20926-i20927.service; invocation ID: e170174b9e2544c2885b4d091e37ded6
+mise WARN  missing: node@25.7.0
+
+~ ❯ A

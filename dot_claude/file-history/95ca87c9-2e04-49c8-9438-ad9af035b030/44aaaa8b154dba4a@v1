@@ -1,0 +1,32 @@
+# Walker White's Workstation
+
+## Setup
+- OS: Arch Linux with Omarchy (Hyprland desktop)
+- User: soliwkr@gmail.com, Italian keyboard layout
+- Shell: bash sourcing `~/.local/share/omarchy/default/bash/rc`
+
+## Dotfiles
+- Bare git repo at `~/.dotfiles`
+- Alias: `dotfiles()` function in `~/.bashrc`
+- Command: `dotfiles <git-subcommand>` (e.g. `dotfiles status`, `dotfiles add`, `dotfiles push`)
+- Initial commit made, needs remote (GitHub) added and pushed
+- bootstrap.sh at `~/.config/bootstrap.sh` — one-command fresh machine setup
+- packages.txt at `~/.config/packages.txt` (165 official packages)
+
+## Key files tracked
+- Shell: .bashrc, .bash_profile, .XCompose
+- Hyprland: .config/hypr/{monitors,input,bindings,looknfeel,autostart,hyprland}.conf
+- Terminals: alacritty, ghostty, kitty
+- Tools: tmux, starship, lazygit, btop, fastfetch, mako, walker
+- Waybar, fontconfig, mise, nvim (LazyVim), omarchy branding/extensions
+
+## NOT tracked (runtime/secrets)
+- ~/.ssh/, ~/.config/keyrings/, ~/.config/dconf/, ~/.config/chromium/
+- ~/.config/omarchy/current/ (Omarchy-managed theme state)
+- ~/.cache/, ~/.local/state/
+
+## Next step for user
+- Create GitHub repo named "dotfiles"
+- `dotfiles remote add origin git@github.com:soliwkr/dotfiles.git`
+- `dotfiles push -u origin master`
+- Update GITHUB_USER placeholder in bootstrap.sh

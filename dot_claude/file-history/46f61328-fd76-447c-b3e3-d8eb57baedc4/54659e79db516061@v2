@@ -1,0 +1,6 @@
+# Rust Project
+export RUST_BACKTRACE=1
+export CARGO_NET_OFFLINE=false
+
+# Optional: Use asdf for version management
+# use asdf

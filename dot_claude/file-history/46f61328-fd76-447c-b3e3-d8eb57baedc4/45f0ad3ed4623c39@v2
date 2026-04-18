@@ -1,0 +1,10 @@
+# Fullstack Project (Python Backend + Node Frontend)
+use python
+use node
+
+export NODE_ENV=development
+export PYTHONPATH=".:$PYTHONPATH"
+layout python
+
+# Optional: Load .env file
+# dotenv

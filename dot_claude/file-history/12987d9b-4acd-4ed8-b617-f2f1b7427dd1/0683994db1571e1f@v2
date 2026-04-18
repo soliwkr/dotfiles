@@ -1,0 +1,6 @@
+# Node.js Project
+export NODE_ENV=development
+layout node
+
+# Optional: Load .env file
+# dotenv

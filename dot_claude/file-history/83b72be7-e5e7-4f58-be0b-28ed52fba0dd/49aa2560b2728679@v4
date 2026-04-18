@@ -1,0 +1,50 @@
+# Learn how to configure Hyprland: https://wiki.hyprland.org/Configuring/
+
+# Omarchy defaults (Arch only — don't edit these directly!)
+source = ~/.local/share/omarchy/default/hypr/autostart.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/media.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/clipboard.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/tiling-v2.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/utilities.conf
+source = ~/.local/share/omarchy/default/hypr/envs.conf
+source = ~/.config/hypr/nvidia.conf
+source = ~/.local/share/omarchy/default/hypr/looknfeel.conf
+source = ~/.local/share/omarchy/default/hypr/input.conf
+source = ~/.local/share/omarchy/default/hypr/windows.conf
+source = ~/.config/omarchy/current/theme/hyprland.conf
+# Personal overrides (all distros)
+source = ~/.config/hypr/monitors.conf
+source = ~/.config/hypr/input.conf
+source = ~/.config/hypr/bindings.conf
+source = ~/.config/hypr/looknfeel.conf
+source = ~/.config/hypr/autostart.conf
+
+# Add any other personal Hyprland configuration below
+# windowrule = workspace 5, match:class qemu
+
+# hyprexpo — panoramica workspace (4 dita su)
+plugin = ~/.local/lib/hyprland/libhyprexpo.so
+plugin:hyprexpo {
+  columns = 3
+  gap_size = 8
+  bg_col = rgb(111111)
+  workspace_method = center current
+  enable_gesture = false
+}
+
+# hyprfocus — flash visivo quando cambi finestra
+plugin = ~/.local/lib/hyprland/libhyprfocus.so
+plugin:hyprfocus {
+  enabled = yes
+  animate_floating = yes
+  animate_workspacechange = yes
+  focus_animation = shrink
+  bezier = realsmooth, 0.28, 0.29, 0.69, 1.08
+  shrink {
+    shrink_percentage = 0.98
+    in_bezier = realsmooth
+    in_speed = 1
+    out_bezier = realsmooth
+    out_speed = 2
+  }
+}

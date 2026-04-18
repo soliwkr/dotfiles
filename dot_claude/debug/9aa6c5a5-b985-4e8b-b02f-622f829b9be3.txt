@@ -1,0 +1,265 @@
+2026-03-17T15:26:42.362Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-17T15:26:42.363Z [DEBUG] MDM settings load completed in 1ms
+2026-03-17T15:26:42.378Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-17T15:26:42.379Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-17T15:26:42.379Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-17T15:26:42.379Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-17T15:26:42.387Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'userSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-17T15:26:42.387Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'projectSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-17T15:26:42.387Z [DEBUG] Applying permission update: Adding 37 allow rule(s) to destination 'localSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)","Bash(yay:*)","Bash(curl:*)","Bash(rclone purge:*)","Bash(rclone sync:*)","Bash(chezmoi status:*)","Bash(op account:*)","Bash(systemctl:*)","Bash(ls ~/.ssh/ && ssh-add -l 2>&1)","Bash(ls:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock git:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock ssh-add:*)","Bash(arp-scan:*)","Bash(ip neighbor:*)","Bash(echo:*)","Bash(GIT_SSH_COMMAND=\"ssh -i /tmp/1p-import/id_ed25519 -o IdentitiesOnly=yes\" git:*)","Bash(ssh-keygen:*)","Bash(which op && op --version 2>&1)","Bash(op signin:*)","Bash(op vault:*)","Bash(op item:*)","Bash(op item template get \"SSH Key\" | python3 -c \"\nimport json,sys\nt = json.load\\(sys.stdin\\)\nt['title'] = 'SSH Key - soliwkr main'\nt['fields'][1]['value'] = open\\('/tmp/1p-import/id_ed25519'\\).read\\(\\)\nprint\\(json.dumps\\(t\\)\\)\n\" | op item create --category \"SSH Key\" --vault Personal - 2>&1)","Bash(pgrep:*)"]
+2026-03-17T15:26:42.389Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-17T15:26:42.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-17T15:26:42.395Z [DEBUG] [STARTUP] Running setup()...
+2026-03-17T15:26:42.400Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/soliwkr/.claude/skills, project=[]
+2026-03-17T15:26:42.402Z [DEBUG] Error log sink initialized
+2026-03-17T15:26:42.408Z [DEBUG] [STARTUP] setup() completed in 13ms
+2026-03-17T15:26:42.408Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-17T15:26:42.409Z [DEBUG] Git remote URL: null
+2026-03-17T15:26:42.409Z [DEBUG] No git remote URL found
+2026-03-17T15:26:42.412Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 1, project: 0, additional: 0, legacy commands: 0)
+2026-03-17T15:26:42.432Z [DEBUG] [Claude in Chrome] Found chromium profiles: Default
+2026-03-17T15:26:42.480Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2026-03-17T15:26:42.484Z [DEBUG] Loading plugin claude-code-setup from source: "./plugins/claude-code-setup"
+2026-03-17T15:26:42.485Z [DEBUG] [Claude in Chrome] Found vivaldi profiles: Default
+2026-03-17T15:26:42.485Z [DEBUG] [Claude in Chrome] Extension fcoeoabgfenejglbffodgkkbkcdhcgfn found in vivaldi Default
+2026-03-17T15:26:42.488Z [DEBUG] Using manifest version for claude-code-setup@claude-plugins-official: 1.0.0
+2026-03-17T15:26:42.490Z [DEBUG] Plugin claude-code-setup@claude-plugins-official version 1.0.0 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-17T15:26:42.490Z [DEBUG] Resolved local plugin claude-code-setup to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-17T15:26:42.491Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: 205b6e0b3036
+2026-03-17T15:26:42.492Z [DEBUG] Plugin frontend-design@claude-plugins-official version 205b6e0b3036 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-17T15:26:42.492Z [DEBUG] Resolved local plugin frontend-design to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-17T15:26:42.493Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-03-17T15:26:42.493Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-03-17T15:26:42.493Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2026-03-17T15:26:42.493Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036/skills
+2026-03-17T15:26:42.494Z [DEBUG] Total plugin commands loaded: 0
+2026-03-17T15:26:42.494Z [DEBUG] Registered 0 hooks from 2 plugins
+2026-03-17T15:26:42.495Z [DEBUG] Total plugin agents loaded: 0
+2026-03-17T15:26:42.495Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2026-03-17T15:26:42.495Z [DEBUG] Checking plugin claude-code-setup: skillsPath=exists, skillsPaths=0 paths
+2026-03-17T15:26:42.495Z [DEBUG] Attempting to load skills from plugin claude-code-setup default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/skills
+2026-03-17T15:26:42.508Z [DEBUG] Loaded 1 skills from plugin claude-code-setup default directory
+2026-03-17T15:26:42.508Z [DEBUG] Total plugin skills loaded: 2
+2026-03-17T15:26:42.508Z [DEBUG] getSkills returning: 1 skill dir commands, 2 plugin skills, 3 bundled skills
+2026-03-17T15:26:42.509Z [DEBUG] [STARTUP] Commands and agents loaded in 101ms
+2026-03-17T15:26:42.513Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-17T15:26:42.517Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-17T15:26:42.564Z [DEBUG] [keybindings] Watching for changes to /home/soliwkr/.claude/keybindings.json
+2026-03-17T15:26:44.532Z [DEBUG] Grove: Cache stale, returning cached data and refreshing in background
+2026-03-17T15:26:44.548Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-17T15:26:44.549Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-17T15:26:44.549Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-17T15:26:47.505Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:26:47.538Z [DEBUG] Failed to fetch Grove notice config: AxiosError: timeout of 3000ms exceeded
+2026-03-17T15:27:02.427Z [ERROR] Error: Error: 1P event logging: 8 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:27:02.427Z [ERROR] Error: Error: {"message":"Failed to export 8 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 8 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:27:02.427Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 8 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 8 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:27:31.082Z [ERROR] Error: [url=https://api.anthropic.com/api/oauth/account/settings] Error
+    at <anonymous> (/$bunfs/root/claude:79:11055)
+    at <anonymous> (/$bunfs/root/claude:93:10230)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:92:3470)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:253:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:27:31.082Z [DEBUG] [STARTUP] showSetupScreens() completed in 48569ms
+2026-03-17T15:27:31.082Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-17T15:27:31.082Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-17T15:27:31.082Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-17T15:27:31.082Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:27:31.082Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:27:31.084Z [DEBUG] [STARTUP] MCP configs loaded in 48695ms
+2026-03-17T15:27:31.110Z [DEBUG] All plugins already exist, skipping migration
+2026-03-17T15:27:31.110Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:27:31.113Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-17T15:27:31.113Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T15:27:31.113Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-17T15:27:31.113Z [DEBUG] Loaded 2 installed plugins from /home/soliwkr/.claude/plugins/installed_plugins.json
+2026-03-17T15:27:31.113Z [DEBUG] Initialized versioned plugins system with 2 plugins
+2026-03-17T15:27:31.115Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-17T15:27:31.118Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761251118
+2026-03-17T15:27:31.118Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:27:31.127Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:27:31.127Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:27:31.127Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761251118 to /home/soliwkr/.claude.json
+2026-03-17T15:27:31.127Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:27:31.433Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-17T15:27:31.476Z [DEBUG] High write ratio: blit=0, write=1252 (100.0% writes), screen=17x175
+2026-03-17T15:27:31.483Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-17T15:27:31.484Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-17T15:27:31.485Z [DEBUG] performStartupChecks called
+2026-03-17T15:27:31.485Z [DEBUG] Starting background plugin installations
+2026-03-17T15:27:31.485Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-17T15:27:31.489Z [DEBUG] No CLAUDE.md/rules files found
+2026-03-17T15:27:31.508Z [DEBUG] Watching for changes in setting files /home/soliwkr/.claude/settings.json, /home/soliwkr/.claude/settings.local.json...
+2026-03-17T15:27:31.535Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-03-17T15:27:31.535Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-03-17T15:27:31.542Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-03-17T15:27:31.543Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-03-17T15:27:31.550Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-17T15:27:31.550Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-03-17T15:27:31.550Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-03-17T15:27:31.562Z [DEBUG] Found 2 enabled plugins
+2026-03-17T15:27:31.563Z [DEBUG] All plugins already exist, skipping migration
+2026-03-17T15:27:31.563Z [DEBUG] Found 2 installed plugins (V2 format)
+2026-03-17T15:27:31.563Z [DEBUG] Found 0 missing plugins (not installed):
+2026-03-17T15:27:31.563Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-17T15:27:31.568Z [DEBUG] Total LSP servers loaded: 0
+2026-03-17T15:27:31.568Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-17T15:27:31.568Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-17T15:27:31.568Z [DEBUG] LSP server manager initialized successfully
+2026-03-17T15:27:31.568Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-17T15:27:31.571Z [DEBUG] Fetching plugin security messages from https://raw.githubusercontent.com/anthropics/claude-plugins-official/refs/heads/security/security.json
+2026-03-17T15:27:31.579Z [DEBUG] Watching for changes in skill/command directories: /home/soliwkr/.claude/skills, /home/soliwkr/.claude/skills...
+2026-03-17T15:27:31.634Z [DEBUG] High write ratio: blit=0, write=1252 (100.0% writes), screen=17x175
+2026-03-17T15:27:31.710Z [DEBUG] Detected pacman installation: /opt/claude-code/bin/claude is owned by claude-code 2.1.56-1
+2026-03-17T15:27:31.710Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-17T15:27:31.820Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/claude-code/bin/claude)
+2026-03-17T15:27:32.068Z [DEBUG] rg error (signal=null, code=2, stderr: rg: File system loop found: ./.local/state/mise/trusted-configs/home-soliwkr-f38ef8b12c27fe24 points to an ancestor .
+), 63409 results
+2026-03-17T15:27:32.124Z [DEBUG] [FileIndex] ripgrep: 63409 files in 581ms
+2026-03-17T15:27:32.250Z [DEBUG] [FileIndex] cache refresh completed in 715ms (rust index)
+2026-03-17T15:27:36.574Z [ERROR] Failed to fetch plugin security messages: timeout of 5000ms exceeded
+2026-03-17T15:27:36.583Z [DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-17T15:27:51.108Z [DEBUG] Failed to fetch org fast mode status, defaulting to disabled
+2026-03-17T15:27:51.109Z [ERROR] Error: Error: 1P event logging: 18 events failed to export (code=ECONNREFUSED, ECONNREFUSED)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:27:51.109Z [ERROR] Error: Error: {"message":"Failed to export 18 events (code=ECONNREFUSED, ECONNREFUSED)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 18 events (code=ECONNREFUSED, ECONNREFUSED)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:27:51.109Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 18 events (code=ECONNREFUSED, ECONNREFUSED)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 18 events (code=ECONNREFUSED, ECONNREFUSED)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:28:01.114Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=FailedToOpenSocket, Was there a typo in the url or port?)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:28:01.114Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=FailedToOpenSocket, Was there a typo in the url or port?)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=FailedToOpenSocket, Was there a typo in the url or port?)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:28:01.114Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=FailedToOpenSocket, Was there a typo in the url or port?)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=FailedToOpenSocket, Was there a typo in the url or port?)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:36:28.459Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-17T15:36:28.459Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-17T15:36:28.460Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-17T15:36:28.460Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-17T15:36:28.461Z [DEBUG] Sending 5 skills via attachment (initial, 5 total sent)
+2026-03-17T15:36:28.461Z [DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+2026-03-17T15:36:28.461Z [DEBUG] Skill prompt: showing "claude-code-setup:claude-automation-recommender" (userFacingName="claude-automation-recommender")
+2026-03-17T15:36:28.463Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-03-17T15:36:28.464Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-17T15:36:28.464Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T15:36:28.464Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-17T15:36:28.465Z [DEBUG] FileHistory: Added snapshot for 2aa49950-9e41-4441-a43e-558e4591747f, tracking 0 files
+2026-03-17T15:36:28.467Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-17T15:36:28.508Z [DEBUG] High write ratio: blit=0, write=1241 (100.0% writes), screen=19x175
+2026-03-17T15:36:28.526Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-03-17T15:36:28.532Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-17T15:36:28.537Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.ae0; cc_entrypoint=cli; cch=00000;
+2026-03-17T15:36:28.538Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:36:28.538Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:36:28.539Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-17T15:36:28.539Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:36:28.551Z [DEBUG] autocompact: tokens=714 threshold=167000 effectiveWindow=180000
+2026-03-17T15:36:28.561Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:36:28.561Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:36:28.561Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:36:28.566Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-17T15:36:28.626Z [DEBUG] High write ratio: blit=0, write=1268 (100.0% writes), screen=21x175
+2026-03-17T15:36:29.259Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761789259
+2026-03-17T15:36:29.259Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:36:29.270Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:36:29.270Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:36:29.270Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761789259 to /home/soliwkr/.claude.json
+2026-03-17T15:36:29.270Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:36:29.551Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-03-17T15:36:29.560Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761789560
+2026-03-17T15:36:29.560Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:36:29.569Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:36:29.569Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:36:29.569Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761789560 to /home/soliwkr/.claude.json
+2026-03-17T15:36:29.569Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:36:29.570Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-17T15:36:29.571Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:36:29.571Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:36:29.571Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:36:30.193Z [DEBUG] Stream started - received first chunk
+2026-03-17T15:36:36.949Z [DEBUG] [onCancel] focusedInputDialog=undefined streamMode=requesting
+2026-03-17T15:36:36.955Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761796955
+2026-03-17T15:36:36.955Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:36:36.966Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:36:36.966Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:36:36.966Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761796955 to /home/soliwkr/.claude.json
+2026-03-17T15:36:36.966Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:36:36.968Z [ERROR] API error (attempt 1/11): undefined Request was aborted.
+2026-03-17T15:36:36.970Z [ERROR] Error in API request: Request was aborted.
+2026-03-17T15:36:36.970Z [ERROR] Error: Error: Request was aborted.
+    at makeRequest (/$bunfs/root/claude:305:3940)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:36:36.973Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-17T15:36:36.992Z [DEBUG] High write ratio: blit=0, write=1290 (100.0% writes), screen=20x175
+2026-03-17T15:38:36.565Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-17T15:38:36.565Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-17T15:38:36.566Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-17T15:38:36.566Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-17T15:38:36.568Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-17T15:38:36.568Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T15:38:36.568Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-17T15:38:36.568Z [DEBUG] FileHistory: Making snapshot for message 54a91ec2-786d-4ce2-8f3e-0e91f6680b72
+2026-03-17T15:38:36.568Z [DEBUG] FileHistory: Added snapshot for 54a91ec2-786d-4ce2-8f3e-0e91f6680b72, tracking 0 files
+2026-03-17T15:38:36.570Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-17T15:38:36.590Z [DEBUG] High write ratio: blit=0, write=1315 (100.0% writes), screen=22x175
+2026-03-17T15:38:36.599Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-17T15:38:36.601Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.bdd; cc_entrypoint=cli; cch=00000;
+2026-03-17T15:38:36.602Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:38:36.602Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:38:36.604Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:38:36.616Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761916616
+2026-03-17T15:38:36.616Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:38:36.625Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:38:36.625Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:38:36.625Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761916616 to /home/soliwkr/.claude.json
+2026-03-17T15:38:36.625Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:38:36.627Z [DEBUG] autocompact: tokens=727 threshold=167000 effectiveWindow=180000
+2026-03-17T15:38:36.628Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-03-17T15:38:36.636Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.7841.1773761916636
+2026-03-17T15:38:36.636Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:38:36.644Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:38:36.644Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:38:36.644Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.7841.1773761916636 to /home/soliwkr/.claude.json
+2026-03-17T15:38:36.644Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:38:36.645Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-17T15:38:36.646Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T15:38:36.646Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T15:38:36.646Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T15:38:36.652Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-17T15:38:36.720Z [DEBUG] High write ratio: blit=0, write=1341 (100.0% writes), screen=24x175
+2026-03-17T15:38:37.805Z [DEBUG] Stream started - received first chunk
+2026-03-17T15:38:40.661Z [DEBUG] [onCancel] focusedInputDialog=undefined streamMode=requesting
+2026-03-17T15:38:40.663Z [ERROR] API error (attempt 1/11): undefined Request was aborted.
+2026-03-17T15:38:40.663Z [ERROR] Error in API request: Request was aborted.
+2026-03-17T15:38:40.663Z [ERROR] Error: Error: Request was aborted.
+    at makeRequest (/$bunfs/root/claude:305:3940)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:38:40.665Z [DEBUG] [useDeferredValue] Messages deferred by 1 (4→5)
+2026-03-17T15:38:40.682Z [DEBUG] High write ratio: blit=0, write=1365 (100.0% writes), screen=23x175

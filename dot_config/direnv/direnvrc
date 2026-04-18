@@ -1,0 +1,34 @@
+# Global direnv config - extensions & helpers
+
+# Load local .envrc
+if [ -f .envrc.local ]; then
+  source .envrc.local
+fi
+
+# Python venv auto-detection
+layout_python() {
+  local python_exe
+  python_exe="${1:-python3}"
+
+  if [ ! -d ".venv" ]; then
+    $python_exe -m venv .venv
+  fi
+
+  source .venv/bin/activate
+}
+
+# Node.js nvm integration (if nvm installed)
+layout_node() {
+  if [ -s "$HOME/.nvm/nvm.sh" ]; then
+    source "$HOME/.nvm/nvm.sh"
+    nvm use --lts
+  fi
+}
+
+# Rust with asdf
+layout_rust() {
+  if command -v asdf &>/dev/null; then
+    asdf install rust latest
+    asdf global rust latest
+  fi
+}

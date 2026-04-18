@@ -1,0 +1,116 @@
+# ========================================
+# ZSH CONFIG - LAZY GOD MODE ULTRA PIMP
+# ========================================
+
+# WELCOME BANNER (figlet + lolcat)
+if command -v figlet &>/dev/null && command -v lolcat &>/dev/null; then
+  figlet "LAZY GOD" | lolcat
+fi
+
+# System info banner (fastfetch)
+if command -v fastfetch &>/dev/null; then
+  fastfetch --logo-color 5 --hide-titles
+fi
+
+# Init Starship prompt
+eval "$(starship init zsh)"
+
+# ========== FZF KEYBINDINGS ==========
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# ========== ALIASES ==========
+alias cat=bat
+alias top=btm
+alias ...='cd ../..'
+alias cd-='cd -'
+alias md='mkdir -p'
+alias ll='lsd -lA'
+alias la='lsd -A'
+alias l='lsd'
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias gpl='git pull'
+alias gr='git reset'
+alias gb='git branch'
+alias gco='git checkout'
+alias gd='git diff'
+alias gl='git log --oneline -10'
+alias gcp='git add . && git commit -m'
+alias gpr='git pull --rebase'
+alias gf='git fetch'
+alias gfp='git fetch && git pull'
+alias gpu='git push --set-upstream origin'
+alias gsu='git submodule update --init --recursive'
+alias glg='lazygit'
+alias rga='rg --color=always'
+alias da='direnv allow'
+alias dd='direnv deny'
+alias dr='direnv reload'
+alias ds='direnv status'
+alias tm='tmux'
+alias tma='tmux attach-session -t'
+alias tml='tmux list-sessions'
+alias tmc='tmux kill-session -t'
+
+# ========== EXPORTS ==========
+export BAT_THEME="Dracula"
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git" 2>/dev/null'
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+# Direnv hook
+eval "$(direnv hook zsh)"
+
+# ========== ZINIT PLUGIN MANAGER ==========
+if [ ! -d "$HOME/.local/share/zinit/zinit.git" ]; then
+  mkdir -p "$HOME/.local/share/zinit"
+  git clone https://github.com/zdharma-continuum/zinit.git "$HOME/.local/share/zinit/zinit.git"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+
+# Plugins (loaded on demand, ultra fast)
+zinit ice wait"0" lucid atload"_zsh_autosuggest_start"
+zinit light zsh-users/zsh-autosuggestions
+
+zinit ice wait"1" lucid
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit ice wait"2" lucid
+zinit light Aloxaf/fzf-tab
+
+zinit ice wait"3" lucid
+zinit light zsh-users/zsh-history-substring-search
+
+# ========== COMPLETIONS & KEYBINDINGS ==========
+autoload -Uz compinit && compinit
+
+bindkey -v
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# ========== CUSTOM FUNCTIONS ==========
+
+take() {
+  mkdir -p "$1" && cd "$1"
+}
+
+gst() {
+  if [ -z "$1" ]; then
+    git stash
+  else
+    git stash push -m "$1"
+  fi
+}
+
+reload() {
+  echo "🔄 Reloading zsh config..."
+  exec zsh
+}
+
+cls() {
+  clear
+  [ -x ~/.local/bin/welcome-banner ] && ~/.local/bin/welcome-banner
+}

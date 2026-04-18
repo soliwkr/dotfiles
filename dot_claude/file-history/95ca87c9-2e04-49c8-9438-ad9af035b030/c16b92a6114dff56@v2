@@ -1,0 +1,59 @@
+# Dotfiles repo .gitignore
+# (used by the bare repo at ~/.dotfiles)
+
+# Secrets
+.ssh/
+.gnupg/
+.config/keyrings/
+.config/pulse/
+.pki/
+
+# Runtime / binary state
+.config/dconf/
+.config/chromium/
+.config/BraveSoftware/
+.config/fcitx/
+.config/fcitx5/
+.config/ibus/
+.config/gvfs-metadata/
+.config/autostart/
+
+# Cache and temp
+.cache/
+.npm/
+.local/state/
+.local/share/recently-used.xbel
+.local/share/gvfs-metadata/
+.local/share/keyrings/
+.local/share/sddm/
+
+# App state (not config)
+.local/share/nvim/
+.local/share/applications/
+.local/share/fonts/
+.local/share/mime/
+.local/share/flatpak/
+.local/share/icons/
+.local/share/hyprland/
+.local/share/mise/installs/
+.local/share/mise/shims/
+
+# Dotfiles repo itself
+.dotfiles/
+
+# Large downloads / binaries
+Downloads/
+
+# Desktop XDG dirs
+Desktop/
+Documents/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+
+# Misc
+.bash_history
+*.log
+*.bak

@@ -1,0 +1,71 @@
+#!/bin/bash
+# Terminal Setup Check - Verify all components are installed
+
+echo "=== TERMINAL SETUP CHECK ==="
+echo ""
+
+check_tool() {
+  if command -v "$1" &>/dev/null; then
+    echo "✓ $1"
+    return 0
+  else
+    echo "✗ $1"
+    return 1
+  fi
+}
+
+echo "--- SHELL & PROMPT ---"
+check_tool zsh
+check_tool starship
+echo ""
+
+echo "--- TERMINAL MULTIPLEXER ---"
+check_tool tmux
+[ -d ~/.tmux/plugins/tpm ] && echo "✓ TPM" || echo "✗ TPM"
+echo ""
+
+echo "--- MODERN CLI TOOLS ---"
+check_tool fzf
+check_tool rg
+check_tool bat
+check_tool lsd
+check_tool btm
+check_tool direnv
+echo ""
+
+echo "--- EDITOR & DEV ---"
+check_tool nvim
+check_tool git
+check_tool lazygit
+check_tool gh
+echo ""
+
+echo "--- CHEZMOI & DOTFILES ---"
+check_tool chezmoi
+[ -d ~/.local/share/chezmoi ] && echo "✓ Dotfiles repo" || echo "✗ Dotfiles repo"
+echo ""
+
+echo "--- SCRIPTS ---"
+[ -x ~/.local/bin/tmux-sessionizer ] && echo "✓ tmux-sessionizer" || echo "✗ tmux-sessionizer"
+[ -x ~/.local/bin/create-envrc ] && echo "✓ create-envrc" || echo "✗ create-envrc"
+echo ""
+
+echo "=== QUICK TEST ==="
+echo ""
+echo "1. Check FZF fuzzy find:"
+echo "   Ctrl+r in terminal (history fuzzy search)"
+echo ""
+echo "2. Test Tmux sessionizer:"
+echo "   tmux new-session -s test-setup"
+echo "   Ctrl+Space + Ctrl+j (jump to project)"
+echo ""
+echo "3. Test Neovim:"
+echo "   nvim ~/.config/nvim/init.lua"
+echo "   <leader>ff (fuzzy find files)"
+echo ""
+echo "4. Test direnv:"
+echo "   mkdir /tmp/test-direnv"
+echo "   create-envrc python /tmp/test-direnv"
+echo "   cd /tmp/test-direnv && direnv allow"
+echo ""
+echo "=== SETUP COMPLETE ==="

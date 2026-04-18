@@ -1,0 +1,51 @@
+#!/bin/bash
+# Create .envrc template for different project types
+
+if [ -z "$1" ]; then
+  echo "Usage: create-envrc [python|node|go|rust|fullstack]"
+  exit 1
+fi
+
+TYPE="$1"
+PROJECT_DIR="${2:-.}"
+
+case "$TYPE" in
+  python)
+    cat > "$PROJECT_DIR/.envrc" <<'EOF'
+use python
+export PYTHONPATH=".:$PYTHONPATH"
+EOF
+    ;;
+  node)
+    cat > "$PROJECT_DIR/.envrc" <<'EOF'
+use node
+export NODE_ENV=development
+EOF
+    ;;
+  go)
+    cat > "$PROJECT_DIR/.envrc" <<'EOF'
+export GOPATH="$(pwd)/.go"
+export PATH="$GOPATH/bin:$PATH"
+EOF
+    ;;
+  rust)
+    cat > "$PROJECT_DIR/.envrc" <<'EOF'
+use rust
+EOF
+    ;;
+  fullstack)
+    cat > "$PROJECT_DIR/.envrc" <<'EOF'
+use python
+use node
+export NODE_ENV=development
+export PYTHONPATH=".:$PYTHONPATH"
+EOF
+    ;;
+  *)
+    echo "Unknown type: $TYPE"
+    exit 1
+    ;;
+esac
+
+echo "✓ Created .envrc in $PROJECT_DIR"
+echo "Run: direnv allow"

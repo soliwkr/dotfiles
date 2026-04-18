@@ -1,0 +1,40 @@
+# ========================================
+# ZSH CONFIG - LAZY GOD MODE
+# ========================================
+
+# Init Starship prompt
+eval "$(starship init zsh)"
+
+# Abbreviazioni (più veloci di alias quando digiti)
+abbr -a ... ../..
+abbr -a cd- 'cd -'
+abbr -a gs git status
+abbr -a ga git add .
+abbr -a gc git commit -m
+abbr -a gp git push
+abbr -a glg lazygit
+abbr -a ll lsd -lA
+abbr -a la lsd -A
+abbr -a l lsd
+
+# FZF keybindings (C-r history fuzzy, C-t file picker)
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# Modern CLI Aliases
+alias cat=bat
+alias top=btm
+export BAT_THEME="Dracula"
+
+# FZF env - fuzzy find options
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git" 2>/dev/null'
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+# Direnv hook - auto-load .envrc per project
+eval "$(direnv hook zsh)"
+
+# Bash completion compat
+autoload -Uz compinit && compinit
+
+# Vi keybindings
+bindkey -v

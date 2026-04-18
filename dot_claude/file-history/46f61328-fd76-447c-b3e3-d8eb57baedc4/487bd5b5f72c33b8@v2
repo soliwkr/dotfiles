@@ -1,0 +1,4 @@
+# Go Project
+export GOPATH="$(pwd)/.go"
+export PATH="$GOPATH/bin:$PATH"
+export GOFLAGS="-mod=mod"

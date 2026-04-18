@@ -1,0 +1,34 @@
+# ZSH CONFIG
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+# FZF
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# Aliases
+alias cat=bat
+alias top=btm
+alias ll='lsd -lA'
+alias la='lsd -A'
+alias l='lsd'
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias glg='lazygit'
+alias da='direnv allow'
+alias tm='tmux'
+alias reload='exec zsh'
+
+# Exports
+export BAT_THEME="Dracula"
+export FZF_DEFAULT_COMMAND='rg --files --hidden 2>/dev/null'
+
+# Direnv
+eval "$(direnv hook zsh)"
+
+# Completions
+autoload -Uz compinit && compinit
+bindkey -v

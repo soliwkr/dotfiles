@@ -1,0 +1,342 @@
+2026-03-12T07:05:17.092Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-12T07:05:17.093Z [DEBUG] MDM settings load completed in 1ms
+2026-03-12T07:05:17.108Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-12T07:05:17.108Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-12T07:05:17.108Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-12T07:05:17.108Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-12T07:05:17.118Z [DEBUG] Applying permission update: Adding 7 allow rule(s) to destination 'userSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)"]
+2026-03-12T07:05:17.118Z [DEBUG] Applying permission update: Adding 7 allow rule(s) to destination 'projectSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)"]
+2026-03-12T07:05:17.118Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'localSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-12T07:05:17.120Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-12T07:05:17.123Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-12T07:05:17.124Z [DEBUG] [STARTUP] Running setup()...
+2026-03-12T07:05:17.130Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/soliwkr/.claude/skills, project=[]
+2026-03-12T07:05:17.132Z [DEBUG] Error log sink initialized
+2026-03-12T07:05:17.136Z [DEBUG] [STARTUP] setup() completed in 12ms
+2026-03-12T07:05:17.136Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-12T07:05:17.136Z [DEBUG] Git remote URL: null
+2026-03-12T07:05:17.136Z [DEBUG] No git remote URL found
+2026-03-12T07:05:17.140Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 1, project: 0, additional: 0, legacy commands: 0)
+2026-03-12T07:05:17.263Z [DEBUG] [Claude in Chrome] Found chromium profiles: Default
+2026-03-12T07:05:17.264Z [DEBUG] [Claude in Chrome] Found vivaldi profiles: Default
+2026-03-12T07:05:17.264Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-03-12T07:05:17.278Z [DEBUG] Loading plugin claude-code-setup from source: "./plugins/claude-code-setup"
+2026-03-12T07:05:17.283Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2026-03-12T07:05:17.299Z [DEBUG] Using manifest version for claude-code-setup@claude-plugins-official: 1.0.0
+2026-03-12T07:05:17.300Z [DEBUG] Plugin claude-code-setup@claude-plugins-official version 1.0.0 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-12T07:05:17.300Z [DEBUG] Resolved local plugin claude-code-setup to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-12T07:05:17.300Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: 205b6e0b3036
+2026-03-12T07:05:17.302Z [DEBUG] Plugin frontend-design@claude-plugins-official version 205b6e0b3036 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-12T07:05:17.302Z [DEBUG] Resolved local plugin frontend-design to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-12T07:05:17.304Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-03-12T07:05:17.304Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-03-12T07:05:17.304Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2026-03-12T07:05:17.304Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036/skills
+2026-03-12T07:05:17.305Z [DEBUG] Total plugin commands loaded: 0
+2026-03-12T07:05:17.305Z [DEBUG] Registered 0 hooks from 2 plugins
+2026-03-12T07:05:17.305Z [DEBUG] Total plugin agents loaded: 0
+2026-03-12T07:05:17.305Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2026-03-12T07:05:17.305Z [DEBUG] Checking plugin claude-code-setup: skillsPath=exists, skillsPaths=0 paths
+2026-03-12T07:05:17.305Z [DEBUG] Attempting to load skills from plugin claude-code-setup default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/skills
+2026-03-12T07:05:17.316Z [DEBUG] Loaded 1 skills from plugin claude-code-setup default directory
+2026-03-12T07:05:17.316Z [DEBUG] Total plugin skills loaded: 2
+2026-03-12T07:05:17.316Z [DEBUG] getSkills returning: 1 skill dir commands, 2 plugin skills, 3 bundled skills
+2026-03-12T07:05:17.317Z [DEBUG] [STARTUP] Commands and agents loaded in 181ms
+2026-03-12T07:05:17.321Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-12T07:05:17.324Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-12T07:05:17.373Z [DEBUG] [keybindings] Watching for changes to /home/soliwkr/.claude/keybindings.json
+2026-03-12T07:05:17.949Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299117949
+2026-03-12T07:05:17.949Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:17.959Z [DEBUG] Temp file written successfully, size: 5643 bytes
+2026-03-12T07:05:17.959Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:17.959Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299117949 to /home/soliwkr/.claude.json
+2026-03-12T07:05:17.959Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:19.524Z [DEBUG] Grove: Cache stale, returning cached data and refreshing in background
+2026-03-12T07:05:19.544Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-12T07:05:19.544Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-12T07:05:19.544Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-12T07:05:20.065Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299120065
+2026-03-12T07:05:20.066Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:20.076Z [DEBUG] Temp file written successfully, size: 5643 bytes
+2026-03-12T07:05:20.076Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:20.076Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299120065 to /home/soliwkr/.claude.json
+2026-03-12T07:05:20.077Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:20.077Z [DEBUG] [STARTUP] showSetupScreens() completed in 2756ms
+2026-03-12T07:05:20.077Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-12T07:05:20.077Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-12T07:05:20.077Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-12T07:05:20.078Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-12T07:05:20.079Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-12T07:05:20.082Z [DEBUG] [STARTUP] MCP configs loaded in 2962ms
+2026-03-12T07:05:20.092Z [DEBUG] All plugins already exist, skipping migration
+2026-03-12T07:05:20.092Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-12T07:05:20.095Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-12T07:05:20.096Z [DEBUG] Found 0 hook matchers in settings
+2026-03-12T07:05:20.096Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-12T07:05:20.096Z [DEBUG] Loaded 2 installed plugins from /home/soliwkr/.claude/plugins/installed_plugins.json
+2026-03-12T07:05:20.096Z [DEBUG] Initialized versioned plugins system with 2 plugins
+2026-03-12T07:05:20.099Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-12T07:05:20.102Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299120102
+2026-03-12T07:05:20.102Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:20.111Z [DEBUG] Temp file written successfully, size: 5643 bytes
+2026-03-12T07:05:20.111Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:20.111Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299120102 to /home/soliwkr/.claude.json
+2026-03-12T07:05:20.112Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:20.128Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299120127
+2026-03-12T07:05:20.128Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:20.136Z [DEBUG] Temp file written successfully, size: 5644 bytes
+2026-03-12T07:05:20.136Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:20.136Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299120127 to /home/soliwkr/.claude.json
+2026-03-12T07:05:20.136Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:20.336Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-12T07:05:20.384Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-12T07:05:20.385Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-12T07:05:20.385Z [DEBUG] performStartupChecks called
+2026-03-12T07:05:20.386Z [DEBUG] Starting background plugin installations
+2026-03-12T07:05:20.386Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-12T07:05:20.394Z [DEBUG] Loaded 1 CLAUDE.md/rules files:
+  [AutoMem] /home/soliwkr/.claude/projects/-home-soliwkr/memory/MEMORY.md (2115 chars)
+2026-03-12T07:05:20.400Z [DEBUG] Watching for changes in setting files /home/soliwkr/.claude/settings.json, /home/soliwkr/.claude/settings.local.json...
+2026-03-12T07:05:20.418Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-03-12T07:05:20.418Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-03-12T07:05:20.427Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-03-12T07:05:20.428Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-03-12T07:05:20.435Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-12T07:05:20.435Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-12T07:05:20.435Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-03-12T07:05:20.442Z [DEBUG] Found 2 enabled plugins
+2026-03-12T07:05:20.442Z [DEBUG] All plugins already exist, skipping migration
+2026-03-12T07:05:20.442Z [DEBUG] Found 2 installed plugins (V2 format)
+2026-03-12T07:05:20.442Z [DEBUG] Found 0 missing plugins (not installed):
+2026-03-12T07:05:20.442Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-12T07:05:20.449Z [DEBUG] Total LSP servers loaded: 0
+2026-03-12T07:05:20.449Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-12T07:05:20.449Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-12T07:05:20.449Z [DEBUG] LSP server manager initialized successfully
+2026-03-12T07:05:20.449Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-12T07:05:20.505Z [DEBUG] Fetching plugin security messages from https://raw.githubusercontent.com/anthropics/claude-plugins-official/refs/heads/security/security.json
+2026-03-12T07:05:20.531Z [DEBUG] Org fast mode: enabled
+2026-03-12T07:05:20.534Z [DEBUG] Watching for changes in skill/command directories: /home/soliwkr/.claude/skills, /home/soliwkr/.claude/skills...
+2026-03-12T07:05:20.604Z [DEBUG] Detected pacman installation: /opt/claude-code/bin/claude is owned by claude-code 2.1.56-1
+2026-03-12T07:05:20.604Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-12T07:05:20.687Z [DEBUG] [claudeai-mcp] Fetched 10 servers
+2026-03-12T07:05:20.692Z [DEBUG] MCP server "claude.ai Gmail": Initializing claude.ai proxy transport for server mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-12T07:05:20.693Z [DEBUG] MCP server "claude.ai Gmail": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-12T07:05:20.693Z [DEBUG] MCP server "claude.ai Gmail": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.703Z [DEBUG] MCP server "claude.ai Gmail": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.704Z [DEBUG] MCP server "claude.ai Google Calendar": Initializing claude.ai proxy transport for server mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-12T07:05:20.704Z [DEBUG] MCP server "claude.ai Google Calendar": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-12T07:05:20.704Z [DEBUG] MCP server "claude.ai Google Calendar": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.706Z [DEBUG] MCP server "claude.ai Google Calendar": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.706Z [DEBUG] MCP server "claude.ai PDF Viewer": Initializing claude.ai proxy transport for server mcpsrv_01VQycueJu3AVS1dJok6MCeV
+2026-03-12T07:05:20.706Z [DEBUG] MCP server "claude.ai PDF Viewer": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01VQycueJu3AVS1dJok6MCeV
+2026-03-12T07:05:20.706Z [DEBUG] MCP server "claude.ai PDF Viewer": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.710Z [DEBUG] MCP server "claude.ai PDF Viewer": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.711Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Initializing claude.ai proxy transport for server mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-12T07:05:20.711Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-12T07:05:20.711Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.714Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.714Z [DEBUG] MCP server "claude.ai Stripe": Initializing claude.ai proxy transport for server mcpsrv_01QDh2i6Sko1S9W3cUfVwybZ
+2026-03-12T07:05:20.714Z [DEBUG] MCP server "claude.ai Stripe": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01QDh2i6Sko1S9W3cUfVwybZ
+2026-03-12T07:05:20.714Z [DEBUG] MCP server "claude.ai Stripe": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.715Z [DEBUG] MCP server "claude.ai Stripe": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.716Z [DEBUG] MCP server "claude.ai Todoist": Initializing claude.ai proxy transport for server mcpsrv_01WEJk8qZ7iM6FF4CAFtpgmA
+2026-03-12T07:05:20.716Z [DEBUG] MCP server "claude.ai Todoist": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01WEJk8qZ7iM6FF4CAFtpgmA
+2026-03-12T07:05:20.716Z [DEBUG] MCP server "claude.ai Todoist": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.719Z [DEBUG] MCP server "claude.ai Todoist": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.720Z [DEBUG] MCP server "claude.ai Wordpress": Initializing claude.ai proxy transport for server mcpsrv_016BcAvvu4zhdNgp1oJNC8dK
+2026-03-12T07:05:20.720Z [DEBUG] MCP server "claude.ai Wordpress": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_016BcAvvu4zhdNgp1oJNC8dK
+2026-03-12T07:05:20.720Z [DEBUG] MCP server "claude.ai Wordpress": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.721Z [DEBUG] MCP server "claude.ai Wordpress": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.721Z [DEBUG] MCP server "claude.ai Vercel": Initializing claude.ai proxy transport for server mcpsrv_01LMaqNwJWgVdbpvC7MEw74o
+2026-03-12T07:05:20.721Z [DEBUG] MCP server "claude.ai Vercel": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01LMaqNwJWgVdbpvC7MEw74o
+2026-03-12T07:05:20.721Z [DEBUG] MCP server "claude.ai Vercel": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.722Z [DEBUG] MCP server "claude.ai Vercel": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.723Z [DEBUG] MCP server "claude.ai Canva": Initializing claude.ai proxy transport for server mcpsrv_01FfGksQrAdsVEupokhrR7wG
+2026-03-12T07:05:20.723Z [DEBUG] MCP server "claude.ai Canva": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01FfGksQrAdsVEupokhrR7wG
+2026-03-12T07:05:20.723Z [DEBUG] MCP server "claude.ai Canva": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.728Z [DEBUG] MCP server "claude.ai Canva": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.729Z [DEBUG] MCP server "claude.ai Hugging Face": Initializing claude.ai proxy transport for server mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-12T07:05:20.729Z [DEBUG] MCP server "claude.ai Hugging Face": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-12T07:05:20.729Z [DEBUG] MCP server "claude.ai Hugging Face": claude.ai proxy transport created successfully
+2026-03-12T07:05:20.730Z [DEBUG] MCP server "claude.ai Hugging Face": Starting connection with timeout of 30000ms
+2026-03-12T07:05:20.924Z [DEBUG] Security messages saved successfully
+2026-03-12T07:05:20.933Z [DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-12T07:05:20.942Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/claude-code/bin/claude)
+2026-03-12T07:05:21.208Z [DEBUG] rg error (signal=null, code=2, stderr: rg: File system loop found: ./.local/state/mise/trusted-configs/home-soliwkr-f38ef8b12c27fe24 points to an ancestor .
+rg: ./.config/vivaldi/SingletonLock: No such file or directory (os error 2)
+rg: ./.config/vivaldi/SingletonCookie: No such file or directory (os error 2)
+), 49918 results
+2026-03-12T07:05:21.259Z [DEBUG] [FileIndex] ripgrep: 49918 files in 831ms
+2026-03-12T07:05:21.377Z [DEBUG] [FileIndex] cache refresh completed in 959ms (rust index)
+2026-03-12T07:05:21.411Z [DEBUG] MCP server "claude.ai Vercel": claude.ai proxy connection failed after 690ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X6pZaNktM8nmdpTH"}
+2026-03-12T07:05:21.411Z [ERROR] MCP server "claude.ai Vercel" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X6pZaNktM8nmdpTH"}
+2026-03-12T07:05:21.411Z [DEBUG] MCP server "claude.ai Vercel": Authentication required for claude.ai proxy server
+2026-03-12T07:05:21.435Z [DEBUG] MCP server "claude.ai Canva": claude.ai proxy connection failed after 712ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X5LMbLKw1MuCQ4Di"}
+2026-03-12T07:05:21.435Z [ERROR] MCP server "claude.ai Canva" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X5LMbLKw1MuCQ4Di"}
+2026-03-12T07:05:21.436Z [DEBUG] MCP server "claude.ai Canva": Authentication required for claude.ai proxy server
+2026-03-12T07:05:21.483Z [DEBUG] MCP server "claude.ai Stripe": claude.ai proxy connection failed after 769ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X6KuYJszuR3X6Uth"}
+2026-03-12T07:05:21.483Z [ERROR] MCP server "claude.ai Stripe" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CYxm7X6KuYJszuR3X6Uth"}
+2026-03-12T07:05:21.483Z [DEBUG] MCP server "claude.ai Stripe": Authentication required for claude.ai proxy server
+2026-03-12T07:05:21.499Z [DEBUG] MCP server "claude.ai PDF Viewer": claude.ai proxy connection failed after 793ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"OAuth token has been invalidated. Re-authentication is required."},"request_id":"req_011CYxm7X2MdYCiNdptuCLJy"}
+2026-03-12T07:05:21.500Z [ERROR] MCP server "claude.ai PDF Viewer" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"OAuth token has been invalidated. Re-authentication is required."},"request_id":"req_011CYxm7X2MdYCiNdptuCLJy"}
+2026-03-12T07:05:21.500Z [DEBUG] MCP server "claude.ai PDF Viewer": Authentication required for claude.ai proxy server
+2026-03-12T07:05:21.738Z [DEBUG] MCP server "claude.ai Todoist": claude.ai proxy connection failed after 1022ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X6pgD134s572pHG7"}
+2026-03-12T07:05:21.738Z [ERROR] MCP server "claude.ai Todoist" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X6pgD134s572pHG7"}
+2026-03-12T07:05:21.738Z [DEBUG] MCP server "claude.ai Todoist": Connection failed after 1022ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X6pgD134s572pHG7"}
+2026-03-12T07:05:21.738Z [ERROR] MCP server "claude.ai Todoist" Connection failed: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X6pgD134s572pHG7"}
+2026-03-12T07:05:21.820Z [DEBUG] MCP server "claude.ai Wordpress": claude.ai proxy connection failed after 1100ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X4LzTHTc5soNaT9y"}
+2026-03-12T07:05:21.820Z [ERROR] MCP server "claude.ai Wordpress" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X4LzTHTc5soNaT9y"}
+2026-03-12T07:05:21.820Z [DEBUG] MCP server "claude.ai Wordpress": Connection failed after 1100ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X4LzTHTc5soNaT9y"}
+2026-03-12T07:05:21.820Z [ERROR] MCP server "claude.ai Wordpress" Connection failed: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CYxm7X4LzTHTc5soNaT9y"}
+2026-03-12T07:05:21.859Z [DEBUG] MCP server "claude.ai Gmail": Successfully connected to claudeai-proxy server in 1167ms
+2026-03-12T07:05:21.860Z [DEBUG] MCP server "claude.ai Gmail": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"mcp-server-gmail","version":"0.1.0"}}
+2026-03-12T07:05:21.860Z [DEBUG] [MCP] Server "claude.ai Gmail" connected with subscribe=false
+2026-03-12T07:05:21.938Z [DEBUG] MCP server "claude.ai Google Calendar": Successfully connected to claudeai-proxy server in 1234ms
+2026-03-12T07:05:21.938Z [DEBUG] MCP server "claude.ai Google Calendar": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"mcp-server-gcal","version":"0.1.0"}}
+2026-03-12T07:05:21.938Z [DEBUG] [MCP] Server "claude.ai Google Calendar" connected with subscribe=false
+2026-03-12T07:05:22.063Z [DEBUG] MCP server "claude.ai Hugging Face": Successfully connected to claudeai-proxy server in 1334ms
+2026-03-12T07:05:22.063Z [DEBUG] MCP server "claude.ai Hugging Face": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"@huggingface/mcp-services","title":"Hugging Face","icons":[{"src":"https://huggingface.co/favicon.ico"}],"version":"0.3.5","websiteUrl":"https://huggingface.co/mcp"}}
+2026-03-12T07:05:22.063Z [DEBUG] [MCP] Server "claude.ai Hugging Face" connected with subscribe=false
+2026-03-12T07:05:22.317Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Successfully connected to claudeai-proxy server in 1606ms
+2026-03-12T07:05:22.317Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"workers-bindings","version":"0.4.5"}}
+2026-03-12T07:05:22.317Z [DEBUG] [MCP] Server "claude.ai Cloudflare Developer Platform" connected with subscribe=false
+2026-03-12T07:05:22.353Z [DEBUG] High write ratio: blit=0, write=1049 (100.0% writes), screen=22x84
+2026-03-12T07:05:22.458Z [DEBUG] High write ratio: blit=0, write=1049 (100.0% writes), screen=22x84
+2026-03-12T07:05:22.779Z [DEBUG] High write ratio: blit=0, write=1049 (100.0% writes), screen=22x84
+2026-03-12T07:05:22.828Z [DEBUG] High write ratio: blit=0, write=1049 (100.0% writes), screen=22x84
+2026-03-12T07:05:35.413Z [DEBUG] High write ratio: blit=0, write=1098 (100.0% writes), screen=34x84
+2026-03-12T07:05:35.418Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-03-12T07:05:46.929Z [DEBUG] Writing to temp file: /home/soliwkr/.claude/settings.json.tmp.136555.1773299146929
+2026-03-12T07:05:46.929Z [DEBUG] Preserving file permissions: 100644
+2026-03-12T07:05:46.938Z [DEBUG] Temp file written successfully, size: 649 bytes
+2026-03-12T07:05:46.938Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:46.938Z [DEBUG] Renaming /home/soliwkr/.claude/settings.json.tmp.136555.1773299146929 to /home/soliwkr/.claude/settings.json
+2026-03-12T07:05:46.939Z [DEBUG] File /home/soliwkr/.claude/settings.json written atomically
+2026-03-12T07:05:47.499Z [DEBUG] Writing to temp file: /home/soliwkr/.claude/settings.json.tmp.136555.1773299147499
+2026-03-12T07:05:47.500Z [DEBUG] Preserving file permissions: 100644
+2026-03-12T07:05:47.509Z [DEBUG] Temp file written successfully, size: 649 bytes
+2026-03-12T07:05:47.509Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:47.509Z [DEBUG] Renaming /home/soliwkr/.claude/settings.json.tmp.136555.1773299147499 to /home/soliwkr/.claude/settings.json
+2026-03-12T07:05:47.510Z [DEBUG] File /home/soliwkr/.claude/settings.json written atomically
+2026-03-12T07:05:48.049Z [DEBUG] Writing to temp file: /home/soliwkr/.claude/settings.json.tmp.136555.1773299148049
+2026-03-12T07:05:48.049Z [DEBUG] Preserving file permissions: 100644
+2026-03-12T07:05:48.060Z [DEBUG] Temp file written successfully, size: 646 bytes
+2026-03-12T07:05:48.060Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:48.060Z [DEBUG] Renaming /home/soliwkr/.claude/settings.json.tmp.136555.1773299148049 to /home/soliwkr/.claude/settings.json
+2026-03-12T07:05:48.060Z [DEBUG] File /home/soliwkr/.claude/settings.json written atomically
+2026-03-12T07:05:48.642Z [DEBUG] Writing to temp file: /home/soliwkr/.claude/settings.json.tmp.136555.1773299148642
+2026-03-12T07:05:48.642Z [DEBUG] Preserving file permissions: 100644
+2026-03-12T07:05:48.651Z [DEBUG] Temp file written successfully, size: 653 bytes
+2026-03-12T07:05:48.652Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:48.652Z [DEBUG] Renaming /home/soliwkr/.claude/settings.json.tmp.136555.1773299148642 to /home/soliwkr/.claude/settings.json
+2026-03-12T07:05:48.652Z [DEBUG] File /home/soliwkr/.claude/settings.json written atomically
+2026-03-12T07:05:58.354Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299158354
+2026-03-12T07:05:58.354Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:58.364Z [DEBUG] Temp file written successfully, size: 5667 bytes
+2026-03-12T07:05:58.364Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:58.364Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299158354 to /home/soliwkr/.claude.json
+2026-03-12T07:05:58.364Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:58.889Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299158889
+2026-03-12T07:05:58.889Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:58.898Z [DEBUG] Temp file written successfully, size: 5644 bytes
+2026-03-12T07:05:58.898Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:58.898Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299158889 to /home/soliwkr/.claude.json
+2026-03-12T07:05:58.899Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:05:59.762Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299159762
+2026-03-12T07:05:59.762Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:05:59.776Z [DEBUG] Temp file written successfully, size: 5667 bytes
+2026-03-12T07:05:59.776Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:05:59.776Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299159762 to /home/soliwkr/.claude.json
+2026-03-12T07:05:59.776Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:06:02.238Z [DEBUG] Full reset (scrollback changes): scrollbackRows=16, firstChangeY=15
+  prev: " ────────────────────────────────────────────────────────────────────────────────── "
+  next: "  Select model                                                                      "
+2026-03-12T07:06:02.255Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299162255
+2026-03-12T07:06:02.255Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:06:02.264Z [DEBUG] Temp file written successfully, size: 5711 bytes
+2026-03-12T07:06:02.264Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:06:02.264Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299162255 to /home/soliwkr/.claude.json
+2026-03-12T07:06:02.265Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:06:19.475Z [DEBUG] FileHistory: Added snapshot for 6930e3d9-294b-417d-bd0f-fef9b087e99f, tracking 0 files
+2026-03-12T07:06:19.479Z [DEBUG] [useDeferredValue] Messages deferred by 3 (0→3)
+2026-03-12T07:06:19.500Z [DEBUG] Full reset (shrink->below): prevHeight=34, nextHeight=19, viewport=20
+2026-03-12T07:06:19.515Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-12T07:06:19.524Z [DEBUG] [useDeferredValue] Messages deferred by 3 (0→3)
+2026-03-12T07:07:28.703Z [DEBUG] High write ratio: blit=0, write=1970 (100.0% writes), screen=26x175
+2026-03-12T07:07:47.341Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299267341
+2026-03-12T07:07:47.341Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:07:47.352Z [DEBUG] Temp file written successfully, size: 5814 bytes
+2026-03-12T07:07:47.352Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:07:47.352Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299267341 to /home/soliwkr/.claude.json
+2026-03-12T07:07:47.352Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:07:47.354Z [DEBUG] Metadata string for omarchy:
+2026-03-12T07:07:47.354Z [DEBUG] <command-message>omarchy</command-message>
+<command-name>/omarchy</command-name>
+2026-03-12T07:07:47.354Z [DEBUG] command-message tags in metadata: 1
+2026-03-12T07:07:47.357Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-12T07:07:47.357Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-12T07:07:47.358Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-12T07:07:47.358Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-12T07:07:47.359Z [DEBUG] Sending 5 skills via attachment (initial, 5 total sent)
+2026-03-12T07:07:47.359Z [DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+2026-03-12T07:07:47.359Z [DEBUG] Skill prompt: showing "claude-code-setup:claude-automation-recommender" (userFacingName="claude-automation-recommender")
+2026-03-12T07:07:47.390Z [DEBUG] High write ratio: blit=0, write=1326 (100.0% writes), screen=25x175
+2026-03-12T07:07:47.414Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-12T07:07:47.423Z [DEBUG] processPromptSlashCommand creating 4 messages for omarchy
+2026-03-12T07:07:47.423Z [DEBUG] Message 1: <command-message>omarchy</command-message>
+<command-name>/omarchy</command-name>
+2026-03-12T07:07:47.423Z [DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /home/soliwkr/.claude/skills/omarchy\n\n# Omarchy Skill\n\nManage [Omarchy](https://omarchy.org/) Linux systems - a beautiful, modern, opinionate
+2026-03-12T07:07:47.423Z [DEBUG] Message 3: [ATTACHMENT]
+2026-03-12T07:07:47.423Z [DEBUG] Message 4: [ATTACHMENT]
+2026-03-12T07:07:47.439Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-12T07:07:47.439Z [DEBUG] Found 0 hook matchers in settings
+2026-03-12T07:07:47.439Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-12T07:07:47.439Z [DEBUG] FileHistory: Making snapshot for message a6f16473-0928-440f-b64e-eba18f75db24
+2026-03-12T07:07:47.440Z [DEBUG] FileHistory: Added snapshot for a6f16473-0928-440f-b64e-eba18f75db24, tracking 0 files
+2026-03-12T07:07:47.447Z [DEBUG] [useDeferredValue] Messages deferred by 4 (3→7)
+2026-03-12T07:07:47.463Z [DEBUG] High write ratio: blit=0, write=1314 (100.0% writes), screen=23x175
+2026-03-12T07:07:47.477Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-12T07:07:47.483Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299267483
+2026-03-12T07:07:47.483Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:07:47.503Z [DEBUG] Temp file written successfully, size: 5814 bytes
+2026-03-12T07:07:47.503Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:07:47.503Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299267483 to /home/soliwkr/.claude.json
+2026-03-12T07:07:47.504Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:07:47.511Z [DEBUG] autocompact: tokens=4033 threshold=167000 effectiveWindow=180000
+2026-03-12T07:07:47.516Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-12T07:07:47.516Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-12T07:07:47.516Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-12T07:07:47.546Z [DEBUG] [useDeferredValue] Messages deferred by 4 (3→7)
+2026-03-12T07:07:47.613Z [DEBUG] High write ratio: blit=0, write=1325 (100.0% writes), screen=25x175
+2026-03-12T07:07:48.604Z [DEBUG] Auto tool search enabled: 22667 tokens (threshold: 20000, 10% of context) [source: query]
+2026-03-12T07:07:48.620Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.136555.1773299268620
+2026-03-12T07:07:48.620Z [DEBUG] Preserving file permissions: 100600
+2026-03-12T07:07:48.629Z [DEBUG] Temp file written successfully, size: 5814 bytes
+2026-03-12T07:07:48.629Z [DEBUG] Applied original permissions to temp file
+2026-03-12T07:07:48.629Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.136555.1773299268620 to /home/soliwkr/.claude.json
+2026-03-12T07:07:48.630Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-12T07:07:48.632Z [DEBUG] Dynamic tool loading: 0/49 deferred tools included
+2026-03-12T07:07:48.634Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-12T07:07:48.636Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-12T07:07:48.636Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-12T07:07:48.637Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-12T07:07:52.210Z [DEBUG] Stream started - received first chunk
+2026-03-12T07:07:55.475Z [DEBUG] [useDeferredValue] Messages deferred by 1 (7→8)
+2026-03-12T07:07:55.564Z [DEBUG] High write ratio: blit=0, write=1341 (100.0% writes), screen=25x175
+2026-03-12T07:07:57.276Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-12T07:07:57.305Z [DEBUG] High write ratio: blit=0, write=1594 (100.0% writes), screen=35x175
+2026-03-12T07:07:57.577Z [WARN] [3P telemetry] Event dropped (no event logger initialized): api_request
+2026-03-12T07:07:57.579Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-12T07:07:57.579Z [DEBUG] Found 0 hook matchers in settings
+2026-03-12T07:07:57.579Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-12T07:07:57.592Z [DEBUG] High write ratio: blit=0, write=1567 (100.0% writes), screen=33x175
+2026-03-12T07:08:46.885Z [DEBUG] High write ratio: blit=0, write=1860 (100.0% writes), screen=50x175
+2026-03-12T07:08:51.942Z [DEBUG] [useDeferredValue] Messages deferred by 2 (9→11)
+2026-03-12T07:08:51.965Z [DEBUG] High write ratio: blit=0, write=1580 (100.0% writes), screen=35x175
+2026-03-12T07:08:51.966Z [DEBUG] Full reset (scrollback changes): scrollbackRows=31, firstChangeY=29
+  prev: "❯ /permissions                                                                                                                                                                 "
+  next: "✢ Processing…                                                                                                                                                                  "
+2026-03-12T07:08:51.990Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-12T07:08:51.993Z [DEBUG] [useDeferredValue] Messages deferred by 2 (9→11)
+2026-03-12T07:08:52.020Z [DEBUG] High write ratio: blit=0, write=1615 (100.0% writes), screen=36x175

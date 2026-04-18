@@ -1,0 +1,22 @@
+# Example .envrc for projects
+
+# Python project
+# use python
+# export PYTHONPATH=".:$PYTHONPATH"
+
+# Node project
+# use node
+# export NODE_ENV=development
+
+# Go project
+# export GOPATH="$(pwd)/.go"
+# export PATH="$GOPATH/bin:$PATH"
+
+# Load environment variables from .env
+# dotenv
+
+# Or both (fullstack):
+use python
+use node
+export NODE_ENV=development
+export PYTHONPATH=".:$PYTHONPATH"

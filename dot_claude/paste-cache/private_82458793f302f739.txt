@@ -1,0 +1,42 @@
+[oh-my-zsh] plugin 'claude' not found
+❯ sudo tailscale up
+[sudo] password for chris: 
+❯ sudo tail -20 /var/log/secure || sudo journalctl -u sshd -n 20
+  ls -la ~/.ssh/ && cat ~/.ssh/authorized_keys
+Mar  9 08:08:45 Fedora sshd[1334]: Server listening on :: port 22.
+Mar  9 08:08:50 Fedora sddm-helper[1674]: pam_unix(sddm-greeter:session): session opened for user sddm(uid=963) by (uid=0)
+Mar  9 08:08:50 Fedora (systemd)[1691]: pam_unix(systemd-user:session): session opened for user sddm(uid=963) by sddm(uid=0)
+Mar  9 09:14:03 Fedora sshd[1334]: Received signal 15; terminating.
+Mar  9 13:07:18 Fedora sshd[1298]: Server listening on 0.0.0.0 port 22.
+Mar  9 13:07:18 Fedora sshd[1298]: Server listening on :: port 22.
+Mar  9 13:07:22 Fedora sddm-helper[1721]: pam_unix(sddm-greeter:session): session opened for user sddm(uid=963) by (uid=0)
+Mar  9 13:07:22 Fedora (systemd)[1763]: pam_unix(systemd-user:session): session opened for user sddm(uid=963) by sddm(uid=0)
+Mar  9 13:07:29 Fedora sddm-helper[3071]: gkr-pam: unable to locate daemon control file
+Mar  9 13:07:29 Fedora sddm-helper[3071]: gkr-pam: stashed password to try later in open session
+Mar  9 13:07:29 Fedora (systemd)[3077]: pam_unix(systemd-user:session): session opened for user chris(uid=1000) by chris(uid=0)
+Mar  9 13:07:29 Fedora sddm-helper[3071]: pam_unix(sddm:session): session opened for user chris(uid=1000) by chris(uid=0)
+Mar  9 13:07:29 Fedora sddm-helper[1721]: pam_unix(sddm-greeter:session): session closed for user sddm
+Mar  9 13:07:29 Fedora sddm-helper[3071]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Mar  9 13:24:30 Fedora sudo[34635]:   chris : TTY=pts/1 ; PWD=/home/chris ; USER=root ; COMMAND=/usr/sbin/tailscale up
+Mar  9 13:24:30 Fedora (systemd)[34771]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+Mar  9 13:24:31 Fedora sudo[34635]: pam_unix(sudo:session): session opened for user root(uid=0) by chris(uid=1000)
+Mar  9 13:24:31 Fedora sudo[34635]: pam_unix(sudo:session): session closed for user root
+Mar  9 13:27:06 Fedora sudo[39611]:   chris : TTY=pts/1 ; PWD=/home/chris ; USER=root ; COMMAND=/usr/sbin/tail -20 /var/log/secure
+Mar  9 13:27:06 Fedora (systemd)[39618]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+drwx------. chris chris 542 B  Sun Mar  8 18:35:24 2026 󰢬 .
+drwxr-x---+ chris chris 2.2 KB Mon Mar  9 13:27:06 2026  ..
+.rw-r--r--. chris chris 104 B  Sun Mar  8 18:35:24 2026  authorized_keys
+.rw-r--r--. chris chris 456 B  Mon Mar  2 17:14:37 2026  config
+.rw-r--r--. chris chris 400 B  Thu Jan 29 12:48:58 2026  'Eternal VPS - Dokploy - Fedora_private_id_ed25519'
+.rw-r--r--. chris chris  88 B  Thu Jan 29 12:49:22 2026 󰌆 'Eternal VPS - Dokploy - Fedora_public_id_ed25519.pub'
+.rw-r--r--. chris chris  88 B  Mon Jan 26 11:26:32 2026 󰌆 eternal_dokploy.pub
+.rw-------. chris chris 464 B  Fri Feb 27 11:14:01 2026  git_soliwalker_legacy
+.rw-r--r--. chris chris  99 B  Fri Feb 27 11:14:01 2026 󰌆 git_soliwalker_legacy.pub
+.rw-------. chris chris 464 B  Fri Feb 27 14:55:02 2026  hetzner_soliwkr
+.rw-r--r--. chris chris  99 B  Fri Feb 27 14:55:02 2026 󰌆 hetzner_soliwkr.pub
+.rw-------. chris chris 464 B  Mon Jan 19 12:45:49 2026  id_ed25519
+.rw-r--r--. chris chris 100 B  Mon Jan 19 12:45:49 2026 󰌆 id_ed25519.pub
+.rw-------. chris chris 2.1 KB Sat Mar  7 12:59:36 2026  known_hosts
+.rw-------. chris chris 1.2 KB Sun Mar  1 18:32:01 2026 󰁯 known_hosts.old
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIATgf0fi3Vo56tParUgQEIymg
+  fGUvgwtTsYtk6Ss84p6 arch-temp-migration

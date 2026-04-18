@@ -1,0 +1,23 @@
+#!/bin/bash
+# Create .envrc template for different project types
+
+TEMPLATES_DIR="$HOME/.config/direnv/templates"
+
+if [ -z "$1" ]; then
+  echo "Usage: create-envrc [python|node|go|rust|fullstack]"
+  echo "Available templates:"
+  ls -1 "$TEMPLATES_DIR"/*.envrc 2>/dev/null | xargs -n1 basename | sed 's/.envrc//'
+  exit 1
+fi
+
+TYPE="$1"
+PROJECT_DIR="${2:-.}"
+
+if [ ! -f "$TEMPLATES_DIR/$TYPE.envrc" ]; then
+  echo "✗ Template not found: $TEMPLATES_DIR/$TYPE.envrc"
+  exit 1
+fi
+
+cp "$TEMPLATES_DIR/$TYPE.envrc" "$PROJECT_DIR/.envrc"
+echo "✓ Created .envrc in $PROJECT_DIR"
+echo "Run: direnv allow"

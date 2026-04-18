@@ -1,0 +1,704 @@
+2026-03-17T14:52:15.380Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-17T14:52:15.381Z [DEBUG] MDM settings load completed in 1ms
+2026-03-17T14:52:15.394Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-17T14:52:15.394Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-17T14:52:15.394Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-17T14:52:15.395Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-17T14:52:15.402Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'userSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-17T14:52:15.402Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'projectSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-17T14:52:15.402Z [DEBUG] Applying permission update: Adding 37 allow rule(s) to destination 'localSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)","Bash(yay:*)","Bash(curl:*)","Bash(rclone purge:*)","Bash(rclone sync:*)","Bash(chezmoi status:*)","Bash(op account:*)","Bash(systemctl:*)","Bash(ls ~/.ssh/ && ssh-add -l 2>&1)","Bash(ls:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock git:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock ssh-add:*)","Bash(arp-scan:*)","Bash(ip neighbor:*)","Bash(echo:*)","Bash(GIT_SSH_COMMAND=\"ssh -i /tmp/1p-import/id_ed25519 -o IdentitiesOnly=yes\" git:*)","Bash(ssh-keygen:*)","Bash(which op && op --version 2>&1)","Bash(op signin:*)","Bash(op vault:*)","Bash(op item:*)","Bash(op item template get \"SSH Key\" | python3 -c \"\nimport json,sys\nt = json.load\\(sys.stdin\\)\nt['title'] = 'SSH Key - soliwkr main'\nt['fields'][1]['value'] = open\\('/tmp/1p-import/id_ed25519'\\).read\\(\\)\nprint\\(json.dumps\\(t\\)\\)\n\" | op item create --category \"SSH Key\" --vault Personal - 2>&1)","Bash(pgrep:*)"]
+2026-03-17T14:52:15.403Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-17T14:52:15.406Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-17T14:52:15.407Z [DEBUG] [STARTUP] Running setup()...
+2026-03-17T14:52:15.412Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/soliwkr/.claude/skills, project=[]
+2026-03-17T14:52:15.414Z [DEBUG] Error log sink initialized
+2026-03-17T14:52:15.418Z [DEBUG] [STARTUP] setup() completed in 11ms
+2026-03-17T14:52:15.418Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-17T14:52:15.418Z [DEBUG] Git remote URL: null
+2026-03-17T14:52:15.418Z [DEBUG] No git remote URL found
+2026-03-17T14:52:15.421Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 1, project: 0, additional: 0, legacy commands: 0)
+2026-03-17T14:52:15.450Z [DEBUG] [Claude in Chrome] Found chromium profiles: Default
+2026-03-17T14:52:15.486Z [DEBUG] Loading plugin claude-code-setup from source: "./plugins/claude-code-setup"
+2026-03-17T14:52:15.490Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2026-03-17T14:52:15.491Z [DEBUG] [Claude in Chrome] Found vivaldi profiles: Default
+2026-03-17T14:52:15.491Z [DEBUG] [Claude in Chrome] Extension fcoeoabgfenejglbffodgkkbkcdhcgfn found in vivaldi Default
+2026-03-17T14:52:15.493Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759135493
+2026-03-17T14:52:15.493Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:15.502Z [DEBUG] Temp file written successfully, size: 7217 bytes
+2026-03-17T14:52:15.503Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:15.503Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759135493 to /home/soliwkr/.claude.json
+2026-03-17T14:52:15.503Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:15.505Z [DEBUG] Using manifest version for claude-code-setup@claude-plugins-official: 1.0.0
+2026-03-17T14:52:15.505Z [DEBUG] Plugin claude-code-setup@claude-plugins-official version 1.0.0 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-17T14:52:15.505Z [DEBUG] Resolved local plugin claude-code-setup to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-17T14:52:15.505Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: 205b6e0b3036
+2026-03-17T14:52:15.506Z [DEBUG] Plugin frontend-design@claude-plugins-official version 205b6e0b3036 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-17T14:52:15.506Z [DEBUG] Resolved local plugin frontend-design to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-17T14:52:15.507Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-03-17T14:52:15.507Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-03-17T14:52:15.507Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2026-03-17T14:52:15.507Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036/skills
+2026-03-17T14:52:15.507Z [DEBUG] Total plugin commands loaded: 0
+2026-03-17T14:52:15.507Z [DEBUG] Registered 0 hooks from 2 plugins
+2026-03-17T14:52:15.507Z [DEBUG] Total plugin agents loaded: 0
+2026-03-17T14:52:15.507Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2026-03-17T14:52:15.507Z [DEBUG] Checking plugin claude-code-setup: skillsPath=exists, skillsPaths=0 paths
+2026-03-17T14:52:15.507Z [DEBUG] Attempting to load skills from plugin claude-code-setup default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/skills
+2026-03-17T14:52:15.517Z [DEBUG] Loaded 1 skills from plugin claude-code-setup default directory
+2026-03-17T14:52:15.517Z [DEBUG] Total plugin skills loaded: 2
+2026-03-17T14:52:15.517Z [DEBUG] getSkills returning: 1 skill dir commands, 2 plugin skills, 3 bundled skills
+2026-03-17T14:52:15.518Z [DEBUG] [STARTUP] Commands and agents loaded in 100ms
+2026-03-17T14:52:15.522Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-17T14:52:15.525Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-17T14:52:15.567Z [DEBUG] [keybindings] Watching for changes to /home/soliwkr/.claude/keybindings.json
+2026-03-17T14:52:17.956Z [DEBUG] Grove: Cache stale, returning cached data and refreshing in background
+2026-03-17T14:52:17.972Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-17T14:52:17.973Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-17T14:52:17.973Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-17T14:52:20.517Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:20.959Z [DEBUG] Failed to fetch Grove notice config: AxiosError: timeout of 3000ms exceeded
+2026-03-17T14:52:22.965Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759142965
+2026-03-17T14:52:22.965Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:22.974Z [DEBUG] Temp file written successfully, size: 7218 bytes
+2026-03-17T14:52:22.974Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:22.974Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759142965 to /home/soliwkr/.claude.json
+2026-03-17T14:52:22.975Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:22.980Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759142980
+2026-03-17T14:52:22.980Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:22.989Z [DEBUG] Temp file written successfully, size: 7219 bytes
+2026-03-17T14:52:22.990Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:22.990Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759142980 to /home/soliwkr/.claude.json
+2026-03-17T14:52:22.991Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:30.721Z [ERROR] Error: [url=https://api.anthropic.com/api/oauth/account/settings] Error
+    at <anonymous> (/$bunfs/root/claude:79:11055)
+    at <anonymous> (/$bunfs/root/claude:93:10230)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:92:3470)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:253:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:30.722Z [DEBUG] [STARTUP] showSetupScreens() completed in 15200ms
+2026-03-17T14:52:30.722Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-17T14:52:30.722Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-17T14:52:30.722Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-17T14:52:30.722Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:52:30.722Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:52:30.725Z [DEBUG] [STARTUP] MCP configs loaded in 15322ms
+2026-03-17T14:52:30.734Z [DEBUG] All plugins already exist, skipping migration
+2026-03-17T14:52:30.734Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:52:30.736Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-17T14:52:30.736Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T14:52:30.736Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-17T14:52:30.736Z [DEBUG] Loaded 2 installed plugins from /home/soliwkr/.claude/plugins/installed_plugins.json
+2026-03-17T14:52:30.736Z [DEBUG] Initialized versioned plugins system with 2 plugins
+2026-03-17T14:52:30.738Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-17T14:52:30.739Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759150739
+2026-03-17T14:52:30.739Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:30.746Z [DEBUG] Temp file written successfully, size: 7219 bytes
+2026-03-17T14:52:30.746Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:30.746Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759150739 to /home/soliwkr/.claude.json
+2026-03-17T14:52:30.747Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:30.763Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759150763
+2026-03-17T14:52:30.763Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:30.771Z [DEBUG] Temp file written successfully, size: 7220 bytes
+2026-03-17T14:52:30.771Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:30.772Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759150763 to /home/soliwkr/.claude.json
+2026-03-17T14:52:30.772Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:30.774Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759150774
+2026-03-17T14:52:30.774Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:30.782Z [DEBUG] Temp file written successfully, size: 7219 bytes
+2026-03-17T14:52:30.782Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:30.782Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759150774 to /home/soliwkr/.claude.json
+2026-03-17T14:52:30.782Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:30.784Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759150784
+2026-03-17T14:52:30.784Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:30.790Z [DEBUG] Temp file written successfully, size: 7218 bytes
+2026-03-17T14:52:30.790Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:30.790Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759150784 to /home/soliwkr/.claude.json
+2026-03-17T14:52:30.790Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:31.033Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-17T14:52:31.071Z [DEBUG] High write ratio: blit=0, write=1226 (100.0% writes), screen=17x175
+2026-03-17T14:52:31.078Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-17T14:52:31.081Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-17T14:52:31.082Z [DEBUG] performStartupChecks called
+2026-03-17T14:52:31.083Z [DEBUG] Starting background plugin installations
+2026-03-17T14:52:31.083Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-17T14:52:31.090Z [DEBUG] No CLAUDE.md/rules files found
+2026-03-17T14:52:31.100Z [DEBUG] Watching for changes in setting files /home/soliwkr/.claude/settings.json, /home/soliwkr/.claude/settings.local.json...
+2026-03-17T14:52:31.118Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-03-17T14:52:31.118Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-03-17T14:52:31.124Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-03-17T14:52:31.125Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759151125
+2026-03-17T14:52:31.125Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:31.133Z [DEBUG] Temp file written successfully, size: 7221 bytes
+2026-03-17T14:52:31.133Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:31.133Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759151125 to /home/soliwkr/.claude.json
+2026-03-17T14:52:31.133Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:31.134Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759151134
+2026-03-17T14:52:31.135Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:31.143Z [DEBUG] Temp file written successfully, size: 7222 bytes
+2026-03-17T14:52:31.143Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:31.143Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759151134 to /home/soliwkr/.claude.json
+2026-03-17T14:52:31.143Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:31.143Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-03-17T14:52:31.151Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-17T14:52:31.151Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-17T14:52:31.151Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-03-17T14:52:31.156Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759151156
+2026-03-17T14:52:31.156Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:31.162Z [DEBUG] Temp file written successfully, size: 7223 bytes
+2026-03-17T14:52:31.162Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:31.162Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759151156 to /home/soliwkr/.claude.json
+2026-03-17T14:52:31.162Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:31.169Z [DEBUG] Found 2 enabled plugins
+2026-03-17T14:52:31.169Z [DEBUG] All plugins already exist, skipping migration
+2026-03-17T14:52:31.169Z [DEBUG] Found 2 installed plugins (V2 format)
+2026-03-17T14:52:31.169Z [DEBUG] Found 0 missing plugins (not installed):
+2026-03-17T14:52:31.169Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-17T14:52:31.172Z [DEBUG] Failed to fetch org fast mode status, defaulting to disabled
+2026-03-17T14:52:31.173Z [DEBUG] Total LSP servers loaded: 0
+2026-03-17T14:52:31.173Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-17T14:52:31.173Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-17T14:52:31.173Z [DEBUG] LSP server manager initialized successfully
+2026-03-17T14:52:31.173Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-17T14:52:31.173Z [ERROR] Error: Error: 1P event logging: 8 events failed to export (code=ECONNREFUSED, ECONNREFUSED)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:31.174Z [ERROR] Error: Error: {"message":"Failed to export 8 events (code=ECONNREFUSED, ECONNREFUSED)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 8 events (code=ECONNREFUSED, ECONNREFUSED)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:31.174Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 8 events (code=ECONNREFUSED, ECONNREFUSED)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 8 events (code=ECONNREFUSED, ECONNREFUSED)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:52:31.175Z [DEBUG] Fetching plugin security messages from https://raw.githubusercontent.com/anthropics/claude-plugins-official/refs/heads/security/security.json
+2026-03-17T14:52:31.180Z [DEBUG] Watching for changes in skill/command directories: /home/soliwkr/.claude/skills, /home/soliwkr/.claude/skills...
+2026-03-17T14:52:31.224Z [DEBUG] High write ratio: blit=0, write=1226 (100.0% writes), screen=17x175
+2026-03-17T14:52:31.260Z [DEBUG] Detected pacman installation: /opt/claude-code/bin/claude is owned by claude-code 2.1.56-1
+2026-03-17T14:52:31.260Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-17T14:52:31.372Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/claude-code/bin/claude)
+2026-03-17T14:52:31.622Z [DEBUG] rg error (signal=null, code=2, stderr: rg: File system loop found: ./.local/state/mise/trusted-configs/home-soliwkr-f38ef8b12c27fe24 points to an ancestor .
+), 63280 results
+2026-03-17T14:52:31.678Z [DEBUG] [FileIndex] ripgrep: 63280 files in 535ms
+2026-03-17T14:52:31.797Z [DEBUG] [FileIndex] cache refresh completed in 679ms (rust index)
+2026-03-17T14:52:35.433Z [ERROR] AxiosError: [url=https://http-intake.logs.us5.datadoghq.com/api/v2/logs] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:36.154Z [DEBUG] [claudeai-mcp] Fetch failed
+2026-03-17T14:52:36.186Z [ERROR] Failed to fetch plugin security messages: timeout of 5000ms exceeded
+2026-03-17T14:52:36.200Z [DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-17T14:52:41.945Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-17T14:52:41.945Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-17T14:52:41.946Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-17T14:52:41.946Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-17T14:52:41.947Z [DEBUG] Sending 5 skills via attachment (initial, 5 total sent)
+2026-03-17T14:52:41.947Z [DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+2026-03-17T14:52:41.947Z [DEBUG] Skill prompt: showing "claude-code-setup:claude-automation-recommender" (userFacingName="claude-automation-recommender")
+2026-03-17T14:52:41.948Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-03-17T14:52:41.949Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-17T14:52:41.949Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T14:52:41.949Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-17T14:52:41.949Z [DEBUG] FileHistory: Added snapshot for 55820fb2-f191-4272-b6ce-2649cf0e6ebd, tracking 0 files
+2026-03-17T14:52:41.952Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-17T14:52:41.996Z [DEBUG] High write ratio: blit=0, write=1239 (100.0% writes), screen=19x175
+2026-03-17T14:52:42.004Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-03-17T14:52:42.012Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162012
+2026-03-17T14:52:42.012Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.021Z [DEBUG] Temp file written successfully, size: 7224 bytes
+2026-03-17T14:52:42.022Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.022Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162012 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.022Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.022Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-17T14:52:42.028Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162028
+2026-03-17T14:52:42.028Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.036Z [DEBUG] Temp file written successfully, size: 7219 bytes
+2026-03-17T14:52:42.036Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.036Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162028 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.037Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.038Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162038
+2026-03-17T14:52:42.038Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.046Z [DEBUG] Temp file written successfully, size: 7220 bytes
+2026-03-17T14:52:42.046Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.046Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162038 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.046Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.048Z [DEBUG] autocompact: tokens=710 threshold=167000 effectiveWindow=180000
+2026-03-17T14:52:42.049Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162049
+2026-03-17T14:52:42.049Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.057Z [DEBUG] Temp file written successfully, size: 7221 bytes
+2026-03-17T14:52:42.057Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.057Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162049 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.057Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.060Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162060
+2026-03-17T14:52:42.060Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.068Z [DEBUG] Temp file written successfully, size: 7222 bytes
+2026-03-17T14:52:42.069Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.069Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162060 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.069Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.070Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162070
+2026-03-17T14:52:42.070Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.078Z [DEBUG] Temp file written successfully, size: 7205 bytes
+2026-03-17T14:52:42.078Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.078Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162070 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.078Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.079Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162079
+2026-03-17T14:52:42.079Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.090Z [DEBUG] Temp file written successfully, size: 7204 bytes
+2026-03-17T14:52:42.090Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.090Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162079 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.090Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.091Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-03-17T14:52:42.098Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162098
+2026-03-17T14:52:42.098Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.106Z [DEBUG] Temp file written successfully, size: 7232 bytes
+2026-03-17T14:52:42.106Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.106Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162098 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.106Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.109Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-17T14:52:42.110Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:52:42.110Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:52:42.111Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759162111
+2026-03-17T14:52:42.111Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:42.116Z [DEBUG] Temp file written successfully, size: 7134 bytes
+2026-03-17T14:52:42.116Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:42.116Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759162111 to /home/soliwkr/.claude.json
+2026-03-17T14:52:42.117Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:42.118Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:52:42.123Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-17T14:52:42.181Z [DEBUG] High write ratio: blit=0, write=1251 (100.0% writes), screen=21x175
+2026-03-17T14:52:47.036Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:47.108Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:51.181Z [ERROR] Error: Error: 1P event logging: 18 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:51.182Z [ERROR] Error: Error: {"message":"Failed to export 18 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 18 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:51.182Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 18 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 18 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:52:53.071Z [DEBUG] [onCancel] focusedInputDialog=undefined streamMode=requesting
+2026-03-17T14:52:53.076Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759173076
+2026-03-17T14:52:53.076Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:53.086Z [DEBUG] Temp file written successfully, size: 7158 bytes
+2026-03-17T14:52:53.086Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:53.086Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759173076 to /home/soliwkr/.claude.json
+2026-03-17T14:52:53.087Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:53.091Z [ERROR] API error (attempt 1/11): undefined Request was aborted.
+2026-03-17T14:52:53.093Z [ERROR] Error in API request: Request was aborted.
+2026-03-17T14:52:53.093Z [ERROR] Error: Error: Request was aborted.
+    at makeRequest (/$bunfs/root/claude:305:3940)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:52:53.095Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759173095
+2026-03-17T14:52:53.095Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:53.101Z [DEBUG] Temp file written successfully, size: 7179 bytes
+2026-03-17T14:52:53.101Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:53.101Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759173095 to /home/soliwkr/.claude.json
+2026-03-17T14:52:53.101Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:53.103Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759173103
+2026-03-17T14:52:53.103Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T14:52:53.111Z [DEBUG] Temp file written successfully, size: 7179 bytes
+2026-03-17T14:52:53.111Z [DEBUG] Applied original permissions to temp file
+2026-03-17T14:52:53.111Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759173103 to /home/soliwkr/.claude.json
+2026-03-17T14:52:53.112Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T14:52:53.114Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-17T14:52:53.127Z [DEBUG] High write ratio: blit=0, write=1275 (100.0% writes), screen=20x175
+2026-03-17T14:53:11.195Z [ERROR] Error: Error: 1P event logging: 20 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:53:11.195Z [ERROR] Error: Error: {"message":"Failed to export 20 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 20 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:53:11.195Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 20 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 20 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:53:18.846Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-17T14:53:18.846Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-17T14:53:18.847Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-17T14:53:18.847Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-17T14:53:18.849Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-17T14:53:18.849Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T14:53:18.849Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-17T14:53:18.850Z [DEBUG] FileHistory: Making snapshot for message 8a42eefd-c747-4984-8541-40f65f7d5b84
+2026-03-17T14:53:18.850Z [DEBUG] FileHistory: Added snapshot for 8a42eefd-c747-4984-8541-40f65f7d5b84, tracking 0 files
+2026-03-17T14:53:18.856Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-17T14:53:18.874Z [DEBUG] High write ratio: blit=0, write=1342 (100.0% writes), screen=23x175
+2026-03-17T14:53:18.888Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-17T14:53:18.889Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.8f0; cc_entrypoint=cli; cch=00000;
+2026-03-17T14:53:18.889Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:53:18.889Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:53:18.890Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:53:18.894Z [DEBUG] autocompact: tokens=734 threshold=167000 effectiveWindow=180000
+2026-03-17T14:53:18.899Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:53:18.899Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:53:18.899Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:53:18.905Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-17T14:53:18.976Z [DEBUG] High write ratio: blit=0, write=1684 (100.0% writes), screen=26x175
+2026-03-17T14:53:23.895Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:53:38.854Z [ERROR] Error: Error: 1P event logging: 12 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:53:38.855Z [ERROR] Error: Error: {"message":"Failed to export 12 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 12 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:53:38.855Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 12 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 12 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:54:34.479Z [ERROR] API error (attempt 1/11): undefined Connection error.
+2026-03-17T14:54:34.982Z [ERROR] Error: Error: Connection error.
+    at makeRequest (/$bunfs/root/claude:305:4548)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:54:34.982Z [DEBUG] countTokensWithFallback: API returned null, trying haiku fallback (14 tools)
+2026-03-17T14:54:34.982Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:54:34.982Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:54:34.982Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:54:54.484Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:54:54.485Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:54:54.485Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:56:16.224Z [ERROR] API error (attempt 2/11): undefined Connection error.
+2026-03-17T14:56:36.234Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:56:36.235Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:56:36.235Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T14:57:58.968Z [ERROR] API error (attempt 3/11): undefined Connection error.
+2026-03-17T14:57:58.969Z [DEBUG] countTokensWithFallback: haiku fallback failed: Connection error.
+2026-03-17T14:57:58.969Z [ERROR] Error: Error: Connection error.
+    at makeRequest (/$bunfs/root/claude:305:4548)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:57:58.969Z [DEBUG] countToolDefinitionTokens returned null for 14 tools: TaskOutput, ExitPlanMode, NotebookEdit, WebFetch, WebSearch, TaskStop, AskUserQuestion, Skill, Enter...
+2026-03-17T14:57:58.973Z [DEBUG] Tool search disabled via experiment (tengu_tst_kx7): below threshold, deferred tools present [source: query]
+2026-03-17T14:57:58.980Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-17T14:57:58.981Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-17T14:57:58.981Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-17T14:57:58.982Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-17T14:58:03.980Z [ERROR] AxiosError: [url=https://api.anthropic.com/api/oauth/claude_cli/client_data] Error
+    at <anonymous> (/$bunfs/root/claude:93:10649)
+    at emit (node:events:92:22)
+    at <anonymous> (/$bunfs/root/claude:92:5642)
+    at request (/$bunfs/root/claude:95:2149)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:58:18.985Z [ERROR] Error: Error: 1P event logging: 9 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:58:18.986Z [ERROR] Error: Error: {"message":"Failed to export 9 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 9 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T14:58:18.986Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 9 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 9 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:00:00.232Z [ERROR] API error (attempt 4/11): undefined Connection error.
+2026-03-17T15:00:00.237Z [ERROR] API error (attempt 1/11): undefined Connection error.
+2026-03-17T15:00:00.245Z [DEBUG] [useDeferredValue] Messages deferred by 1 (4→5)
+2026-03-17T15:00:20.243Z [ERROR] Error: Error: 1P event logging: 4 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:00:20.243Z [ERROR] Error: Error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:00:20.243Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:00:50.726Z [ERROR] API error (attempt 5/11): undefined Connection error.
+2026-03-17T15:00:50.727Z [ERROR] API error (attempt 2/11): undefined Connection error.
+2026-03-17T15:00:50.730Z [DEBUG] [useDeferredValue] Messages deferred by 1 (5→6)
+2026-03-17T15:01:10.737Z [ERROR] Error: Error: 1P event logging: 4 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:01:10.738Z [ERROR] Error: Error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:01:10.738Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:02:42.019Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.238782.1773759762019
+2026-03-17T15:02:42.019Z [DEBUG] Preserving file permissions: 100600
+2026-03-17T15:02:42.030Z [DEBUG] Temp file written successfully, size: 7180 bytes
+2026-03-17T15:02:42.030Z [DEBUG] Applied original permissions to temp file
+2026-03-17T15:02:42.030Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.238782.1773759762019 to /home/soliwkr/.claude.json
+2026-03-17T15:02:42.030Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-17T15:02:51.724Z [ERROR] API error (attempt 6/11): undefined Connection error.
+2026-03-17T15:02:51.725Z [ERROR] API error (attempt 3/11): undefined Connection error.
+2026-03-17T15:02:51.727Z [DEBUG] [useDeferredValue] Messages deferred by 1 (6→7)
+2026-03-17T15:03:11.755Z [ERROR] Error: Error: 1P event logging: 3 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:03:11.755Z [ERROR] Error: Error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:03:11.755Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:03:31.761Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:03:31.762Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:03:31.762Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:03:51.470Z [ERROR] API error (attempt 7/11): undefined Connection error.
+2026-03-17T15:03:51.471Z [ERROR] API error (attempt 4/11): undefined Connection error.
+2026-03-17T15:03:51.473Z [DEBUG] [useDeferredValue] Messages deferred by 1 (7→8)
+2026-03-17T15:03:51.503Z [DEBUG] High write ratio: blit=0, write=1076 (100.0% writes), screen=28x84
+2026-03-17T15:04:11.473Z [ERROR] Error: Error: 1P event logging: 3 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:04:11.474Z [ERROR] Error: Error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:04:11.474Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:04:17.220Z [ERROR] API error (attempt 5/11): undefined Connection error.
+2026-03-17T15:04:17.222Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-17T15:04:17.245Z [DEBUG] High write ratio: blit=0, write=1077 (100.0% writes), screen=28x84
+2026-03-17T15:04:37.244Z [ERROR] Error: Error: 1P event logging: 3 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:04:37.244Z [ERROR] Error: Error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:04:37.244Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:06:06.971Z [ERROR] API error (attempt 6/11): undefined Connection error.
+2026-03-17T15:06:06.972Z [ERROR] API error (attempt 8/11): undefined Connection error.
+2026-03-17T15:06:06.974Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-03-17T15:06:06.998Z [DEBUG] High write ratio: blit=0, write=1077 (100.0% writes), screen=28x84
+2026-03-17T15:06:26.984Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:06:26.984Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:06:26.984Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:06:46.996Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:06:46.996Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:06:46.996Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:06:53.719Z [ERROR] API error (attempt 9/11): undefined Connection error.
+2026-03-17T15:06:53.720Z [ERROR] API error (attempt 7/11): undefined Connection error.
+2026-03-17T15:06:53.720Z [DEBUG] [useDeferredValue] Messages deferred by 1 (10→11)
+2026-03-17T15:06:53.743Z [DEBUG] High write ratio: blit=0, write=1077 (100.0% writes), screen=28x84
+2026-03-17T15:07:07.006Z [ERROR] Error: Error: 1P event logging: 3 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:07:07.006Z [ERROR] Error: Error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:07:07.006Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 3 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:07:47.578Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:07:47.578Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:07:47.578Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:08:08.259Z [ERROR] API error (attempt 8/11): undefined Connection error.
+2026-03-17T15:08:08.261Z [ERROR] API error (attempt 10/11): undefined Connection error.
+2026-03-17T15:08:08.262Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-17T15:08:08.287Z [DEBUG] High write ratio: blit=0, write=1077 (100.0% writes), screen=28x84
+2026-03-17T15:08:28.275Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:08:28.276Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:08:28.276Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:08:51.470Z [ERROR] API error (attempt 11/11): undefined Connection error.
+2026-03-17T15:08:51.471Z [ERROR] Error in API request: Connection error.
+2026-03-17T15:08:51.471Z [ERROR] Connection error details: code=ConnectionRefused, message=Unable to connect. Is the computer able to access the url?
+2026-03-17T15:08:51.471Z [ERROR] Error: Error: Connection error.
+    at makeRequest (/$bunfs/root/claude:305:4548)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:08:51.474Z [ERROR] SyntaxError: SyntaxError: JSON Parse error: Unexpected identifier "API"
+    at <parse> (:0)
+    at parse (unknown)
+    at <anonymous> (/$bunfs/root/claude:112:1140)
+    at A (/$bunfs/root/claude:11:8107)
+    at PtI (/$bunfs/root/claude:1770:19584)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:08:51.475Z [ERROR] API error (attempt 9/11): undefined Connection error.
+2026-03-17T15:08:51.479Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-03-17T15:08:51.528Z [DEBUG] High write ratio: blit=0, write=1077 (100.0% writes), screen=28x84
+2026-03-17T15:09:01.762Z [ERROR] Error: Error: 1P event logging: 4 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:09:01.763Z [ERROR] Error: Error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:09:01.763Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 4 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:09:48.810Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:09:48.810Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:09:48.810Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:10:45.113Z [ERROR] API error (attempt 10/11): undefined Connection error.
+2026-03-17T15:10:45.115Z [DEBUG] [useDeferredValue] Messages deferred by 1 (13→14)
+2026-03-17T15:10:45.139Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:46.618Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:47.413Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:48.668Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:48.816Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:49.678Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:49.797Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:50.514Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:50.759Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:51.344Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:51.491Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:52.509Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:53.345Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:54.581Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:10:54.968Z [DEBUG] High write ratio: blit=0, write=1078 (100.0% writes), screen=28x84
+2026-03-17T15:10:57.234Z [DEBUG] High write ratio: blit=0, write=1069 (100.0% writes), screen=28x83
+2026-03-17T15:11:05.137Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:11:05.137Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:11:05.137Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:11:43.559Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:11:43.559Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:11:43.559Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:12:44.154Z [ERROR] API error (attempt 11/11): undefined Connection error.
+2026-03-17T15:12:44.154Z [ERROR] Error in API request: Connection error.
+2026-03-17T15:12:44.154Z [ERROR] Connection error details: code=ConnectionRefused, message=Unable to connect. Is the computer able to access the url?
+2026-03-17T15:12:44.154Z [ERROR] Error: Error: Connection error.
+    at makeRequest (/$bunfs/root/claude:305:4548)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:12:44.158Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-17T15:12:44.158Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T15:12:44.158Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-17T15:12:44.161Z [DEBUG] [useDeferredValue] Messages deferred by 2 (14→16)
+2026-03-17T15:13:04.169Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:13:04.169Z [ERROR] Error: Error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:13:04.169Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 2 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+2026-03-17T15:13:44.189Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-03-17T15:13:44.189Z [DEBUG] Found 0 hook matchers in settings
+2026-03-17T15:13:44.189Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-03-17T15:14:04.206Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (code=ECONNABORTED, timeout of 10000ms exceeded)
+    at queueFailedEvents (/$bunfs/root/claude:6218:2350)
+    at async doExport (/$bunfs/root/claude:6218:1257)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:14:04.206Z [ERROR] Error: Error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}
+    at error (/$bunfs/root/claude:2398:25028)
+    at <anonymous> (/$bunfs/root/claude:118:92467)
+    at I10 (/$bunfs/root/claude:118:93011)
+    at <anonymous> (/$bunfs/root/claude:119:17366)
+    at processTicksAndRejections (native:7:39)
+2026-03-17T15:14:04.206Z [ERROR] [3P telemetry] OTEL diag error: {"message":"Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)","originalLine":"6218","originalColumn":"1409","line":"6218","column":"1409","sourceURL":"/$bunfs/root/claude","stack":"Error: Failed to export 1 events (code=ECONNABORTED, timeout of 10000ms exceeded)\n    at doExport (/$bunfs/root/claude:6218:1409)\n    at processTicksAndRejections (native:7:39)","name":"Error"}

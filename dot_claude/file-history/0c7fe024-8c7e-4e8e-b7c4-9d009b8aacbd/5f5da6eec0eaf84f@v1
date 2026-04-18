@@ -1,0 +1,61 @@
+# Secrets
+.ssh/id_*
+.ssh/authorized_keys
+.ssh/known_hosts
+.gnupg/**
+.config/keyrings/**
+.pki/**
+
+# Browser state
+.config/chromium/**
+.config/BraveSoftware/**
+.config/google-chrome/**
+.config/microsoft-edge-dev/**
+.config/vivaldi/**
+.config/dconf/**
+.config/fcitx/**
+.config/fcitx5/**
+.config/ibus/**
+.config/pulse/**
+.config/autostart/**
+
+# Omarchy runtime
+.config/omarchy/current/**
+
+# Caches e stato runtime
+.cache/**
+.npm/**
+.local/state/**
+.local/share/recently-used.xbel
+.local/share/gvfs-metadata/**
+.local/share/keyrings/**
+.local/share/sddm/**
+.local/share/nvim/**
+.local/share/applications/**
+.local/share/fonts/**
+.local/share/mime/**
+.local/share/flatpak/**
+.local/share/icons/**
+.local/share/hyprland/**
+.local/share/mise/installs/**
+.local/share/mise/shims/**
+.local/share/chezmoi/**
+.local/share/opencode/**
+
+# Cartelle dati utente (gestite da rclone/sync)
+Documenti/**
+Immagini/**
+Musica/**
+Scaricati/**
+Scrivania/**
+Video/**
+Vault/**
+Codice/**
+Work/**
+Scripts/**
+
+# Misc
+.bash_history
+*.log
+*.bak
+.windows/**

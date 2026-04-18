@@ -1,0 +1,25 @@
+========================================
+BOOTSTRAP OMARCHY SU LAPTOP PRINCIPALE
+========================================
+
+Eseguire questo comando per clonare l'intera installazione:
+
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply soliwkr
+
+========================================
+
+Cosa farà:
+1. Installa chezmoi
+2. Clona https://github.com/soliwkr/dotfiles.git
+3. Applica tutte le configurazioni (hypr, alacritty, nvim, ecc.)
+4. Crea ~/Codice ~/Vault ~/Documenti ~/Foto ~/Scripts
+5. Clona tutti i repos
+6. Copia chiave SSH id_ed25519
+
+Dopo il bootstrap:
+- Accedi a 1Password (sincronizza le 4 chiavi SSH)
+- Verificare: ssh chris@192.168.1.111 (oppure il server principale)
+
+========================================
+Data: 2026-03-17
+Generato da: Claude Code

@@ -1,0 +1,771 @@
+2026-03-18T08:08:17.184Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T08:08:17.184Z [DEBUG] MDM settings load completed in 1ms
+2026-03-18T08:08:17.209Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-18T08:08:17.209Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-18T08:08:17.209Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-18T08:08:17.209Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-18T08:08:17.223Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'userSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-18T08:08:17.223Z [DEBUG] Applying permission update: Adding 15 allow rule(s) to destination 'projectSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)"]
+2026-03-18T08:08:17.225Z [DEBUG] Applying permission update: Adding 44 allow rule(s) to destination 'localSettings': ["Bash(git:*)","Bash(pacman:*)","Bash(chmod +x:*)","Bash(gh auth:*)","Bash(gh repo:*)","Bash(mkdir:*)","Bash(export:*)","Bash(tailscale status:*)","Bash(ssh:*)","Bash(tailscale ssh:*)","Bash(ssh-keyscan:*)","Bash(RUST_LOG=debug alacritty:*)","Bash(~/.local/bin/chezmoi add:*)","Bash(tail:*)","Bash(rsync:*)","Bash(yay:*)","Bash(curl:*)","Bash(rclone purge:*)","Bash(rclone sync:*)","Bash(chezmoi status:*)","Bash(op account:*)","Bash(systemctl:*)","Bash(ls ~/.ssh/ && ssh-add -l 2>&1)","Bash(ls:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock git:*)","Bash(SSH_AUTH_SOCK=~/.1password/agent.sock ssh-add:*)","Bash(arp-scan:*)","Bash(ip neighbor:*)","Bash(echo:*)","Bash(GIT_SSH_COMMAND=\"ssh -i /tmp/1p-import/id_ed25519 -o IdentitiesOnly=yes\" git:*)","Bash(ssh-keygen:*)","Bash(which op && op --version 2>&1)","Bash(op signin:*)","Bash(op vault:*)","Bash(op item:*)","Bash(op item template get \"SSH Key\" | python3 -c \"\nimport json,sys\nt = json.load\\(sys.stdin\\)\nt['title'] = 'SSH Key - soliwkr main'\nt['fields'][1]['value'] = open\\('/tmp/1p-import/id_ed25519'\\).read\\(\\)\nprint\\(json.dumps\\(t\\)\\)\n\" | op item create --category \"SSH Key\" --vault Personal - 2>&1)","Bash(pgrep:*)","Bash(sudo tailscale:*)","Bash(tailscale bugreport:*)","Bash(python3:*)","Bash(DISPLAY=:0 SSH_ASKPASS=/tmp/ssh_pass.sh SSH_ASKPASS_REQUIRE=force ssh:*)","Bash(ping:*)","Bash(cat:*)","Bash(cp:*)"]
+2026-03-18T08:08:17.227Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-18T08:08:17.233Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-03-18T08:08:17.234Z [DEBUG] [STARTUP] Running setup()...
+2026-03-18T08:08:17.243Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/soliwkr/.claude/skills, project=[]
+2026-03-18T08:08:17.245Z [DEBUG] Error log sink initialized
+2026-03-18T08:08:17.251Z [DEBUG] [STARTUP] setup() completed in 17ms
+2026-03-18T08:08:17.251Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-18T08:08:17.251Z [DEBUG] Git remote URL: null
+2026-03-18T08:08:17.251Z [DEBUG] No git remote URL found
+2026-03-18T08:08:17.255Z [DEBUG] Loaded 1 unique skills (1 unconditional, 0 conditional, managed: 0, user: 1, project: 0, additional: 0, legacy commands: 0)
+2026-03-18T08:08:17.309Z [DEBUG] [Claude in Chrome] Found chromium profiles: Default
+2026-03-18T08:08:17.327Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2026-03-18T08:08:17.335Z [DEBUG] Loading plugin claude-code-setup from source: "./plugins/claude-code-setup"
+2026-03-18T08:08:17.336Z [DEBUG] [Claude in Chrome] Found vivaldi profiles: Default
+2026-03-18T08:08:17.336Z [DEBUG] [Claude in Chrome] Extension fcoeoabgfenejglbffodgkkbkcdhcgfn found in vivaldi Default
+2026-03-18T08:08:17.339Z [DEBUG] Using manifest version for claude-code-setup@claude-plugins-official: 1.0.0
+2026-03-18T08:08:17.394Z [DEBUG] Plugin claude-code-setup@claude-plugins-official version 1.0.0 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-18T08:08:17.394Z [DEBUG] Resolved local plugin claude-code-setup to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0
+2026-03-18T08:08:17.395Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: 205b6e0b3036
+2026-03-18T08:08:17.395Z [DEBUG] Plugin frontend-design@claude-plugins-official version 205b6e0b3036 already cached at /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-18T08:08:17.395Z [DEBUG] Resolved local plugin frontend-design to versioned cache: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036
+2026-03-18T08:08:17.397Z [DEBUG] Found 2 plugins (2 enabled, 0 disabled)
+2026-03-18T08:08:17.397Z [DEBUG] getPluginSkills: Processing 2 enabled plugins
+2026-03-18T08:08:17.397Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2026-03-18T08:08:17.397Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036/skills
+2026-03-18T08:08:17.398Z [DEBUG] Total plugin commands loaded: 0
+2026-03-18T08:08:17.398Z [DEBUG] Registered 0 hooks from 2 plugins
+2026-03-18T08:08:17.398Z [DEBUG] Total plugin agents loaded: 0
+2026-03-18T08:08:17.398Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2026-03-18T08:08:17.398Z [DEBUG] Checking plugin claude-code-setup: skillsPath=exists, skillsPaths=0 paths
+2026-03-18T08:08:17.398Z [DEBUG] Attempting to load skills from plugin claude-code-setup default skillsPath: /home/soliwkr/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0/skills
+2026-03-18T08:08:17.411Z [DEBUG] Loaded 1 skills from plugin claude-code-setup default directory
+2026-03-18T08:08:17.411Z [DEBUG] Total plugin skills loaded: 2
+2026-03-18T08:08:17.411Z [DEBUG] getSkills returning: 1 skill dir commands, 2 plugin skills, 3 bundled skills
+2026-03-18T08:08:17.412Z [DEBUG] [STARTUP] Commands and agents loaded in 161ms
+2026-03-18T08:08:17.419Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-18T08:08:17.424Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-18T08:08:17.494Z [DEBUG] [keybindings] Watching for changes to /home/soliwkr/.claude/keybindings.json
+2026-03-18T08:08:17.734Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821297734
+2026-03-18T08:08:17.734Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:17.742Z [DEBUG] Temp file written successfully, size: 6807 bytes
+2026-03-18T08:08:17.742Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:17.743Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821297734 to /home/soliwkr/.claude.json
+2026-03-18T08:08:17.747Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:19.567Z [DEBUG] Grove: Using fresh cached config
+2026-03-18T08:08:19.593Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-03-18T08:08:19.593Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-18T08:08:19.593Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-18T08:08:20.180Z [DEBUG] [STARTUP] showSetupScreens() completed in 2761ms
+2026-03-18T08:08:20.180Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-18T08:08:20.180Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-18T08:08:20.180Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-18T08:08:20.181Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:08:20.181Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:08:20.185Z [DEBUG] [STARTUP] MCP configs loaded in 2958ms
+2026-03-18T08:08:20.218Z [DEBUG] All plugins already exist, skipping migration
+2026-03-18T08:08:20.218Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:08:20.221Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-18T08:08:20.221Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:20.221Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-18T08:08:20.222Z [DEBUG] Loaded 2 installed plugins from /home/soliwkr/.claude/plugins/installed_plugins.json
+2026-03-18T08:08:20.222Z [DEBUG] Initialized versioned plugins system with 2 plugins
+2026-03-18T08:08:20.225Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-18T08:08:20.227Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821300227
+2026-03-18T08:08:20.227Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:20.238Z [DEBUG] Temp file written successfully, size: 6808 bytes
+2026-03-18T08:08:20.238Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:20.238Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821300227 to /home/soliwkr/.claude.json
+2026-03-18T08:08:20.239Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:20.923Z [DEBUG] [keybindings] KeybindingSetup initialized with 103 bindings, 0 warnings
+2026-03-18T08:08:21.002Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-18T08:08:21.004Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-18T08:08:21.004Z [DEBUG] performStartupChecks called
+2026-03-18T08:08:21.005Z [DEBUG] Starting background plugin installations
+2026-03-18T08:08:21.005Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-18T08:08:21.018Z [DEBUG] Loaded 1 CLAUDE.md/rules files:
+  [AutoMem] /home/soliwkr/.claude/projects/-home-soliwkr/memory/MEMORY.md (2115 chars)
+2026-03-18T08:08:21.040Z [DEBUG] Watching for changes in setting files /home/soliwkr/.claude/settings.json, /home/soliwkr/.claude/settings.local.json...
+2026-03-18T08:08:21.090Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-03-18T08:08:21.090Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-03-18T08:08:21.101Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-03-18T08:08:21.103Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-03-18T08:08:21.261Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-18T08:08:21.261Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-18T08:08:21.261Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-03-18T08:08:21.302Z [DEBUG] Found 2 enabled plugins
+2026-03-18T08:08:21.309Z [DEBUG] All plugins already exist, skipping migration
+2026-03-18T08:08:21.309Z [DEBUG] Found 2 installed plugins (V2 format)
+2026-03-18T08:08:21.309Z [DEBUG] Found 0 missing plugins (not installed):
+2026-03-18T08:08:21.309Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-03-18T08:08:21.385Z [DEBUG] Total LSP servers loaded: 0
+2026-03-18T08:08:21.385Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-18T08:08:21.385Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-18T08:08:21.385Z [DEBUG] LSP server manager initialized successfully
+2026-03-18T08:08:21.385Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-18T08:08:21.390Z [DEBUG] Fetching plugin security messages from https://raw.githubusercontent.com/anthropics/claude-plugins-official/refs/heads/security/security.json
+2026-03-18T08:08:21.410Z [DEBUG] Org fast mode: enabled
+2026-03-18T08:08:21.411Z [DEBUG] Watching for changes in skill/command directories: /home/soliwkr/.claude/skills, /home/soliwkr/.claude/skills...
+2026-03-18T08:08:22.083Z [DEBUG] [claudeai-mcp] Fetched 10 servers
+2026-03-18T08:08:22.096Z [DEBUG] MCP server "claude.ai Gmail": Initializing claude.ai proxy transport for server mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-18T08:08:22.096Z [DEBUG] MCP server "claude.ai Gmail": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-18T08:08:22.107Z [DEBUG] MCP server "claude.ai Gmail": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.166Z [DEBUG] MCP server "claude.ai Gmail": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.200Z [DEBUG] MCP server "claude.ai Google Calendar": Initializing claude.ai proxy transport for server mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-18T08:08:22.200Z [DEBUG] MCP server "claude.ai Google Calendar": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-18T08:08:22.215Z [DEBUG] MCP server "claude.ai Google Calendar": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.272Z [DEBUG] MCP server "claude.ai Google Calendar": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.272Z [DEBUG] MCP server "claude.ai PDF Viewer": Initializing claude.ai proxy transport for server mcpsrv_01VQycueJu3AVS1dJok6MCeV
+2026-03-18T08:08:22.272Z [DEBUG] MCP server "claude.ai PDF Viewer": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01VQycueJu3AVS1dJok6MCeV
+2026-03-18T08:08:22.272Z [DEBUG] MCP server "claude.ai PDF Viewer": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.273Z [DEBUG] MCP server "claude.ai PDF Viewer": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.273Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Initializing claude.ai proxy transport for server mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-18T08:08:22.280Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-18T08:08:22.281Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.299Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.300Z [DEBUG] MCP server "claude.ai Hugging Face": Initializing claude.ai proxy transport for server mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-18T08:08:22.302Z [DEBUG] MCP server "claude.ai Hugging Face": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-18T08:08:22.302Z [DEBUG] MCP server "claude.ai Hugging Face": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.306Z [DEBUG] MCP server "claude.ai Hugging Face": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.307Z [DEBUG] MCP server "claude.ai Canva": Initializing claude.ai proxy transport for server mcpsrv_01FfGksQrAdsVEupokhrR7wG
+2026-03-18T08:08:22.307Z [DEBUG] MCP server "claude.ai Canva": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01FfGksQrAdsVEupokhrR7wG
+2026-03-18T08:08:22.307Z [DEBUG] MCP server "claude.ai Canva": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.312Z [DEBUG] MCP server "claude.ai Canva": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.314Z [DEBUG] MCP server "claude.ai Vercel": Initializing claude.ai proxy transport for server mcpsrv_01LMaqNwJWgVdbpvC7MEw74o
+2026-03-18T08:08:22.321Z [DEBUG] MCP server "claude.ai Vercel": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01LMaqNwJWgVdbpvC7MEw74o
+2026-03-18T08:08:22.321Z [DEBUG] MCP server "claude.ai Vercel": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.322Z [DEBUG] MCP server "claude.ai Vercel": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.330Z [DEBUG] MCP server "claude.ai Wordpress": Initializing claude.ai proxy transport for server mcpsrv_016BcAvvu4zhdNgp1oJNC8dK
+2026-03-18T08:08:22.330Z [DEBUG] MCP server "claude.ai Wordpress": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_016BcAvvu4zhdNgp1oJNC8dK
+2026-03-18T08:08:22.330Z [DEBUG] MCP server "claude.ai Wordpress": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.340Z [DEBUG] MCP server "claude.ai Wordpress": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.340Z [DEBUG] MCP server "claude.ai Todoist": Initializing claude.ai proxy transport for server mcpsrv_01WEJk8qZ7iM6FF4CAFtpgmA
+2026-03-18T08:08:22.340Z [DEBUG] MCP server "claude.ai Todoist": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01WEJk8qZ7iM6FF4CAFtpgmA
+2026-03-18T08:08:22.341Z [DEBUG] MCP server "claude.ai Todoist": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.342Z [DEBUG] MCP server "claude.ai Todoist": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.349Z [DEBUG] MCP server "claude.ai Stripe": Initializing claude.ai proxy transport for server mcpsrv_01QDh2i6Sko1S9W3cUfVwybZ
+2026-03-18T08:08:22.350Z [DEBUG] MCP server "claude.ai Stripe": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01QDh2i6Sko1S9W3cUfVwybZ
+2026-03-18T08:08:22.350Z [DEBUG] MCP server "claude.ai Stripe": claude.ai proxy transport created successfully
+2026-03-18T08:08:22.354Z [DEBUG] MCP server "claude.ai Stripe": Starting connection with timeout of 30000ms
+2026-03-18T08:08:22.401Z [DEBUG] Detected pacman installation: /opt/claude-code/bin/claude is owned by claude-code 2.1.56-1
+2026-03-18T08:08:22.401Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-18T08:08:22.403Z [DEBUG] Security messages saved successfully
+2026-03-18T08:08:22.522Z [DEBUG] Loaded plugins - Enabled: 2, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-18T08:08:22.689Z [DEBUG] MCP server "claude.ai PDF Viewer": claude.ai proxy connection failed after 417ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"OAuth token has been invalidated. Re-authentication is required."},"request_id":"req_011CZACmkSWpUhpF6hBhcNRY"}
+2026-03-18T08:08:22.689Z [ERROR] MCP server "claude.ai PDF Viewer" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"OAuth token has been invalidated. Re-authentication is required."},"request_id":"req_011CZACmkSWpUhpF6hBhcNRY"}
+2026-03-18T08:08:22.689Z [DEBUG] MCP server "claude.ai PDF Viewer": Authentication required for claude.ai proxy server
+2026-03-18T08:08:22.692Z [DEBUG] MCP server "claude.ai Canva": claude.ai proxy connection failed after 385ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkUFVWcS3cMJhrUrv"}
+2026-03-18T08:08:22.692Z [ERROR] MCP server "claude.ai Canva" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkUFVWcS3cMJhrUrv"}
+2026-03-18T08:08:22.692Z [DEBUG] MCP server "claude.ai Canva": Authentication required for claude.ai proxy server
+2026-03-18T08:08:22.865Z [DEBUG] MCP server "claude.ai Vercel": claude.ai proxy connection failed after 551ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkWjEMqedfgdNPiEd"}
+2026-03-18T08:08:22.865Z [ERROR] MCP server "claude.ai Vercel" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkWjEMqedfgdNPiEd"}
+2026-03-18T08:08:22.865Z [DEBUG] MCP server "claude.ai Vercel": Authentication required for claude.ai proxy server
+2026-03-18T08:08:22.869Z [DEBUG] MCP server "claude.ai Stripe": claude.ai proxy connection failed after 520ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkgQGn3tkucmd2AEK"}
+2026-03-18T08:08:22.869Z [ERROR] MCP server "claude.ai Stripe" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"authentication_error","message":"MCP server requires authentication but no OAuth token is configured."},"request_id":"req_011CZACmkgQGn3tkucmd2AEK"}
+2026-03-18T08:08:22.869Z [DEBUG] MCP server "claude.ai Stripe": Authentication required for claude.ai proxy server
+2026-03-18T08:08:22.889Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/claude-code/bin/claude)
+2026-03-18T08:08:23.088Z [DEBUG] MCP server "claude.ai Todoist": claude.ai proxy connection failed after 748ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkeApSajx8Ttb4cm9"}
+2026-03-18T08:08:23.089Z [ERROR] MCP server "claude.ai Todoist" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkeApSajx8Ttb4cm9"}
+2026-03-18T08:08:23.089Z [DEBUG] MCP server "claude.ai Todoist": Connection failed after 749ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkeApSajx8Ttb4cm9"}
+2026-03-18T08:08:23.089Z [ERROR] MCP server "claude.ai Todoist" Connection failed: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkeApSajx8Ttb4cm9"}
+2026-03-18T08:08:23.089Z [DEBUG] MCP server "claude.ai Wordpress": claude.ai proxy connection failed after 759ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkaT5fTb7hZ1sar4v"}
+2026-03-18T08:08:23.090Z [ERROR] MCP server "claude.ai Wordpress" Error: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkaT5fTb7hZ1sar4v"}
+2026-03-18T08:08:23.090Z [DEBUG] MCP server "claude.ai Wordpress": Connection failed after 760ms: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkaT5fTb7hZ1sar4v"}
+2026-03-18T08:08:23.090Z [ERROR] MCP server "claude.ai Wordpress" Connection failed: Streamable HTTP error: Error POSTing to endpoint: {"type":"error","error":{"type":"not_found_error","message":"No MCP endpoint was found at the URL provided."},"request_id":"req_011CZACmkaT5fTb7hZ1sar4v"}
+2026-03-18T08:08:23.198Z [DEBUG] MCP server "claude.ai Gmail": Successfully connected to claudeai-proxy server in 1102ms
+2026-03-18T08:08:23.198Z [DEBUG] MCP server "claude.ai Gmail": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"mcp-server-gmail","version":"0.1.0"}}
+2026-03-18T08:08:23.198Z [DEBUG] [MCP] Server "claude.ai Gmail" connected with subscribe=false
+2026-03-18T08:08:23.199Z [DEBUG] MCP server "claude.ai Google Calendar": Successfully connected to claudeai-proxy server in 999ms
+2026-03-18T08:08:23.200Z [DEBUG] MCP server "claude.ai Google Calendar": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"mcp-server-gcal","version":"0.1.0"}}
+2026-03-18T08:08:23.200Z [DEBUG] [MCP] Server "claude.ai Google Calendar" connected with subscribe=false
+2026-03-18T08:08:23.349Z [DEBUG] MCP server "claude.ai Hugging Face": Successfully connected to claudeai-proxy server in 1049ms
+2026-03-18T08:08:23.349Z [DEBUG] MCP server "claude.ai Hugging Face": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"@huggingface/mcp-services","title":"Hugging Face","icons":[{"src":"https://huggingface.co/favicon.ico"}],"version":"0.3.5","websiteUrl":"https://huggingface.co/mcp"}}
+2026-03-18T08:08:23.349Z [DEBUG] [MCP] Server "claude.ai Hugging Face" connected with subscribe=false
+2026-03-18T08:08:23.680Z [DEBUG] rg error (signal=null, code=2, stderr: rg: ./.config/vivaldi/SingletonLock: No such file or directory (os error 2)
+rg: ./.config/vivaldi/SingletonCookie: No such file or directory (os error 2)
+rg: File system loop found: ./.local/state/mise/trusted-configs/home-soliwkr-f38ef8b12c27fe24 points to an ancestor .
+), 63880 results
+2026-03-18T08:08:23.802Z [DEBUG] [FileIndex] ripgrep: 63880 files in 2699ms
+2026-03-18T08:08:24.047Z [DEBUG] [FileIndex] cache refresh completed in 2958ms (rust index)
+2026-03-18T08:08:26.469Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Successfully connected to claudeai-proxy server in 4196ms
+2026-03-18T08:08:26.469Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"workers-bindings","version":"0.4.5"}}
+2026-03-18T08:08:26.469Z [DEBUG] [MCP] Server "claude.ai Cloudflare Developer Platform" connected with subscribe=false
+2026-03-18T08:08:30.708Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T08:08:30.708Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T08:08:30.708Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T08:08:30.708Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T08:08:30.710Z [DEBUG] Sending 5 skills via attachment (initial, 5 total sent)
+2026-03-18T08:08:30.710Z [DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+2026-03-18T08:08:30.710Z [DEBUG] Skill prompt: showing "claude-code-setup:claude-automation-recommender" (userFacingName="claude-automation-recommender")
+2026-03-18T08:08:30.712Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-03-18T08:08:30.713Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-18T08:08:30.714Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:30.714Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:08:30.715Z [DEBUG] FileHistory: Added snapshot for 5972276c-cdd3-4473-94b3-c8e8c1b37ffd, tracking 0 files
+2026-03-18T08:08:30.718Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-18T08:08:30.750Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-03-18T08:08:30.763Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-18T08:08:30.767Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821310767
+2026-03-18T08:08:30.767Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:30.773Z [DEBUG] Temp file written successfully, size: 6808 bytes
+2026-03-18T08:08:30.773Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:30.773Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821310767 to /home/soliwkr/.claude.json
+2026-03-18T08:08:30.773Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:30.776Z [DEBUG] autocompact: tokens=713 threshold=167000 effectiveWindow=180000
+2026-03-18T08:08:30.777Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T08:08:30.787Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821310787
+2026-03-18T08:08:30.787Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:30.796Z [DEBUG] Temp file written successfully, size: 6808 bytes
+2026-03-18T08:08:30.796Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:30.796Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821310787 to /home/soliwkr/.claude.json
+2026-03-18T08:08:30.796Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:30.799Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T08:08:30.800Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:08:30.800Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:08:30.801Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:08:30.826Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-18T08:08:32.640Z [DEBUG] Stream started - received first chunk
+2026-03-18T08:08:35.695Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-18T08:08:35.713Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-18T08:08:36.169Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-18T08:08:36.229Z [DEBUG] executePreToolHooks called for tool: Read
+2026-03-18T08:08:36.231Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-03-18T08:08:36.231Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:36.231Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-18T08:08:36.250Z [DEBUG] [useDeferredValue] Messages deferred by 2 (3→5)
+2026-03-18T08:08:36.305Z [DEBUG] Read tool error (67ms): File does not exist. Note: your current working directory is /home/soliwkr.
+2026-03-18T08:08:36.305Z [ERROR] Error: Error: File does not exist. Note: your current working directory is /home/soliwkr.
+    at call (/$bunfs/root/claude:1791:6346)
+    at async q69 (/$bunfs/root/claude:3468:15033)
+    at processTicksAndRejections (native:7:39)
+2026-03-18T08:08:36.307Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Read
+2026-03-18T08:08:36.307Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:36.307Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-03-18T08:08:36.311Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T08:08:36.311Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T08:08:36.312Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T08:08:36.312Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T08:08:36.314Z [DEBUG] autocompact: tokens=45052 threshold=167000 effectiveWindow=180000
+2026-03-18T08:08:36.316Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T08:08:36.329Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821316329
+2026-03-18T08:08:36.329Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:36.340Z [DEBUG] Temp file written successfully, size: 6808 bytes
+2026-03-18T08:08:36.340Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:36.340Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821316329 to /home/soliwkr/.claude.json
+2026-03-18T08:08:36.341Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:36.344Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T08:08:36.348Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:08:36.348Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:08:36.349Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:08:36.360Z [DEBUG] [useDeferredValue] Messages deferred by 3 (3→6)
+2026-03-18T08:08:37.579Z [DEBUG] Stream started - received first chunk
+2026-03-18T08:08:37.996Z [DEBUG] [useDeferredValue] Messages deferred by 2 (6→8)
+2026-03-18T08:08:38.029Z [DEBUG] [useDeferredValue] Messages deferred by 2 (6→8)
+2026-03-18T08:08:38.293Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-18T08:08:38.293Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-18T08:08:38.293Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:38.293Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T08:08:38.305Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-18T08:08:38.358Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-18T08:08:38.427Z [DEBUG] tree-sitter: loaded from embedded
+2026-03-18T08:08:38.460Z [DEBUG] Creating shell snapshot for bash (/usr/bin/bash)
+2026-03-18T08:08:38.460Z [DEBUG] Looking for shell config file: /home/soliwkr/.bashrc
+2026-03-18T08:08:38.461Z [DEBUG] Snapshots directory: /home/soliwkr/.claude/shell-snapshots
+2026-03-18T08:08:38.467Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-18T08:08:38.488Z [DEBUG] Creating snapshot at: /home/soliwkr/.claude/shell-snapshots/snapshot-bash-1773821318461-ojoyye.sh
+2026-03-18T08:08:38.488Z [DEBUG] Execution timeout: 10000ms
+2026-03-18T08:08:38.638Z [DEBUG] Shell snapshot created successfully (5951 bytes)
+2026-03-18T08:08:38.639Z [DEBUG] No session environment scripts found
+2026-03-18T08:08:38.640Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-18T08:08:41.274Z [DEBUG] Bash tool error (2824ms): Shell command failed
+2026-03-18T08:08:41.275Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-03-18T08:08:41.275Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:41.275Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T08:08:41.277Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T08:08:41.277Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T08:08:41.277Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T08:08:41.277Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T08:08:41.279Z [DEBUG] autocompact: tokens=45331 threshold=167000 effectiveWindow=180000
+2026-03-18T08:08:41.280Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T08:08:41.288Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821321288
+2026-03-18T08:08:41.288Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:41.298Z [DEBUG] Temp file written successfully, size: 6808 bytes
+2026-03-18T08:08:41.298Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:41.298Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821321288 to /home/soliwkr/.claude.json
+2026-03-18T08:08:41.298Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:41.300Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T08:08:41.301Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:08:41.301Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:08:41.301Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:08:41.308Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-03-18T08:08:41.406Z [DEBUG] High write ratio: blit=0, write=1403 (100.0% writes), screen=41x84
+2026-03-18T08:08:42.851Z [DEBUG] Stream started - received first chunk
+2026-03-18T08:08:44.567Z [DEBUG] [useDeferredValue] Messages deferred by 1 (10→11)
+2026-03-18T08:08:44.629Z [DEBUG] High write ratio: blit=0, write=1403 (100.0% writes), screen=41x84
+2026-03-18T08:08:45.888Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-18T08:08:45.931Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-18T08:08:45.931Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:08:45.931Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:08:45.936Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821325936
+2026-03-18T08:08:45.936Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:45.945Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:08:45.945Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:45.945Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821325936 to /home/soliwkr/.claude.json
+2026-03-18T08:08:45.946Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:45.948Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821325948
+2026-03-18T08:08:45.948Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:08:45.955Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:08:45.955Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:08:45.955Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821325948 to /home/soliwkr/.claude.json
+2026-03-18T08:08:45.955Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:08:45.957Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-18T08:08:45.981Z [DEBUG] High write ratio: blit=0, write=1844 (100.0% writes), screen=57x84
+2026-03-18T08:08:45.986Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-18T08:08:54.349Z [DEBUG] High write ratio: blit=0, write=1844 (100.0% writes), screen=57x84
+2026-03-18T08:09:29.553Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T08:09:29.553Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T08:09:29.553Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T08:09:29.553Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T08:09:29.555Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-18T08:09:29.555Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:09:29.555Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:09:29.555Z [DEBUG] FileHistory: Making snapshot for message c149265a-8620-4732-ae51-832335c8499d
+2026-03-18T08:09:29.555Z [DEBUG] FileHistory: Added snapshot for c149265a-8620-4732-ae51-832335c8499d, tracking 0 files
+2026-03-18T08:09:29.558Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-03-18T08:09:29.584Z [DEBUG] High write ratio: blit=0, write=1903 (100.0% writes), screen=60x84
+2026-03-18T08:09:29.602Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821369602
+2026-03-18T08:09:29.602Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:09:29.612Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:09:29.612Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:09:29.612Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821369602 to /home/soliwkr/.claude.json
+2026-03-18T08:09:29.612Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:09:29.615Z [DEBUG] autocompact: tokens=45903 threshold=167000 effectiveWindow=180000
+2026-03-18T08:09:29.616Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T08:09:29.624Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773821369624
+2026-03-18T08:09:29.624Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:09:29.636Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:09:29.636Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:09:29.636Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773821369624 to /home/soliwkr/.claude.json
+2026-03-18T08:09:29.636Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:09:29.638Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T08:09:29.639Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:09:29.639Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:09:29.639Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:09:29.650Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-03-18T08:09:29.762Z [DEBUG] High write ratio: blit=0, write=3503 (100.0% writes), screen=81x84
+2026-03-18T08:09:30.950Z [DEBUG] Stream started - received first chunk
+2026-03-18T08:09:33.288Z [DEBUG] [useDeferredValue] Messages deferred by 1 (13→14)
+2026-03-18T08:09:33.364Z [DEBUG] High write ratio: blit=0, write=3519 (100.0% writes), screen=81x84
+2026-03-18T08:09:34.262Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-03-18T08:09:34.299Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-18T08:09:34.299Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:09:34.299Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:09:34.301Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-03-18T08:09:34.335Z [DEBUG] High write ratio: blit=0, write=3862 (100.0% writes), screen=95x84
+2026-03-18T08:09:34.338Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-03-18T08:09:40.609Z [DEBUG] High write ratio: blit=1344, write=3284 (71.0% writes), screen=95x84
+2026-03-18T08:09:59.053Z [DEBUG] High write ratio: blit=1344, write=3284 (71.0% writes), screen=95x84
+2026-03-18T08:10:05.074Z [DEBUG] High write ratio: blit=1344, write=3298 (71.0% writes), screen=95x84
+2026-03-18T08:21:57.592Z [DEBUG] High write ratio: blit=1344, write=3298 (71.0% writes), screen=95x84
+2026-03-18T08:22:08.434Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T08:22:08.434Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T08:22:08.435Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T08:22:08.435Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T08:22:08.448Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-18T08:22:08.448Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:22:08.449Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:22:08.449Z [DEBUG] FileHistory: Making snapshot for message d83f0712-5287-4007-a623-6799a3d3f28b
+2026-03-18T08:22:08.449Z [DEBUG] FileHistory: Added snapshot for d83f0712-5287-4007-a623-6799a3d3f28b, tracking 0 files
+2026-03-18T08:22:08.451Z [DEBUG] [useDeferredValue] Messages deferred by 1 (15→16)
+2026-03-18T08:22:08.489Z [DEBUG] High write ratio: blit=0, write=3872 (100.0% writes), screen=97x84
+2026-03-18T08:22:08.508Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773822128508
+2026-03-18T08:22:08.508Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:22:08.517Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:22:08.517Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:22:08.517Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773822128508 to /home/soliwkr/.claude.json
+2026-03-18T08:22:08.517Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:22:08.518Z [DEBUG] autocompact: tokens=46411 threshold=167000 effectiveWindow=180000
+2026-03-18T08:22:08.519Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T08:22:08.528Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773822128528
+2026-03-18T08:22:08.528Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T08:22:08.536Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T08:22:08.536Z [DEBUG] Applied original permissions to temp file
+2026-03-18T08:22:08.536Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773822128528 to /home/soliwkr/.claude.json
+2026-03-18T08:22:08.537Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T08:22:08.539Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T08:22:08.540Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T08:22:08.540Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T08:22:08.541Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T08:22:08.556Z [DEBUG] [useDeferredValue] Messages deferred by 1 (15→16)
+2026-03-18T08:22:08.644Z [DEBUG] High write ratio: blit=0, write=3916 (100.0% writes), screen=99x84
+2026-03-18T08:22:09.804Z [DEBUG] Stream started - received first chunk
+2026-03-18T08:22:11.562Z [DEBUG] [useDeferredValue] Messages deferred by 1 (16→17)
+2026-03-18T08:22:11.610Z [DEBUG] High write ratio: blit=0, write=3926 (100.0% writes), screen=99x84
+2026-03-18T08:22:12.186Z [DEBUG] [useDeferredValue] Messages deferred by 1 (17→18)
+2026-03-18T08:22:12.236Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-18T08:22:12.236Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T08:22:12.236Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T08:22:12.240Z [DEBUG] [useDeferredValue] Messages deferred by 1 (17→18)
+2026-03-18T08:22:12.271Z [DEBUG] High write ratio: blit=0, write=4196 (100.0% writes), screen=111x84
+2026-03-18T08:22:12.274Z [DEBUG] [useDeferredValue] Messages deferred by 1 (17→18)
+2026-03-18T08:22:24.426Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:22:25.070Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:22:27.512Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:22:42.235Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:22:43.723Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:23:55.168Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:23:55.632Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:13.403Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:13.672Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:14.560Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:14.795Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:18.263Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:24:18.503Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:25:05.701Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:25:07.164Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:25:08.874Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=111x84
+2026-03-18T08:25:09.752Z [DEBUG] High write ratio: blit=0, write=3405 (100.0% writes), screen=157x39
+2026-03-18T08:25:09.785Z [DEBUG] High write ratio: blit=1794, write=2548 (58.7% writes), screen=157x39
+2026-03-18T08:25:35.230Z [DEBUG] High write ratio: blit=0, write=4196 (100.0% writes), screen=119x84
+2026-03-18T08:38:21.048Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T09:08:21.051Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T09:38:21.048Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T10:08:21.048Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T10:38:21.055Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T11:08:21.057Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T11:09:17.441Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": CLAUDEAI-PROXY connection dropped after 10850s uptime
+2026-03-18T11:09:17.442Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection error: SSE stream disconnected: TimeoutError: The operation timed out.
+2026-03-18T11:11:33.420Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": CLAUDEAI-PROXY connection dropped after 10986s uptime
+2026-03-18T11:11:33.420Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection error: Unable to connect. Is the computer able to access the url?
+2026-03-18T11:11:33.422Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": CLAUDEAI-PROXY connection dropped after 10986s uptime
+2026-03-18T11:11:33.422Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection error: Failed to reconnect SSE stream: Unable to connect. Is the computer able to access the url?
+2026-03-18T11:13:17.832Z [DEBUG] High write ratio: blit=1344, write=3618 (72.9% writes), screen=119x84
+2026-03-18T11:13:22.095Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T11:13:22.096Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T11:13:22.096Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T11:13:22.096Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T11:13:22.099Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-18T11:13:22.099Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T11:13:22.099Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T11:13:22.100Z [DEBUG] FileHistory: Making snapshot for message c77f0b23-669b-4e4e-b7a4-a9d441c71e2c
+2026-03-18T11:13:22.100Z [DEBUG] FileHistory: Added snapshot for c77f0b23-669b-4e4e-b7a4-a9d441c71e2c, tracking 0 files
+2026-03-18T11:13:22.102Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-03-18T11:13:22.142Z [DEBUG] High write ratio: blit=0, write=4211 (100.0% writes), screen=121x84
+2026-03-18T11:13:22.165Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773832402165
+2026-03-18T11:13:22.165Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T11:13:22.175Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T11:13:22.175Z [DEBUG] Applied original permissions to temp file
+2026-03-18T11:13:22.175Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773832402165 to /home/soliwkr/.claude.json
+2026-03-18T11:13:22.176Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T11:13:22.178Z [DEBUG] autocompact: tokens=46723 threshold=167000 effectiveWindow=180000
+2026-03-18T11:13:22.181Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T11:13:22.189Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773832402189
+2026-03-18T11:13:22.189Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T11:13:22.198Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T11:13:22.198Z [DEBUG] Applied original permissions to temp file
+2026-03-18T11:13:22.198Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773832402189 to /home/soliwkr/.claude.json
+2026-03-18T11:13:22.199Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T11:13:22.203Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T11:13:22.205Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T11:13:22.205Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T11:13:22.206Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T11:13:22.232Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-03-18T11:13:22.299Z [DEBUG] High write ratio: blit=0, write=4231 (100.0% writes), screen=123x84
+2026-03-18T11:13:24.658Z [DEBUG] Stream started - received first chunk
+2026-03-18T11:13:29.582Z [DEBUG] [useDeferredValue] Messages deferred by 1 (19→20)
+2026-03-18T11:13:29.620Z [DEBUG] High write ratio: blit=0, write=4241 (100.0% writes), screen=123x84
+2026-03-18T11:13:29.643Z [DEBUG] High write ratio: blit=0, write=4241 (100.0% writes), screen=123x84
+2026-03-18T11:13:29.765Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-18T11:13:29.765Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-18T11:13:29.765Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T11:13:29.765Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T11:13:29.774Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-18T11:13:29.776Z [DEBUG] [useDeferredValue] Messages deferred by 1 (20→21)
+2026-03-18T11:13:29.795Z [DEBUG] High write ratio: blit=0, write=4247 (100.0% writes), screen=123x84
+2026-03-18T11:13:29.835Z [DEBUG] High write ratio: blit=0, write=4301 (100.0% writes), screen=126x84
+2026-03-18T11:13:29.877Z [DEBUG] High write ratio: blit=0, write=4301 (100.0% writes), screen=126x84
+2026-03-18T11:13:29.901Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T11:13:29.904Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.d8d; cc_entrypoint=cli; cch=00000;
+2026-03-18T11:13:29.905Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T11:13:29.905Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T11:13:29.905Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T11:13:29.907Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-18T11:13:29.907Z [DEBUG] Found 5 hook matchers in settings
+2026-03-18T11:13:29.907Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T11:13:29.909Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T11:13:29.909Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T11:13:29.909Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T11:13:29.909Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T11:13:29.910Z [DEBUG] autocompact: tokens=46980 threshold=167000 effectiveWindow=180000
+2026-03-18T11:13:29.911Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T11:13:29.915Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773832409915
+2026-03-18T11:13:29.915Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T11:13:29.924Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T11:13:29.924Z [DEBUG] Applied original permissions to temp file
+2026-03-18T11:13:29.924Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773832409915 to /home/soliwkr/.claude.json
+2026-03-18T11:13:29.924Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T11:13:29.926Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T11:13:29.926Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T11:13:29.926Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T11:13:29.926Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T11:13:29.930Z [DEBUG] [useDeferredValue] Messages deferred by 1 (21→22)
+2026-03-18T11:13:29.948Z [DEBUG] High write ratio: blit=0, write=4301 (100.0% writes), screen=126x84
+2026-03-18T11:13:29.983Z [DEBUG] High write ratio: blit=0, write=4304 (100.0% writes), screen=126x84
+2026-03-18T11:13:30.651Z [DEBUG] Stream started - received first chunk
+2026-03-18T11:13:31.122Z [DEBUG] Stream started - received first chunk
+2026-03-18T11:13:31.342Z [DEBUG] [useDeferredValue] Messages deferred by 1 (22→23)
+2026-03-18T11:13:31.392Z [DEBUG] High write ratio: blit=0, write=4298 (100.0% writes), screen=126x84
+2026-03-18T11:13:31.598Z [DEBUG] [useDeferredValue] Messages deferred by 1 (23→24)
+2026-03-18T11:13:31.617Z [DEBUG] High write ratio: blit=0, write=4298 (100.0% writes), screen=126x84
+2026-03-18T11:13:31.640Z [DEBUG] High write ratio: blit=0, write=4317 (100.0% writes), screen=128x84
+2026-03-18T11:13:32.187Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-18T11:13:32.187Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-18T11:13:32.187Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T11:13:32.187Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T11:13:32.193Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-18T11:13:32.194Z [DEBUG] [useDeferredValue] Messages deferred by 1 (24→25)
+2026-03-18T11:13:32.214Z [DEBUG] High write ratio: blit=0, write=4317 (100.0% writes), screen=128x84
+2026-03-18T11:13:32.228Z [DEBUG] [useDeferredValue] Messages deferred by 1 (24→25)
+2026-03-18T11:13:32.243Z [DEBUG] [useDeferredValue] Messages deferred by 1 (24→25)
+2026-03-18T11:13:32.267Z [DEBUG] High write ratio: blit=0, write=4317 (100.0% writes), screen=128x84
+2026-03-18T11:13:32.320Z [DEBUG] High write ratio: blit=0, write=4370 (100.0% writes), screen=131x84
+2026-03-18T11:13:32.337Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T11:13:32.338Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.d8d; cc_entrypoint=cli; cch=00000;
+2026-03-18T11:13:32.338Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T11:13:32.338Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T11:13:32.338Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T11:13:32.340Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-18T11:13:32.341Z [DEBUG] Found 5 hook matchers in settings
+2026-03-18T11:13:32.341Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T11:13:32.343Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T11:13:32.343Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T11:13:32.344Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T11:13:32.344Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T11:13:32.346Z [DEBUG] autocompact: tokens=47591 threshold=167000 effectiveWindow=180000
+2026-03-18T11:13:32.347Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T11:13:32.354Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773832412354
+2026-03-18T11:13:32.354Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T11:13:32.362Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T11:13:32.362Z [DEBUG] Applied original permissions to temp file
+2026-03-18T11:13:32.362Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773832412354 to /home/soliwkr/.claude.json
+2026-03-18T11:13:32.362Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T11:13:32.364Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T11:13:32.365Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T11:13:32.365Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T11:13:32.365Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T11:13:32.368Z [DEBUG] [useDeferredValue] Messages deferred by 2 (25→27)
+2026-03-18T11:13:32.386Z [DEBUG] High write ratio: blit=0, write=4370 (100.0% writes), screen=131x84
+2026-03-18T11:13:32.427Z [DEBUG] High write ratio: blit=0, write=4543 (100.0% writes), screen=134x84
+2026-03-18T11:13:32.959Z [DEBUG] Stream started - received first chunk
+2026-03-18T11:13:33.495Z [DEBUG] Stream started - received first chunk
+2026-03-18T11:13:34.388Z [DEBUG] [useDeferredValue] Messages deferred by 1 (27→28)
+2026-03-18T11:13:34.445Z [DEBUG] High write ratio: blit=0, write=4543 (100.0% writes), screen=134x84
+2026-03-18T11:13:35.039Z [DEBUG] [useDeferredValue] Messages deferred by 1 (28→29)
+2026-03-18T11:13:35.074Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-18T11:13:35.074Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T11:13:35.074Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T11:13:35.078Z [DEBUG] [useDeferredValue] Messages deferred by 1 (28→29)
+2026-03-18T11:13:35.108Z [DEBUG] High write ratio: blit=0, write=4745 (100.0% writes), screen=144x84
+2026-03-18T11:13:35.110Z [DEBUG] [useDeferredValue] Messages deferred by 1 (28→29)
+2026-03-18T11:13:44.574Z [DEBUG] High write ratio: blit=1344, write=4167 (75.6% writes), screen=144x84
+2026-03-18T11:38:21.062Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T12:08:21.063Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T12:38:21.071Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T13:08:21.077Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T13:38:24.146Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T14:08:24.145Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T14:38:24.146Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T15:08:24.153Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T15:38:24.155Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T16:00:56.182Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773849656182
+2026-03-18T16:00:56.183Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T16:00:56.191Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T16:00:56.191Z [DEBUG] Applied original permissions to temp file
+2026-03-18T16:00:56.191Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773849656182 to /home/soliwkr/.claude.json
+2026-03-18T16:00:56.192Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T16:08:24.156Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-18T16:33:47.495Z [DEBUG] High write ratio: blit=1344, write=4167 (75.6% writes), screen=144x84
+2026-03-18T16:33:51.149Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T16:33:51.149Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T16:33:51.149Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T16:33:51.149Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T16:33:51.151Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-18T16:33:51.151Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:33:51.151Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T16:33:51.151Z [DEBUG] FileHistory: Making snapshot for message dcde96cc-30c0-425d-b76a-6697d24c933a
+2026-03-18T16:33:51.151Z [DEBUG] FileHistory: Added snapshot for dcde96cc-30c0-425d-b76a-6697d24c933a, tracking 0 files
+2026-03-18T16:33:51.153Z [DEBUG] [useDeferredValue] Messages deferred by 1 (29→30)
+2026-03-18T16:33:51.184Z [DEBUG] High write ratio: blit=0, write=4762 (100.0% writes), screen=146x84
+2026-03-18T16:33:51.197Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773851631197
+2026-03-18T16:33:51.197Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T16:33:51.207Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T16:33:51.207Z [DEBUG] Applied original permissions to temp file
+2026-03-18T16:33:51.207Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773851631197 to /home/soliwkr/.claude.json
+2026-03-18T16:33:51.208Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T16:33:51.209Z [DEBUG] autocompact: tokens=47970 threshold=167000 effectiveWindow=180000
+2026-03-18T16:33:51.210Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T16:33:51.218Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773851631218
+2026-03-18T16:33:51.218Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T16:33:51.226Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T16:33:51.226Z [DEBUG] Applied original permissions to temp file
+2026-03-18T16:33:51.226Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773851631218 to /home/soliwkr/.claude.json
+2026-03-18T16:33:51.226Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T16:33:51.229Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T16:33:51.230Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T16:33:51.230Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T16:33:51.230Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T16:33:51.236Z [DEBUG] [useDeferredValue] Messages deferred by 1 (29→30)
+2026-03-18T16:33:51.341Z [DEBUG] High write ratio: blit=0, write=4767 (100.0% writes), screen=148x84
+2026-03-18T16:33:53.480Z [DEBUG] Stream started - received first chunk
+2026-03-18T16:33:53.732Z [DEBUG] [useDeferredValue] Messages deferred by 1 (30→31)
+2026-03-18T16:33:53.754Z [DEBUG] [useDeferredValue] Messages deferred by 1 (30→31)
+2026-03-18T16:33:53.780Z [DEBUG] High write ratio: blit=0, write=4777 (100.0% writes), screen=148x84
+2026-03-18T16:33:53.823Z [DEBUG] High write ratio: blit=0, write=4777 (100.0% writes), screen=148x84
+2026-03-18T16:33:53.891Z [DEBUG] High write ratio: blit=1344, write=4199 (75.8% writes), screen=148x84
+2026-03-18T16:33:53.924Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-18T16:33:53.926Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-18T16:33:53.926Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:33:53.927Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T16:33:53.949Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "killall syncthing"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-18T16:33:53.951Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-18T16:33:53.952Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-18T16:33:53.952Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:33:53.952Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T16:33:53.960Z [DEBUG] [useDeferredValue] Messages deferred by 1 (31→32)
+2026-03-18T16:33:54.003Z [DEBUG] High write ratio: blit=0, write=4877 (100.0% writes), screen=154x84
+2026-03-18T16:33:54.018Z [DEBUG] [useDeferredValue] Messages deferred by 1 (31→32)
+2026-03-18T16:33:54.087Z [DEBUG] High write ratio: blit=0, write=4916 (100.0% writes), screen=157x84
+2026-03-18T16:34:00.025Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-18T16:34:00.025Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:34:00.025Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-18T16:34:08.265Z [DEBUG] High write ratio: blit=1344, write=4338 (76.3% writes), screen=157x84
+2026-03-18T16:34:09.138Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-18T16:34:09.168Z [DEBUG] High write ratio: blit=0, write=4838 (100.0% writes), screen=151x84
+2026-03-18T16:34:09.183Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-03-18T16:34:09.236Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T16:34:09.237Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.c0a; cc_entrypoint=cli; cch=00000;
+2026-03-18T16:34:09.237Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T16:34:09.237Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T16:34:09.237Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T16:34:09.239Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-18T16:34:09.239Z [DEBUG] Found 5 hook matchers in settings
+2026-03-18T16:34:09.239Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T16:34:09.242Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T16:34:09.242Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T16:34:09.242Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T16:34:09.242Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T16:34:09.243Z [DEBUG] autocompact: tokens=48108 threshold=167000 effectiveWindow=180000
+2026-03-18T16:34:09.243Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T16:34:09.249Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773851649249
+2026-03-18T16:34:09.249Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T16:34:09.257Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T16:34:09.258Z [DEBUG] Applied original permissions to temp file
+2026-03-18T16:34:09.258Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773851649249 to /home/soliwkr/.claude.json
+2026-03-18T16:34:09.258Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T16:34:09.260Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T16:34:09.261Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T16:34:09.261Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T16:34:09.261Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T16:34:09.265Z [DEBUG] [useDeferredValue] Messages deferred by 1 (32→33)
+2026-03-18T16:34:09.298Z [DEBUG] High write ratio: blit=0, write=4838 (100.0% writes), screen=151x84
+2026-03-18T16:34:09.341Z [DEBUG] High write ratio: blit=0, write=4841 (100.0% writes), screen=151x84
+2026-03-18T16:34:09.965Z [DEBUG] Stream started - received first chunk
+2026-03-18T16:34:10.776Z [DEBUG] Stream started - received first chunk
+2026-03-18T16:34:11.357Z [DEBUG] [useDeferredValue] Messages deferred by 1 (33→34)
+2026-03-18T16:34:11.427Z [DEBUG] High write ratio: blit=0, write=4851 (100.0% writes), screen=151x84
+2026-03-18T16:34:11.432Z [DEBUG] [useDeferredValue] Messages deferred by 1 (34→35)
+2026-03-18T16:34:11.457Z [DEBUG] High write ratio: blit=0, write=4851 (100.0% writes), screen=151x84
+2026-03-18T16:34:11.497Z [DEBUG] High write ratio: blit=0, write=4870 (100.0% writes), screen=153x84
+2026-03-18T16:34:11.549Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-18T16:34:11.550Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-18T16:34:11.550Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:34:11.550Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T16:34:11.555Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-18T16:34:11.556Z [DEBUG] [useDeferredValue] Messages deferred by 1 (35→36)
+2026-03-18T16:34:11.580Z [DEBUG] High write ratio: blit=0, write=4870 (100.0% writes), screen=153x84
+2026-03-18T16:34:11.592Z [DEBUG] [useDeferredValue] Messages deferred by 1 (35→36)
+2026-03-18T16:34:11.628Z [DEBUG] High write ratio: blit=0, write=4870 (100.0% writes), screen=153x84
+2026-03-18T16:34:11.634Z [DEBUG] [useDeferredValue] Messages deferred by 1 (35→36)
+2026-03-18T16:34:11.675Z [DEBUG] High write ratio: blit=1344, write=4292 (76.2% writes), screen=153x84
+2026-03-18T16:34:11.726Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T16:34:11.727Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.d8d; cc_entrypoint=cli; cch=00000;
+2026-03-18T16:34:11.728Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T16:34:11.728Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T16:34:11.728Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T16:34:11.729Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-18T16:34:11.729Z [DEBUG] Found 5 hook matchers in settings
+2026-03-18T16:34:11.729Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-18T16:34:11.738Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-18T16:34:11.738Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-18T16:34:11.739Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-18T16:34:11.739Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-18T16:34:11.741Z [DEBUG] autocompact: tokens=48465 threshold=167000 effectiveWindow=180000
+2026-03-18T16:34:11.741Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-03-18T16:34:11.745Z [DEBUG] Writing to temp file: /home/soliwkr/.claude.json.tmp.49223.1773851651745
+2026-03-18T16:34:11.745Z [DEBUG] Preserving file permissions: 100600
+2026-03-18T16:34:11.755Z [DEBUG] Temp file written successfully, size: 6809 bytes
+2026-03-18T16:34:11.756Z [DEBUG] Applied original permissions to temp file
+2026-03-18T16:34:11.756Z [DEBUG] Renaming /home/soliwkr/.claude.json.tmp.49223.1773851651745 to /home/soliwkr/.claude.json
+2026-03-18T16:34:11.757Z [DEBUG] File /home/soliwkr/.claude.json written atomically
+2026-03-18T16:34:11.760Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.56.836; cc_entrypoint=cli; cch=00000;
+2026-03-18T16:34:11.761Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-18T16:34:11.761Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-18T16:34:11.761Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-18T16:34:11.772Z [DEBUG] [useDeferredValue] Messages deferred by 2 (35→37)
+2026-03-18T16:34:11.813Z [DEBUG] High write ratio: blit=0, write=4870 (100.0% writes), screen=153x84
+2026-03-18T16:34:11.912Z [DEBUG] High write ratio: blit=0, write=5096 (100.0% writes), screen=159x84
+2026-03-18T16:34:12.439Z [DEBUG] Stream started - received first chunk
+2026-03-18T16:34:12.823Z [DEBUG] Stream started - received first chunk
+2026-03-18T16:34:13.352Z [DEBUG] [useDeferredValue] Messages deferred by 1 (37→38)
+2026-03-18T16:34:13.359Z [DEBUG] [useDeferredValue] Messages deferred by 1 (37→38)
+2026-03-18T16:34:13.410Z [DEBUG] High write ratio: blit=0, write=5096 (100.0% writes), screen=159x84
+2026-03-18T16:34:13.508Z [DEBUG] [useDeferredValue] Messages deferred by 1 (38→39)
+2026-03-18T16:34:13.545Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-18T16:34:13.545Z [DEBUG] Found 0 hook matchers in settings
+2026-03-18T16:34:13.545Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-18T16:34:13.547Z [DEBUG] [useDeferredValue] Messages deferred by 1 (38→39)
+2026-03-18T16:34:13.573Z [DEBUG] High write ratio: blit=0, write=5153 (100.0% writes), screen=159x84
+2026-03-18T16:34:13.575Z [DEBUG] [useDeferredValue] Messages deferred by 1 (38→39)
+2026-03-18T16:35:05.249Z [DEBUG] High write ratio: blit=1344, write=4575 (77.3% writes), screen=159x84
+2026-03-18T16:35:09.456Z [DEBUG] High write ratio: blit=0, write=4214 (100.0% writes), screen=206x39
+2026-03-18T16:35:12.831Z [DEBUG] High write ratio: blit=0, write=5153 (100.0% writes), screen=160x84
+2026-03-19T08:49:30.491Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-19T08:52:50.143Z [DEBUG] High write ratio: blit=1344, write=4575 (77.3% writes), screen=160x84
+2026-03-19T08:52:51.169Z [DEBUG] MCP server "claude.ai Gmail": SSE transport closed/disconnected, attempting automatic reconnection
+2026-03-19T08:52:51.170Z [DEBUG] MCP server "claude.ai Google Calendar": SSE transport closed/disconnected, attempting automatic reconnection
+2026-03-19T08:52:51.170Z [DEBUG] MCP server "claude.ai Hugging Face": SSE transport closed/disconnected, attempting automatic reconnection
+2026-03-19T08:52:51.170Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": SSE transport closed/disconnected, attempting automatic reconnection
+2026-03-19T08:52:51.171Z [DEBUG] LSP server manager shut down successfully
+2026-03-19T08:52:51.173Z [DEBUG] MCP server "claude.ai Gmail": Initializing claude.ai proxy transport for server mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-19T08:52:51.173Z [DEBUG] MCP server "claude.ai Gmail": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01HffcktXCPXfn1dipGqQQjX
+2026-03-19T08:52:51.173Z [DEBUG] MCP server "claude.ai Gmail": claude.ai proxy transport created successfully
+2026-03-19T08:52:51.175Z [DEBUG] MCP server "claude.ai Gmail": Starting connection with timeout of 30000ms
+2026-03-19T08:52:51.176Z [DEBUG] MCP server "claude.ai Google Calendar": Initializing claude.ai proxy transport for server mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-19T08:52:51.176Z [DEBUG] MCP server "claude.ai Google Calendar": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_018u5pUp1MgfdK93RnhSsWDU
+2026-03-19T08:52:51.176Z [DEBUG] MCP server "claude.ai Google Calendar": claude.ai proxy transport created successfully
+2026-03-19T08:52:51.177Z [DEBUG] MCP server "claude.ai Google Calendar": Starting connection with timeout of 30000ms
+2026-03-19T08:52:51.177Z [DEBUG] MCP server "claude.ai Hugging Face": Initializing claude.ai proxy transport for server mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-19T08:52:51.177Z [DEBUG] MCP server "claude.ai Hugging Face": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01X5dnnPCegPAcsLLLNfEEvi
+2026-03-19T08:52:51.177Z [DEBUG] MCP server "claude.ai Hugging Face": claude.ai proxy transport created successfully
+2026-03-19T08:52:51.178Z [DEBUG] MCP server "claude.ai Hugging Face": Starting connection with timeout of 30000ms
+2026-03-19T08:52:51.178Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Initializing claude.ai proxy transport for server mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-19T08:52:51.178Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Using claude.ai proxy at https://mcp-proxy.anthropic.com/v1/mcp/mcpsrv_01BQSPMUM6tn9uNzma1RBfbj
+2026-03-19T08:52:51.178Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": claude.ai proxy transport created successfully
+2026-03-19T08:52:51.179Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Starting connection with timeout of 30000ms
+2026-03-19T08:52:51.180Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": CLAUDEAI-PROXY connection dropped after 89064s uptime
+2026-03-19T08:52:51.180Z [DEBUG] MCP server "claude.ai Cloudflare Developer Platform": Connection error: SSE stream disconnected: AbortError: The operation was aborted.
+2026-03-19T08:52:51.180Z [DEBUG] Cleaned up session snapshot: /home/soliwkr/.claude/shell-snapshots/snapshot-bash-1773821318461-ojoyye.sh
+2026-03-19T08:52:51.181Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2026-03-19T08:52:51.181Z [DEBUG] Found 0 hook matchers in settings
+2026-03-19T08:52:51.181Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)

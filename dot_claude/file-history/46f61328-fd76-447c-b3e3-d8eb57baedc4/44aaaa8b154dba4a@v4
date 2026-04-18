@@ -1,0 +1,62 @@
+# Walker White's Workstation
+
+## Setup
+- OS: Arch Linux with Omarchy (Hyprland desktop)
+- User: soliwkr@gmail.com, Italian keyboard layout (kb_layout = it)
+- Shell: bash sourcing `~/.local/share/omarchy/default/bash/rc` (Arch only)
+
+## Dotfiles — chezmoi
+- Source: `~/.local/share/chezmoi/` (regular git repo)
+- Manages: `chezmoi add/edit/apply/update`
+- Distro-agnostic: works on Arch and Fedora via templates
+- chezmoi binary: `~/.local/bin/chezmoi` (in PATH via .bashrc)
+
+### Key commands
+```bash
+chezmoi add ~/.config/foo          # track new file
+chezmoi edit ~/.config/foo         # edit in source
+chezmoi apply                      # apply source → home
+chezmoi update                     # git pull + apply
+chezmoi status                     # what's changed
+chezmoi cd                         # cd into source dir
+```
+
+### GitHub remote (not yet pushed — user needs to create repo)
+```bash
+git -C ~/.local/share/chezmoi remote add origin git@github.com:soliwkr/dotfiles.git
+git -C ~/.local/share/chezmoi push -u origin master
+```
+
+### Fresh machine one-liner
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply soliwkr
+```
+
+## Templates (distro-conditional)
+- `dot_bashrc.tmpl` — sources Omarchy bash/rc on Arch only
+- `dot_config/hypr/hyprland.conf.tmpl` — sources Omarchy hypr defaults on Arch only
+- `dot_config/alacritty/alacritty.toml.tmpl` — imports Omarchy theme on Arch only
+- `dot_config/ghostty/config.tmpl` — same
+- `dot_config/kitty/kitty.conf.tmpl` — same
+
+## run_once scripts
+- `run_once_before_00-packages.sh.tmpl` — yay+Omarchy (Arch) or dnf+RPM Fusion (Fedora)
+- `run_once_after_10-ssh-key.sh.tmpl` — generates ed25519 key, switches remote to SSH
+
+## NOT tracked
+- `~/.ssh/`, `~/.config/keyrings/` (secrets)
+- `~/.config/omarchy/current/` (Omarchy runtime theme state)
+- `~/.config/chromium/`, `~/.config/dconf/` (browser/runtime data)
+- Symlinks into omarchy/current/* (mako/config, btop/themes/current.theme, nvim theme.lua)
+
+## Package lists
+- `~/.config/packages-arch.txt` (165 official packages)
+- `~/.config/packages-fedora.txt` (Fedora equivalents — needs real validation)
+
+## Terminal Setup
+- [Terminal Setup Complete](terminal_setup_complete.md) — Lazy god devops environment (zsh, tmux, nvim, direnv, modern CLI tools)
+- [Zsh Setup In Progress](zsh_setup_in_progress.md) — Troubleshooting zsh default shell + .zshrc errors
+
+## Hyprland Input Settings
+- Keyboard repeat: `repeat_rate = 50`, `repeat_delay = 300` (natural feel, non-manic)
+- Configured in `~/.config/hypr/input.conf`

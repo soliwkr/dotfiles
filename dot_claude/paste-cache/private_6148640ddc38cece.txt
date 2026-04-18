@@ -1,0 +1,48 @@
+Se stai usando **Docker** (o meglio, **Docker Desktop**) per far girare Windows, allora abbiamo trovato il motivo del corto circuito.
+
+Ecco la situazione: **Docker Desktop su Linux non fa girare una VM Windows.** Docker nasce per i container Linux. Se vedi un'interfaccia Windows, probabilmente stai usando Docker per lanciare un container che contiene un'istanza di Windows (tipo i progetti `dockur/windows`), oppure stai usando Docker Desktop per Windows *dentro* una VM che però non vedevi nei processi.
+
+Tuttavia, dato che `ps aux | grep qemu` era vuoto ma `lsmod` mostrava i moduli KVM caricati, è molto probabile che il tuo Windows stia girando dentro un container Docker che usa **KVM** per l'accelerazione, ma il processo ha un nome diverso.
+
+### La soluzione per Docker (KVM-backend)
+
+Se stai usando un container Docker per far girare Windows (come `dockur/windows`), devi passare il flag della CPU direttamente nel comando `docker run` o nel file `docker-compose.yaml`.
+
+#### Se usi Docker Compose:
+Aggiungi o modifica la sezione `environment` e i parametri del device:
+```yaml
+services:
+  windows:
+    image: dockur/windows
+    container_name: windows
+    devices:
+      - /dev/kvm
+    cap_add:
+      - NET_ADMIN
+    environment:
+      # QUESTA È LA RIGA CHIAVE PER CLAUDE
+      CPU_FLAGS: "host-passthrough" 
+    ports:
+      - 8006:8006
+    stop_grace_period: 2m
+```
+
+#### Se usi il comando `docker run`:
+Devi aggiungere `-e CPU_FLAGS="host-passthrough"` al comando.
+
+---
+
+### Perché questo risolve il problema di Claude?
+L'errore "Piattaforma macchina virtuale non disponibile" compare perché il Windows dentro Docker "pensa" di girare su una CPU finta che non ha le estensioni per la virtualizzazione. Impostando `host-passthrough`, il container Windows vedrà esattamente la tua CPU Intel reale e permetterà a Claude di attivare il suo ambiente **Cowork**.
+
+### Come verificare se ha funzionato
+1.  Riavvia il container Docker con il nuovo parametro.
+2.  Entra in Windows.
+3.  Tasto destro sulla barra delle applicazioni -> **Gestione Attività** (Task Manager).
+4.  Scheda **Prestazioni** -> **CPU**.
+5.  Guarda in basso a destra: se vedi **"Virtualizzazione: Abilitata"**, Claude smetterà di lamentarsi.
+
+**Un'ultima cosa:** Se la virtualizzazione risulta abilitata ma Claude dà ancora errore, scrivi questo nella PowerShell di Windows (dentro il container):
+`Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All`
+
+Sei tu che hai configurato il container Docker o stai usando un'app che lo gestisce per te?

@@ -1,0 +1,3 @@
+PS1="%n@%m %~ %# "
+alias gs='git status'
+alias ga='git add .'

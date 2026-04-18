@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(pacman:*)",
+      "Bash(chmod +x:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(mkdir:*)",
+      "Bash(export:*)",
+      "Bash(tailscale status:*)",
+      "Bash(ssh:*)",
+      "Bash(tailscale ssh:*)",
+      "Bash(ssh-keyscan:*)",
+      "Bash(RUST_LOG=debug alacritty:*)",
+      "Bash(~/.local/bin/chezmoi add:*)",
+      "Bash(tail:*)",
+      "Bash(rsync:*)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true
+  },
+  "language": "Italiano",
+  "model": "haiku"
+}

@@ -1,0 +1,13 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key"
+    }
+  },
+  "model": {
+    "name": "gemini-3-flash-preview"
+  },
+  "ide": {
+    "hasSeenNudge": true
+  }
+}
